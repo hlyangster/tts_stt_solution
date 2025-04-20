@@ -1,8 +1,6 @@
 import os
 import sys
 sys.path.append(os.path.abspath(os.path.dirname(__file__)))
-# 導入 OpenAI 補丁
-from modules.openai_patch import patch_openai
 import gradio as gr
 import json
 import time

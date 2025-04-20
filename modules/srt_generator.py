@@ -4,7 +4,7 @@ import re
 import tempfile
 from typing import List, Tuple, Optional, Dict
 from pydub import AudioSegment
-from modules.openai_utils import get_openai_client  # 使用統一的客戶端獲取函數
+from openai import OpenAI
 
 class SRTGenerator:
     """
@@ -49,11 +49,8 @@ class SRTGenerator:
             SRT格式的轉錄結果
         """
         try:
-            # 導入新版 OpenAI 客戶端
-            import openai
-            
             # 非常簡單直接的初始化方式，只傳遞 api_key
-            client = openai.OpenAI(api_key=api_key)
+            client = OpenAI(api_key=api_key)
             
             # 打開音頻文件並調用API
             with open(file_path, "rb") as audio_file:
