@@ -1021,15 +1021,11 @@ with gr.Blocks(
         api_name="process_text"
     )
     
-    # 從步驟1到步驟2的回調 - 傳遞數據並切換頁籤
+    # 從步驟1到步驟2的回調 - 只傳遞數據
     next_step_btn.click(
-        fn=lambda t, key: (t, key),
+        fn=lambda t, key: (t, key, "資料已送出：文本已傳遞到多音字處理步驟"),
         inputs=[processed_text, google_api_key],
-        outputs=[step2_processed_text, step2_google_api_key]
-    ).then(
-        fn=lambda: gr.Tabs(selected=1),  # 切換到步驟2頁籤
-        inputs=None,
-        outputs=tabs
+        outputs=[step2_processed_text, step2_google_api_key, status_msg]
     )
     
     # 步驟2的多音字替換回調
@@ -1040,15 +1036,11 @@ with gr.Blocks(
         api_name="replace_homophones"
     )
     
-    # 從步驟2到步驟3的回調 - 傳遞數據並切換頁籤
+    # 從步驟2到步驟3的回調 - 只傳遞數據
     next_step_btn2.click(
-    fn=lambda t: t,
-    inputs=[replaced_text],  # 使用 replaced_text (多音字替換後的文本)
-    outputs=[step3_replaced_text]
-    ).then(
-    fn=lambda: gr.Tabs(selected=2),  # 切換到步驟3頁籤
-    inputs=None,
-    outputs=tabs
+        fn=lambda t: (t, "資料已送出：文本已傳遞到語音生成步驟"),
+        inputs=[replaced_text],  # 使用 replaced_text (多音字替換後的文本)
+        outputs=[step3_replaced_text, step2_status_msg]
     )
     
     # 步驟3的TTS生成回調
@@ -1071,34 +1063,32 @@ with gr.Blocks(
             generated_files,
             audio_zip,
             transcript_file_path,
-            mp3_files_state  # 儲存 mp3_files 到狀態變量
+            mp3_files_state,  # 儲存 mp3_files 到狀態變量
+            step3_status_msg
         ],
         api_name="generate_tts"
     )
     
-    # 從步驟3到步驟4的回調 - 傳遞數據並切換頁籤
+    # 從步驟3到步驟4的回調 - 只傳遞數據
     def prepare_step4(audio_zip, preprocessed_text):
         """準備步驟4的數據，使用步驟1的預處理文本作為逐字稿"""
-        timestamp = int(time.time())
-        transcript_file = str(subtitle_dir / f"preprocessed_transcript_{timestamp}.txt")
+        if not audio_zip:
+            return None, None, None, "請先生成語音文件", "準備失敗：請先生成語音文件"
         
-        # 保存預處理文本作為逐字稿
-        with open(transcript_file, "w", encoding="utf-8") as f:
-            f.write(preprocessed_text)
-        
-        # 同時載入逐字稿內容以顯示在預覽區域
+        # 使用預處理後的文本作為逐字稿
         transcript_content = preprocessed_text
         
-        return audio_zip, transcript_file, "zh", transcript_content
-    
+        # 創建臨時文件來存儲逐字稿
+        transcript_file = "temp_transcript.txt"
+        with open(transcript_file, "w", encoding="utf-8") as f:
+            f.write(transcript_content)
+        
+        return audio_zip, transcript_file, "zh", transcript_content, "資料已送出：音頻和逐字稿已傳遞到字幕生成步驟"
+
     next_step_btn3.click(
         fn=prepare_step4,
         inputs=[audio_zip, preprocessed_text_state],
-        outputs=[step4_audio_zip, step4_transcript_file, step4_language, transcript_preview]
-    ).then(
-        fn=lambda: gr.Tabs(selected=3),  # 切換到步驟4頁籤
-        inputs=None,
-        outputs=tabs
+        outputs=[step4_audio_zip, step4_transcript_file, step4_language, transcript_preview, step4_status_msg]
     )
     
     # 當上傳逐字稿文件時更新預覽
@@ -1156,19 +1146,14 @@ with gr.Blocks(
         outputs=[subtitle_file]
     )
 
-    # 從步驟4到步驟5的回調 - 傳遞數據並切換頁籤
+    # 從步驟4到步驟5的回調 - 只傳遞數據
     def prepare_step5(subtitle_file, corrected_srt_content):
-        """準備步驟5的數據"""
-        return corrected_srt_content, subtitle_file
+        return subtitle_file, corrected_srt_content, "資料已送出：字幕已傳遞到預覽效果步驟", subtitle_file
 
     preview_effect_btn.click(
         fn=prepare_step5,
         inputs=[subtitle_file, corrected_srt_preview],
-        outputs=[step5_subtitle_content, step5_subtitle_file]
-    ).then(
-        fn=lambda: gr.Tabs(selected=4),  # 切換到步驟5頁籤
-        inputs=None,
-        outputs=tabs
+        outputs=[step5_subtitle_content, step5_subtitle_file, step4_status_msg]
     )
 
     # 步驟5的視頻預覽回調
