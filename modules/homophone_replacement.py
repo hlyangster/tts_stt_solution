@@ -110,7 +110,7 @@ class HomophoneReplacer:
         Returns:
             str: 合併後的處理結果
         """
-        from prompt.zh_prompt import TEXT_SEGMENTATION_PROMPT
+        from prompts.zh_prompt import TEXT_SEGMENTATION_PROMPT
         
         # 配置Google AI
         genai.configure(api_key=api_key)

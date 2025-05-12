@@ -2,18 +2,38 @@
 __pycache__/
 *.py[cod]
 *$py.class
+*.so
+.Python
 venv/
-.env
+ENV/
 
-# VS Code
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
 
-# 專案特定
-*.wav
+# Project specific
+temp/
+logs/
+*.log
+api_settings.json
+
+# Temp files
+*.tmp
+*.temp
+*.bak
+
+# Audio files
 *.mp3
+*.wav
+*.ogg
+
+# Video files
+*.mp4
+*.avi
+*.mkv
+
+# Subtitle files
 *.srt
-temp_files/
+!example/*.srt

@@ -5,7 +5,7 @@ import re
 import os
 import time
 from typing import Dict, List, Tuple, Optional
-from prompt.zh_prompt import SUBTITLE_CORRECTION_PROMPT
+from prompts.zh_prompt import SUBTITLE_CORRECTION_PROMPT
 
 class SubtitleCorrector:
     def __init__(self, api_key: str):

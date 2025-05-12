@@ -101,7 +101,7 @@ def replace_homophones(processed_text, google_api_key):
     except Exception as e:
         return f"多音字替換錯誤: {str(e)}", None, None
 
-def generate_tts(text, api_key, voice_name, emotion, speed, custom_pronunciation, progress=gr.Progress()):
+def generate_tts(text, api_key, voice_name, emotion, speed, custom_pronunciation):
     """TTS語音生成的回調函數"""
     try:
         if not text or not text.strip():
@@ -145,7 +145,7 @@ def generate_tts(text, api_key, voice_name, emotion, speed, custom_pronunciation
         return f"未知錯誤: {str(e)}", None, None, None, None
 
 # 新增函數：僅生成字幕，不進行校正
-def generate_subtitle_only(audio_zip, whisper_api_key, language, progress=gr.Progress()):
+def generate_subtitle_only(audio_zip, whisper_api_key, language):
     """只從音頻生成字幕的回調函數，不進行校正"""
     try:
         if not audio_zip or not os.path.exists(audio_zip):
@@ -199,7 +199,7 @@ def generate_subtitle_only(audio_zip, whisper_api_key, language, progress=gr.Pro
         return f"字幕生成過程中出錯: {str(e)}", None, None
 
 def auto_process_all(transcript_file_path, google_api_key, tts_api_key, whisper_api_key, gemini_api_key, 
-                    language, voice_name, emotion, speed, custom_pronunciation, batch_size, progress=gr.Progress()):
+                    language, voice_name, emotion, speed, custom_pronunciation, batch_size):
     """一鍵處理所有步驟的整合函數"""
     try:
         # 檢查必要參數
@@ -307,7 +307,7 @@ def auto_process_all(transcript_file_path, google_api_key, tts_api_key, whisper_
         return error_msg, "處理出錯，請查看狀態信息", None, None
 
 # 修改後的校正字幕函數
-def correct_subtitles_only(transcript_file, initial_srt_file, gemini_api_key, batch_size, progress=gr.Progress()):
+def correct_subtitles_only(transcript_file, initial_srt_file, gemini_api_key, batch_size):
     """僅執行字幕校正部分"""
     try:
         if not transcript_file or not os.path.exists(transcript_file):
@@ -355,7 +355,7 @@ def correct_subtitles_only(transcript_file, initial_srt_file, gemini_api_key, ba
     except Exception as e:
         return f"字幕校正過程中出錯: {str(e)}", None, None, None
 
-def generate_subtitle(audio_zip, transcript_file, whisper_api_key, gemini_api_key, language, batch_size, progress=gr.Progress()):
+def generate_subtitle(audio_zip, transcript_file, whisper_api_key, gemini_api_key, language, batch_size):
     """從音頻和逐字稿生成和校正字幕的回調函數"""
     try:
         if not audio_zip or not os.path.exists(audio_zip):
@@ -472,7 +472,7 @@ def download_corrected_srt(subtitle_file):
     return subtitle_file
 
 # 新增函數：創建視頻預覽
-def create_video_preview(mp3_files, subtitle_file, progress=gr.Progress()):
+def create_video_preview(mp3_files, subtitle_file):
     """從音頻文件和字幕文件創建視頻預覽"""
     try:
         if not mp3_files or not all(os.path.exists(f) for f in mp3_files):
@@ -518,7 +518,7 @@ def create_video_preview(mp3_files, subtitle_file, progress=gr.Progress()):
         return f"未知錯誤: {str(e)}", None
 
 def batch_process_all_files(transcript_files, google_api_key, tts_api_key, whisper_api_key, gemini_api_key, 
-                          language, voice_name, emotion, speed, custom_pronunciation, batch_size, progress=gr.Progress()):
+                          language, voice_name, emotion, speed, custom_pronunciation, batch_size):
     """批次處理多個逐字稿檔案，每個檔案獨立處理並打包"""
     if not transcript_files:
         return "請上傳至少一個逐字稿檔案", "未處理任何檔案", None
@@ -596,6 +596,7 @@ def batch_process_all_files(transcript_files, google_api_key, tts_api_key, whisp
 # 定義Gradio界面
 with gr.Blocks(
     title="AI語音生成與字幕系統",
+    queue=True,
     css="""
     .wrap-text textarea {
         white-space: pre-wrap !important;
@@ -1208,4 +1209,4 @@ with gr.Blocks(
     )
 
 if __name__ == "__main__":
-    app.launch()
+    app.launch(server_port=8080)

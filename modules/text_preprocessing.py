@@ -1,5 +1,5 @@
 import re
-from prompt import TEXT_PREPROCESSING_PROMPTS
+from prompts import TEXT_PREPROCESSING_PROMPTS
 from utils.api_handler import process_with_ai, APIError
 
 class PreprocessingError(Exception):

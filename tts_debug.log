@@ -1,749 +1,308 @@
-2025-05-10 09:30:26,565 - asyncio - DEBUG - Using proactor: IocpProactor
-2025-05-10 09:30:26,567 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
-2025-05-10 09:30:26,780 - httpcore.connection - DEBUG - connect_tcp.started host='api.gradio.app' port=443 local_address=None timeout=3 socket_options=None
-2025-05-10 09:30:26,782 - asyncio - DEBUG - Using proactor: IocpProactor
-2025-05-10 09:30:26,874 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/telemetry/gradio/initiated HTTP/1.1" 200 0
-2025-05-10 09:30:26,973 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001F63631E180>
-2025-05-10 09:30:26,974 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001F6363A9850> server_hostname='api.gradio.app' timeout=3
-2025-05-10 09:30:27,016 - httpcore.connection - DEBUG - connect_tcp.started host='127.0.0.1' port=7860 local_address=None timeout=None socket_options=None
-2025-05-10 09:30:27,016 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001F636829F10>
-2025-05-10 09:30:27,017 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
-2025-05-10 09:30:27,017 - httpcore.http11 - DEBUG - send_request_headers.complete
-2025-05-10 09:30:27,017 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
-2025-05-10 09:30:27,017 - httpcore.http11 - DEBUG - send_request_body.complete
-2025-05-10 09:30:27,017 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
-2025-05-10 09:30:27,018 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Sat, 10 May 2025 01:30:26 GMT'), (b'server', b'uvicorn'), (b'content-length', b'4'), (b'content-type', b'application/json')])
-2025-05-10 09:30:27,019 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
-2025-05-10 09:30:27,019 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
-2025-05-10 09:30:27,019 - httpcore.http11 - DEBUG - receive_response_body.complete
-2025-05-10 09:30:27,019 - httpcore.http11 - DEBUG - response_closed.started
-2025-05-10 09:30:27,019 - httpcore.http11 - DEBUG - response_closed.complete
-2025-05-10 09:30:27,019 - httpcore.connection - DEBUG - close.started
-2025-05-10 09:30:27,019 - httpcore.connection - DEBUG - close.complete
-2025-05-10 09:30:27,020 - httpcore.connection - DEBUG - connect_tcp.started host='127.0.0.1' port=7860 local_address=None timeout=3 socket_options=None
-2025-05-10 09:30:27,020 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001F63682AEA0>
-2025-05-10 09:30:27,020 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'HEAD']>
-2025-05-10 09:30:27,021 - httpcore.http11 - DEBUG - send_request_headers.complete
-2025-05-10 09:30:27,021 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'HEAD']>
-2025-05-10 09:30:27,021 - httpcore.http11 - DEBUG - send_request_body.complete
-2025-05-10 09:30:27,021 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'HEAD']>
-2025-05-10 09:30:27,039 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Sat, 10 May 2025 01:30:26 GMT'), (b'server', b'uvicorn'), (b'content-length', b'159296'), (b'content-type', b'text/html; charset=utf-8')])
-2025-05-10 09:30:27,039 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
-2025-05-10 09:30:27,039 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'HEAD']>
-2025-05-10 09:30:27,039 - httpcore.http11 - DEBUG - receive_response_body.complete
-2025-05-10 09:30:27,039 - httpcore.http11 - DEBUG - response_closed.started
-2025-05-10 09:30:27,040 - httpcore.http11 - DEBUG - response_closed.complete
-2025-05-10 09:30:27,040 - httpcore.connection - DEBUG - close.started
-2025-05-10 09:30:27,040 - httpcore.connection - DEBUG - close.complete
-2025-05-10 09:30:27,042 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
-2025-05-10 09:30:27,306 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/telemetry/gradio/launched HTTP/1.1" 200 0
-2025-05-10 09:30:27,324 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001F636354E00>
-2025-05-10 09:30:27,324 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
-2025-05-10 09:30:27,324 - httpcore.http11 - DEBUG - send_request_headers.complete
-2025-05-10 09:30:27,324 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
-2025-05-10 09:30:27,324 - httpcore.http11 - DEBUG - send_request_body.complete
-2025-05-10 09:30:27,324 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
-2025-05-10 09:30:27,492 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sat, 10 May 2025 01:30:27 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'21'), (b'Connection', b'keep-alive'), (b'Server', b'nginx/1.18.0'), (b'Access-Control-Allow-Origin', b'*')])
-2025-05-10 09:30:27,492 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
-2025-05-10 09:30:27,492 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
-2025-05-10 09:30:27,492 - httpcore.http11 - DEBUG - receive_response_body.complete
-2025-05-10 09:30:27,492 - httpcore.http11 - DEBUG - response_closed.started
-2025-05-10 09:30:27,492 - httpcore.http11 - DEBUG - response_closed.complete
-2025-05-10 09:30:27,492 - httpcore.connection - DEBUG - close.started
-2025-05-10 09:30:27,492 - httpcore.connection - DEBUG - close.complete
-2025-05-10 10:16:47,536 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): generativelanguage.googleapis.com:443
-2025-05-10 10:16:48,341 - urllib3.connectionpool - DEBUG - https://generativelanguage.googleapis.com:443 "POST /v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBDc73003zr5T8KVhem_kTOIa9nRIbcHsg HTTP/1.1" 200 None
-2025-05-10 10:17:26,366 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.minimaxi.chat:443
-2025-05-10 10:17:29,765 - urllib3.connectionpool - DEBUG - https://api.minimaxi.chat:443 "POST /v1/t2a_v2?GroupId=1886392350196895842 HTTP/1.1" 200 None
-2025-05-10 10:17:30,026 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.minimaxi.chat:443
-2025-05-10 10:17:31,743 - urllib3.connectionpool - DEBUG - https://api.minimaxi.chat:443 "POST /v1/t2a_v2?GroupId=1886392350196895842 HTTP/1.1" 200 None
-2025-05-10 10:17:32,233 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.minimaxi.chat:443
-2025-05-10 10:17:33,654 - urllib3.connectionpool - DEBUG - https://api.minimaxi.chat:443 "POST /v1/t2a_v2?GroupId=1886392350196895842 HTTP/1.1" 200 None
-2025-05-10 10:17:33,999 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.minimaxi.chat:443
-2025-05-10 10:17:35,724 - urllib3.connectionpool - DEBUG - https://api.minimaxi.chat:443 "POST /v1/t2a_v2?GroupId=1886392350196895842 HTTP/1.1" 200 None
-2025-05-10 10:17:59,242 - pydub.converter - DEBUG - subprocess.call(['ffmpeg', '-y', '-i', 'C:\\Users\\posed\\AppData\\Local\\Temp\\tmpu7tjgvs3\\01.mp3', '-acodec', 'pcm_s16le', '-vn', '-f', 'wav', '-'])
-2025-05-10 10:17:59,739 - openai._base_client - DEBUG - Request options: {'method': 'post', 'url': '/audio/transcriptions', 'headers': {'Content-Type': 'multipart/form-data'}, 'files': [('file', SerializationIterator(index=0, iterator=SerializationIterator(index=0, iterator=<_io.BufferedReader name='C:\\Users\\posed\\AppData\\Local\\Temp\\tmpu7tjgvs3\\01.mp3'>)))], 'idempotency_key': 'stainless-python-retry-abbc2b87-3a50-44da-8246-1887e155eb74', 'json_data': {'model': 'whisper-1', 'language': 'zh', 'response_format': 'srt'}}
-2025-05-10 10:17:59,813 - openai._base_client - DEBUG - Sending HTTP Request: POST https://api.openai.com/v1/audio/transcriptions
-2025-05-10 10:17:59,813 - httpcore.connection - DEBUG - connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=5.0 socket_options=None
-2025-05-10 10:17:59,873 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001F63641C380>
-2025-05-10 10:17:59,873 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001F6368F2F50> server_hostname='api.openai.com' timeout=5.0
-2025-05-10 10:17:59,897 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001F63651F0E0>
-2025-05-10 10:17:59,897 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
-2025-05-10 10:17:59,897 - httpcore.http11 - DEBUG - send_request_headers.complete
-2025-05-10 10:17:59,897 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
-2025-05-10 10:17:59,942 - httpcore.http11 - DEBUG - send_request_body.complete
-2025-05-10 10:17:59,942 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
-2025-05-10 10:18:02,872 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sat, 10 May 2025 02:18:02 GMT'), (b'Content-Type', b'text/plain; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-expose-headers', b'X-Request-ID'), (b'openai-organization', b'genhaus'), (b'openai-processing-ms', b'1258'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), (b'via', b'envoy-router-7c84779655-lkt7p'), (b'x-envoy-upstream-service-time', b'1261'), (b'x-ratelimit-limit-requests', b'500'), (b'x-ratelimit-remaining-requests', b'499'), (b'x-ratelimit-reset-requests', b'120ms'), (b'x-request-id', b'req_8e4ff1d1ceac9099b4b96f45c7e07509'), (b'cf-cache-status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=gzMPcKb3dbpl7_ax362DAlXgsnKQjCggu5Sye0wq1qE-1746843482-1.0.1.1-6vvMG4Mm_8qY_F2FqlUC20KPlbEoqivFZGoOEZRwbKKE_A4z2r8BSjvofyePDx.Sjg3CQXyM8B8R15K4aqiYONXaqjMwdh2IPyMvtF34EE0; path=/; expires=Sat, 10-May-25 02:48:02 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'X-Content-Type-Options', b'nosniff'), (b'Set-Cookie', b'_cfuvid=8uxD0_nnID4MaUvbqqnklle5U8ZEcHqM3vUMhfqtY5M-1746843482798-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'93d5f18518a9f06b-KHH'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
-2025-05-10 10:18:02,874 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
-2025-05-10 10:18:02,874 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
-2025-05-10 10:18:02,874 - httpcore.http11 - DEBUG - receive_response_body.complete
-2025-05-10 10:18:02,874 - httpcore.http11 - DEBUG - response_closed.started
-2025-05-10 10:18:02,874 - httpcore.http11 - DEBUG - response_closed.complete
-2025-05-10 10:18:02,874 - openai._base_client - DEBUG - HTTP Response: POST https://api.openai.com/v1/audio/transcriptions "200 OK" Headers([('date', 'Sat, 10 May 2025 02:18:02 GMT'), ('content-type', 'text/plain; charset=utf-8'), ('transfer-encoding', 'chunked'), ('connection', 'keep-alive'), ('access-control-expose-headers', 'X-Request-ID'), ('openai-organization', 'genhaus'), ('openai-processing-ms', '1258'), ('openai-version', '2020-10-01'), ('strict-transport-security', 'max-age=31536000; includeSubDomains; preload'), ('via', 'envoy-router-7c84779655-lkt7p'), ('x-envoy-upstream-service-time', '1261'), ('x-ratelimit-limit-requests', '500'), ('x-ratelimit-remaining-requests', '499'), ('x-ratelimit-reset-requests', '120ms'), ('x-request-id', 'req_8e4ff1d1ceac9099b4b96f45c7e07509'), ('cf-cache-status', 'DYNAMIC'), ('set-cookie', '__cf_bm=gzMPcKb3dbpl7_ax362DAlXgsnKQjCggu5Sye0wq1qE-1746843482-1.0.1.1-6vvMG4Mm_8qY_F2FqlUC20KPlbEoqivFZGoOEZRwbKKE_A4z2r8BSjvofyePDx.Sjg3CQXyM8B8R15K4aqiYONXaqjMwdh2IPyMvtF34EE0; path=/; expires=Sat, 10-May-25 02:48:02 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('x-content-type-options', 'nosniff'), ('set-cookie', '_cfuvid=8uxD0_nnID4MaUvbqqnklle5U8ZEcHqM3vUMhfqtY5M-1746843482798-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('server', 'cloudflare'), ('cf-ray', '93d5f18518a9f06b-KHH'), ('content-encoding', 'gzip'), ('alt-svc', 'h3=":443"; ma=86400')])
-2025-05-10 10:18:02,874 - openai._base_client - DEBUG - request_id: req_8e4ff1d1ceac9099b4b96f45c7e07509
-2025-05-10 10:18:02,907 - pydub.converter - DEBUG - subprocess.call(['ffmpeg', '-y', '-i', 'C:\\Users\\posed\\AppData\\Local\\Temp\\tmpu7tjgvs3\\02.mp3', '-acodec', 'pcm_s16le', '-vn', '-f', 'wav', '-'])
-2025-05-10 10:18:03,157 - openai._base_client - DEBUG - Request options: {'method': 'post', 'url': '/audio/transcriptions', 'headers': {'Content-Type': 'multipart/form-data'}, 'files': [('file', SerializationIterator(index=0, iterator=SerializationIterator(index=0, iterator=<_io.BufferedReader name='C:\\Users\\posed\\AppData\\Local\\Temp\\tmpu7tjgvs3\\02.mp3'>)))], 'idempotency_key': 'stainless-python-retry-4153e133-9382-421a-8b53-fe17fe343777', 'json_data': {'model': 'whisper-1', 'language': 'zh', 'response_format': 'srt'}}
-2025-05-10 10:18:03,157 - openai._base_client - DEBUG - Sending HTTP Request: POST https://api.openai.com/v1/audio/transcriptions
-2025-05-10 10:18:03,157 - httpcore.connection - DEBUG - connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=5.0 socket_options=None
-2025-05-10 10:18:03,201 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001F6363C8DD0>
-2025-05-10 10:18:03,201 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001F636CC74D0> server_hostname='api.openai.com' timeout=5.0
-2025-05-10 10:18:03,227 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001F6363C8B00>
-2025-05-10 10:18:03,228 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
-2025-05-10 10:18:03,228 - httpcore.http11 - DEBUG - send_request_headers.complete
-2025-05-10 10:18:03,228 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
-2025-05-10 10:18:03,229 - httpcore.http11 - DEBUG - send_request_body.complete
-2025-05-10 10:18:03,229 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
-2025-05-10 10:18:04,946 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sat, 10 May 2025 02:18:04 GMT'), (b'Content-Type', b'text/plain; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-expose-headers', b'X-Request-ID'), (b'openai-organization', b'genhaus'), (b'openai-processing-ms', b'374'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), (b'via', b'envoy-router-7db5469759-dnn9h'), (b'x-envoy-upstream-service-time', b'377'), (b'x-ratelimit-limit-requests', b'500'), (b'x-ratelimit-remaining-requests', b'499'), (b'x-ratelimit-reset-requests', b'120ms'), (b'x-request-id', b'req_4f3716aa8635862e109f09eb363ddf69'), (b'cf-cache-status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=uUBKWJ_.Mvk6FHZdquDi6X1z.OV023VnqdX_jI7ivE0-1746843484-1.0.1.1-YShC39GsHCw8GTqngoHtyY6QSKaYj0EAJ3nIRvx1ZJSJhoK.KfbRh6ozoaO6fr6atVXvtUsW1b9iwnNR8nj1VWpsWbe8Y8pEP1Y5cwIWCEE; path=/; expires=Sat, 10-May-25 02:48:04 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'X-Content-Type-Options', b'nosniff'), (b'Set-Cookie', b'_cfuvid=NNpczuOAA_5eMU2kiX4Mao9QAgrwZQLMftIBVCVULh0-1746843484872-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'93d5f199da58f07f-KHH'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
-2025-05-10 10:18:04,946 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
-2025-05-10 10:18:04,947 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
-2025-05-10 10:18:04,947 - httpcore.http11 - DEBUG - receive_response_body.complete
-2025-05-10 10:18:04,947 - httpcore.http11 - DEBUG - response_closed.started
-2025-05-10 10:18:04,947 - httpcore.http11 - DEBUG - response_closed.complete
-2025-05-10 10:18:04,947 - openai._base_client - DEBUG - HTTP Response: POST https://api.openai.com/v1/audio/transcriptions "200 OK" Headers([('date', 'Sat, 10 May 2025 02:18:04 GMT'), ('content-type', 'text/plain; charset=utf-8'), ('transfer-encoding', 'chunked'), ('connection', 'keep-alive'), ('access-control-expose-headers', 'X-Request-ID'), ('openai-organization', 'genhaus'), ('openai-processing-ms', '374'), ('openai-version', '2020-10-01'), ('strict-transport-security', 'max-age=31536000; includeSubDomains; preload'), ('via', 'envoy-router-7db5469759-dnn9h'), ('x-envoy-upstream-service-time', '377'), ('x-ratelimit-limit-requests', '500'), ('x-ratelimit-remaining-requests', '499'), ('x-ratelimit-reset-requests', '120ms'), ('x-request-id', 'req_4f3716aa8635862e109f09eb363ddf69'), ('cf-cache-status', 'DYNAMIC'), ('set-cookie', '__cf_bm=uUBKWJ_.Mvk6FHZdquDi6X1z.OV023VnqdX_jI7ivE0-1746843484-1.0.1.1-YShC39GsHCw8GTqngoHtyY6QSKaYj0EAJ3nIRvx1ZJSJhoK.KfbRh6ozoaO6fr6atVXvtUsW1b9iwnNR8nj1VWpsWbe8Y8pEP1Y5cwIWCEE; path=/; expires=Sat, 10-May-25 02:48:04 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('x-content-type-options', 'nosniff'), ('set-cookie', '_cfuvid=NNpczuOAA_5eMU2kiX4Mao9QAgrwZQLMftIBVCVULh0-1746843484872-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('server', 'cloudflare'), ('cf-ray', '93d5f199da58f07f-KHH'), ('content-encoding', 'gzip'), ('alt-svc', 'h3=":443"; ma=86400')])
-2025-05-10 10:18:04,947 - openai._base_client - DEBUG - request_id: req_4f3716aa8635862e109f09eb363ddf69
-2025-05-10 10:18:04,981 - pydub.converter - DEBUG - subprocess.call(['ffmpeg', '-y', '-i', 'C:\\Users\\posed\\AppData\\Local\\Temp\\tmpu7tjgvs3\\03.mp3', '-acodec', 'pcm_s16le', '-vn', '-f', 'wav', '-'])
-2025-05-10 10:18:05,231 - openai._base_client - DEBUG - Request options: {'method': 'post', 'url': '/audio/transcriptions', 'headers': {'Content-Type': 'multipart/form-data'}, 'files': [('file', SerializationIterator(index=0, iterator=SerializationIterator(index=0, iterator=<_io.BufferedReader name='C:\\Users\\posed\\AppData\\Local\\Temp\\tmpu7tjgvs3\\03.mp3'>)))], 'idempotency_key': 'stainless-python-retry-322aae12-a534-4684-8b72-d280e38bd667', 'json_data': {'model': 'whisper-1', 'language': 'zh', 'response_format': 'srt'}}
-2025-05-10 10:18:05,232 - openai._base_client - DEBUG - Sending HTTP Request: POST https://api.openai.com/v1/audio/transcriptions
-2025-05-10 10:18:05,232 - httpcore.connection - DEBUG - connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=5.0 socket_options=None
-2025-05-10 10:18:05,267 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001F636434EC0>
-2025-05-10 10:18:05,267 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001F636CF84D0> server_hostname='api.openai.com' timeout=5.0
-2025-05-10 10:18:05,298 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001F636434710>
-2025-05-10 10:18:05,298 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
-2025-05-10 10:18:05,298 - httpcore.http11 - DEBUG - send_request_headers.complete
-2025-05-10 10:18:05,298 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
-2025-05-10 10:18:05,299 - httpcore.connection - DEBUG - close.started
-2025-05-10 10:18:05,299 - httpcore.connection - DEBUG - close.complete
-2025-05-10 10:18:05,300 - httpcore.http11 - DEBUG - send_request_body.complete
-2025-05-10 10:18:05,301 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
-2025-05-10 10:18:06,487 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sat, 10 May 2025 02:18:06 GMT'), (b'Content-Type', b'text/plain; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-expose-headers', b'X-Request-ID'), (b'openai-organization', b'genhaus'), (b'openai-processing-ms', b'350'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), (b'via', b'envoy-router-66d9d5f44f-qqfxp'), (b'x-envoy-upstream-service-time', b'352'), (b'x-ratelimit-limit-requests', b'500'), (b'x-ratelimit-remaining-requests', b'499'), (b'x-ratelimit-reset-requests', b'120ms'), (b'x-request-id', b'req_9ea1748ef6070787987468f5e461d753'), (b'cf-cache-status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=NCd1pmGbkx8L4gZaBRBL8Di0hB57G7_4jI.qSsez6g8-1746843486-1.0.1.1-7tV3Ey8Daw_O315bBHaGFDrW7V86fvFvgGuJiGU2rnamWuHao.t4NJGTmfAtLJrlxGwInztuBMiM542njiLn3.oUwk8mo8syGuWYzqesuV0; path=/; expires=Sat, 10-May-25 02:48:06 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'X-Content-Type-Options', b'nosniff'), (b'Set-Cookie', b'_cfuvid=rFHC6qd.UCpR2Mla0RUwUu2GE83Nsi7dlhkv9M3svrY-1746843486415-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'93d5f1a6c841f07b-KHH'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
-2025-05-10 10:18:06,488 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
-2025-05-10 10:18:06,488 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
-2025-05-10 10:18:06,489 - httpcore.http11 - DEBUG - receive_response_body.complete
-2025-05-10 10:18:06,489 - httpcore.http11 - DEBUG - response_closed.started
-2025-05-10 10:18:06,489 - httpcore.http11 - DEBUG - response_closed.complete
-2025-05-10 10:18:06,489 - openai._base_client - DEBUG - HTTP Response: POST https://api.openai.com/v1/audio/transcriptions "200 OK" Headers([('date', 'Sat, 10 May 2025 02:18:06 GMT'), ('content-type', 'text/plain; charset=utf-8'), ('transfer-encoding', 'chunked'), ('connection', 'keep-alive'), ('access-control-expose-headers', 'X-Request-ID'), ('openai-organization', 'genhaus'), ('openai-processing-ms', '350'), ('openai-version', '2020-10-01'), ('strict-transport-security', 'max-age=31536000; includeSubDomains; preload'), ('via', 'envoy-router-66d9d5f44f-qqfxp'), ('x-envoy-upstream-service-time', '352'), ('x-ratelimit-limit-requests', '500'), ('x-ratelimit-remaining-requests', '499'), ('x-ratelimit-reset-requests', '120ms'), ('x-request-id', 'req_9ea1748ef6070787987468f5e461d753'), ('cf-cache-status', 'DYNAMIC'), ('set-cookie', '__cf_bm=NCd1pmGbkx8L4gZaBRBL8Di0hB57G7_4jI.qSsez6g8-1746843486-1.0.1.1-7tV3Ey8Daw_O315bBHaGFDrW7V86fvFvgGuJiGU2rnamWuHao.t4NJGTmfAtLJrlxGwInztuBMiM542njiLn3.oUwk8mo8syGuWYzqesuV0; path=/; expires=Sat, 10-May-25 02:48:06 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('x-content-type-options', 'nosniff'), ('set-cookie', '_cfuvid=rFHC6qd.UCpR2Mla0RUwUu2GE83Nsi7dlhkv9M3svrY-1746843486415-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('server', 'cloudflare'), ('cf-ray', '93d5f1a6c841f07b-KHH'), ('content-encoding', 'gzip'), ('alt-svc', 'h3=":443"; ma=86400')])
-2025-05-10 10:18:06,489 - openai._base_client - DEBUG - request_id: req_9ea1748ef6070787987468f5e461d753
-2025-05-12 11:32:23,022 - asyncio - DEBUG - Using proactor: IocpProactor
-2025-05-12 11:32:23,151 - asyncio - DEBUG - Using proactor: IocpProactor
-2025-05-12 11:32:23,321 - httpcore.connection - DEBUG - connect_tcp.started host='checkip.amazonaws.com' port=443 local_address=None timeout=3 socket_options=None
-2025-05-12 11:32:23,329 - httpcore.connection - DEBUG - connect_tcp.started host='api.gradio.app' port=443 local_address=None timeout=3 socket_options=None
-2025-05-12 11:32:23,437 - httpcore.connection - DEBUG - connect_tcp.started host='127.0.0.1' port=7861 local_address=None timeout=5.0 socket_options=None
-2025-05-12 11:32:23,438 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000024FCE71E2A0>
-2025-05-12 11:32:23,438 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
-2025-05-12 11:32:23,439 - httpcore.http11 - DEBUG - send_request_headers.complete
-2025-05-12 11:32:23,439 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
-2025-05-12 11:32:23,439 - httpcore.http11 - DEBUG - send_request_body.complete
-2025-05-12 11:32:23,439 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
-2025-05-12 11:32:23,458 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Mon, 12 May 2025 03:32:23 GMT'), (b'server', b'uvicorn'), (b'content-length', b'5'), (b'content-type', b'application/json'), (b'access-control-allow-methods', b'GET, POST, PUT, DELETE, OPTIONS'), (b'access-control-allow-headers', b'Origin, Content-Type, Accept')])
-2025-05-12 11:32:23,458 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7861/startup-events "HTTP/1.1 200 OK"
-2025-05-12 11:32:23,459 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
-2025-05-12 11:32:23,459 - httpcore.http11 - DEBUG - receive_response_body.complete
-2025-05-12 11:32:23,459 - httpcore.http11 - DEBUG - response_closed.started
-2025-05-12 11:32:23,459 - httpcore.http11 - DEBUG - response_closed.complete
-2025-05-12 11:32:23,459 - httpcore.connection - DEBUG - close.started
-2025-05-12 11:32:23,459 - httpcore.connection - DEBUG - close.complete
-2025-05-12 11:32:23,460 - httpcore.connection - DEBUG - connect_tcp.started host='127.0.0.1' port=7861 local_address=None timeout=3 socket_options=None
-2025-05-12 11:32:23,461 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000024FCF7C83E0>
-2025-05-12 11:32:23,461 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'HEAD']>
-2025-05-12 11:32:23,461 - httpcore.http11 - DEBUG - send_request_headers.complete
-2025-05-12 11:32:23,462 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'HEAD']>
-2025-05-12 11:32:23,462 - httpcore.http11 - DEBUG - send_request_body.complete
-2025-05-12 11:32:23,462 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'HEAD']>
-2025-05-12 11:32:23,465 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000024FCE763E90>
-2025-05-12 11:32:23,465 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x0000024FCE51DF50> server_hostname='checkip.amazonaws.com' timeout=3
-2025-05-12 11:32:23,511 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000024FCE65A540>
-2025-05-12 11:32:23,511 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x0000024FCE51DAD0> server_hostname='api.gradio.app' timeout=3
-2025-05-12 11:32:23,525 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Mon, 12 May 2025 03:32:23 GMT'), (b'server', b'uvicorn'), (b'content-length', b'60577'), (b'content-type', b'text/html; charset=utf-8'), (b'access-control-allow-methods', b'GET, POST, PUT, DELETE, OPTIONS'), (b'access-control-allow-headers', b'Origin, Content-Type, Accept')])
-2025-05-12 11:32:23,526 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7861/ "HTTP/1.1 200 OK"
-2025-05-12 11:32:23,526 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'HEAD']>
-2025-05-12 11:32:23,526 - httpcore.http11 - DEBUG - receive_response_body.complete
-2025-05-12 11:32:23,526 - httpcore.http11 - DEBUG - response_closed.started
-2025-05-12 11:32:23,526 - httpcore.http11 - DEBUG - response_closed.complete
-2025-05-12 11:32:23,526 - httpcore.connection - DEBUG - close.started
-2025-05-12 11:32:23,526 - httpcore.connection - DEBUG - close.complete
-2025-05-12 11:32:23,556 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000024FCE567560>
-2025-05-12 11:32:23,556 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
-2025-05-12 11:32:23,556 - httpcore.http11 - DEBUG - send_request_headers.complete
-2025-05-12 11:32:23,556 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
-2025-05-12 11:32:23,556 - httpcore.http11 - DEBUG - send_request_body.complete
-2025-05-12 11:32:23,556 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
-2025-05-12 11:32:23,647 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'', [(b'Date', b'Mon, 12 May 2025 03:32:23 GMT'), (b'Content-Type', b'text/plain;charset=UTF-8'), (b'Content-Length', b'15'), (b'Connection', b'keep-alive'), (b'Server', b'nginx'), (b'Vary', b'Origin'), (b'Vary', b'Access-Control-Request-Method'), (b'Vary', b'Access-Control-Request-Headers')])
-2025-05-12 11:32:23,647 - httpx - INFO - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
-2025-05-12 11:32:23,647 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
-2025-05-12 11:32:23,649 - httpcore.http11 - DEBUG - receive_response_body.complete
-2025-05-12 11:32:23,649 - httpcore.http11 - DEBUG - response_closed.started
-2025-05-12 11:32:23,649 - httpcore.http11 - DEBUG - response_closed.complete
-2025-05-12 11:32:23,649 - httpcore.connection - DEBUG - close.started
-2025-05-12 11:32:23,649 - httpcore.connection - DEBUG - close.complete
-2025-05-12 11:32:23,781 - httpcore.connection - DEBUG - connect_tcp.started host='checkip.amazonaws.com' port=443 local_address=None timeout=3 socket_options=None
-2025-05-12 11:32:23,850 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000024FCE71C770>
-2025-05-12 11:32:23,854 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
-2025-05-12 11:32:23,854 - httpcore.http11 - DEBUG - send_request_headers.complete
-2025-05-12 11:32:23,854 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
-2025-05-12 11:32:23,854 - httpcore.http11 - DEBUG - send_request_body.complete
-2025-05-12 11:32:23,854 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
-2025-05-12 11:32:23,873 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000024FCF7CB920>
-2025-05-12 11:32:23,873 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x0000024FCF7EE6D0> server_hostname='checkip.amazonaws.com' timeout=3
-2025-05-12 11:32:23,909 - httpcore.connection - DEBUG - connect_tcp.started host='api.gradio.app' port=443 local_address=None timeout=5 socket_options=None
-2025-05-12 11:32:23,974 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000024FCF7CB830>
-2025-05-12 11:32:23,974 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
-2025-05-12 11:32:23,974 - httpcore.http11 - DEBUG - send_request_headers.complete
-2025-05-12 11:32:23,975 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
-2025-05-12 11:32:23,975 - httpcore.http11 - DEBUG - send_request_body.complete
-2025-05-12 11:32:23,975 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
-2025-05-12 11:32:24,017 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 12 May 2025 03:32:24 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'21'), (b'Connection', b'keep-alive'), (b'Server', b'nginx/1.18.0'), (b'Access-Control-Allow-Origin', b'*')])
-2025-05-12 11:32:24,017 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
-2025-05-12 11:32:24,017 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
-2025-05-12 11:32:24,017 - httpcore.http11 - DEBUG - receive_response_body.complete
-2025-05-12 11:32:24,017 - httpcore.http11 - DEBUG - response_closed.started
-2025-05-12 11:32:24,017 - httpcore.http11 - DEBUG - response_closed.complete
-2025-05-12 11:32:24,017 - httpcore.connection - DEBUG - close.started
-2025-05-12 11:32:24,019 - httpcore.connection - DEBUG - close.complete
-2025-05-12 11:32:24,073 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'', [(b'Date', b'Mon, 12 May 2025 03:32:24 GMT'), (b'Content-Type', b'text/plain;charset=UTF-8'), (b'Content-Length', b'15'), (b'Connection', b'keep-alive'), (b'Server', b'nginx'), (b'Vary', b'Origin'), (b'Vary', b'Access-Control-Request-Method'), (b'Vary', b'Access-Control-Request-Headers')])
-2025-05-12 11:32:24,073 - httpx - INFO - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
-2025-05-12 11:32:24,073 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
-2025-05-12 11:32:24,073 - httpcore.http11 - DEBUG - receive_response_body.complete
-2025-05-12 11:32:24,073 - httpcore.http11 - DEBUG - response_closed.started
-2025-05-12 11:32:24,073 - httpcore.http11 - DEBUG - response_closed.complete
-2025-05-12 11:32:24,073 - httpcore.connection - DEBUG - close.started
-2025-05-12 11:32:24,073 - httpcore.connection - DEBUG - close.complete
-2025-05-12 11:32:24,092 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000024FCF8082C0>
-2025-05-12 11:32:24,092 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x0000024FCE51DD50> server_hostname='api.gradio.app' timeout=5
-2025-05-12 11:32:24,312 - httpcore.connection - DEBUG - connect_tcp.started host='api.gradio.app' port=443 local_address=None timeout=5 socket_options=None
-2025-05-12 11:32:24,434 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000024FCF8081D0>
-2025-05-12 11:32:24,434 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
-2025-05-12 11:32:24,434 - httpcore.http11 - DEBUG - send_request_headers.complete
-2025-05-12 11:32:24,434 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
-2025-05-12 11:32:24,434 - httpcore.http11 - DEBUG - send_request_body.complete
-2025-05-12 11:32:24,434 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
-2025-05-12 11:32:24,476 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000024FCF809520>
-2025-05-12 11:32:24,476 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x0000024FCF7EF6D0> server_hostname='api.gradio.app' timeout=5
-2025-05-12 11:32:24,695 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 12 May 2025 03:32:24 GMT'), (b'Content-Type', b'text/html; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Server', b'nginx/1.18.0'), (b'Access-Control-Allow-Origin', b'*'), (b'Content-Encoding', b'gzip')])
-2025-05-12 11:32:24,695 - httpx - INFO - HTTP Request: POST https://api.gradio.app/gradio-initiated-analytics/ "HTTP/1.1 200 OK"
-2025-05-12 11:32:24,695 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
-2025-05-12 11:32:24,695 - httpcore.http11 - DEBUG - receive_response_body.complete
-2025-05-12 11:32:24,695 - httpcore.http11 - DEBUG - response_closed.started
-2025-05-12 11:32:24,695 - httpcore.http11 - DEBUG - response_closed.complete
-2025-05-12 11:32:24,695 - httpcore.connection - DEBUG - close.started
-2025-05-12 11:32:24,696 - httpcore.connection - DEBUG - close.complete
-2025-05-12 11:32:24,815 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000024FCE15D640>
-2025-05-12 11:32:24,815 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
-2025-05-12 11:32:24,816 - httpcore.http11 - DEBUG - send_request_headers.complete
-2025-05-12 11:32:24,816 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
-2025-05-12 11:32:24,816 - httpcore.http11 - DEBUG - send_request_body.complete
-2025-05-12 11:32:24,816 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
-2025-05-12 11:32:24,990 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 12 May 2025 03:32:25 GMT'), (b'Content-Type', b'text/html; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Server', b'nginx/1.18.0'), (b'Access-Control-Allow-Origin', b'*'), (b'Content-Encoding', b'gzip')])
-2025-05-12 11:32:24,990 - httpx - INFO - HTTP Request: POST https://api.gradio.app/gradio-launched-telemetry/ "HTTP/1.1 200 OK"
-2025-05-12 11:32:24,990 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
-2025-05-12 11:32:24,990 - httpcore.http11 - DEBUG - receive_response_body.complete
-2025-05-12 11:32:24,990 - httpcore.http11 - DEBUG - response_closed.started
-2025-05-12 11:32:24,990 - httpcore.http11 - DEBUG - response_closed.complete
-2025-05-12 11:32:24,990 - httpcore.connection - DEBUG - close.started
-2025-05-12 11:32:24,991 - httpcore.connection - DEBUG - close.complete
-2025-05-12 11:32:40,607 - httpcore.connection - DEBUG - close.started
-2025-05-12 11:32:40,607 - httpcore.connection - DEBUG - close.complete
-2025-05-12 11:33:45,202 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): generativelanguage.googleapis.com:443
-2025-05-12 11:33:46,243 - urllib3.connectionpool - DEBUG - https://generativelanguage.googleapis.com:443 "POST /v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBDc73003zr5T8KVhem_kTOIa9nRIbcHsg HTTP/1.1" 200 None
-2025-05-12 12:34:43,949 - asyncio - DEBUG - Using proactor: IocpProactor
-2025-05-12 12:34:44,241 - httpcore.connection - DEBUG - connect_tcp.started host='checkip.amazonaws.com' port=443 local_address=None timeout=3 socket_options=None
-2025-05-12 12:34:44,241 - httpcore.connection - DEBUG - connect_tcp.started host='api.gradio.app' port=443 local_address=None timeout=3 socket_options=None
-2025-05-12 12:34:44,351 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001B2BB64A5A0>
-2025-05-12 12:34:44,351 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001B2DECCDF50> server_hostname='checkip.amazonaws.com' timeout=3
-2025-05-12 12:34:44,419 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001B2DD1129F0>
-2025-05-12 12:34:44,419 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
-2025-05-12 12:34:44,419 - httpcore.http11 - DEBUG - send_request_headers.complete
-2025-05-12 12:34:44,419 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
-2025-05-12 12:34:44,419 - httpcore.http11 - DEBUG - send_request_body.complete
-2025-05-12 12:34:44,419 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
-2025-05-12 12:34:44,433 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001B2BB6D2F00>
-2025-05-12 12:34:44,433 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001B2DECCDAD0> server_hostname='api.gradio.app' timeout=3
-2025-05-12 12:34:44,496 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'', [(b'Date', b'Mon, 12 May 2025 04:34:44 GMT'), (b'Content-Type', b'text/plain;charset=UTF-8'), (b'Content-Length', b'15'), (b'Connection', b'keep-alive'), (b'Server', b'nginx'), (b'Vary', b'Origin'), (b'Vary', b'Access-Control-Request-Method'), (b'Vary', b'Access-Control-Request-Headers')])
-2025-05-12 12:34:44,496 - httpx - INFO - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
-2025-05-12 12:34:44,496 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
-2025-05-12 12:34:44,496 - httpcore.http11 - DEBUG - receive_response_body.complete
-2025-05-12 12:34:44,496 - httpcore.http11 - DEBUG - response_closed.started
-2025-05-12 12:34:44,496 - httpcore.http11 - DEBUG - response_closed.complete
-2025-05-12 12:34:44,496 - httpcore.connection - DEBUG - close.started
-2025-05-12 12:34:44,496 - httpcore.connection - DEBUG - close.complete
-2025-05-12 12:34:44,736 - httpcore.connection - DEBUG - connect_tcp.started host='api.gradio.app' port=443 local_address=None timeout=5 socket_options=None
-2025-05-12 12:34:44,798 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001B2BB6D2EA0>
-2025-05-12 12:34:44,798 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
-2025-05-12 12:34:44,798 - httpcore.http11 - DEBUG - send_request_headers.complete
-2025-05-12 12:34:44,798 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
-2025-05-12 12:34:44,798 - httpcore.http11 - DEBUG - send_request_body.complete
-2025-05-12 12:34:44,798 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
-2025-05-12 12:34:44,937 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001B2BB6D3D10>
-2025-05-12 12:34:44,937 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001B2BB425750> server_hostname='api.gradio.app' timeout=5
-2025-05-12 12:34:44,971 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 12 May 2025 04:34:45 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'21'), (b'Connection', b'keep-alive'), (b'Server', b'nginx/1.18.0'), (b'Access-Control-Allow-Origin', b'*')])
-2025-05-12 12:34:44,971 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
-2025-05-12 12:34:44,971 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
-2025-05-12 12:34:44,971 - httpcore.http11 - DEBUG - receive_response_body.complete
-2025-05-12 12:34:44,971 - httpcore.http11 - DEBUG - response_closed.started
-2025-05-12 12:34:44,971 - httpcore.http11 - DEBUG - response_closed.complete
-2025-05-12 12:34:44,971 - httpcore.connection - DEBUG - close.started
-2025-05-12 12:34:44,971 - httpcore.connection - DEBUG - close.complete
-2025-05-12 12:34:45,310 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001B2DE90CAD0>
-2025-05-12 12:34:45,310 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
-2025-05-12 12:34:45,310 - httpcore.http11 - DEBUG - send_request_headers.complete
-2025-05-12 12:34:45,311 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
-2025-05-12 12:34:45,311 - httpcore.http11 - DEBUG - send_request_body.complete
-2025-05-12 12:34:45,311 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
-2025-05-12 12:34:45,580 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 12 May 2025 04:34:45 GMT'), (b'Content-Type', b'text/html; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Server', b'nginx/1.18.0'), (b'Access-Control-Allow-Origin', b'*'), (b'Content-Encoding', b'gzip')])
-2025-05-12 12:34:45,580 - httpx - INFO - HTTP Request: POST https://api.gradio.app/gradio-initiated-analytics/ "HTTP/1.1 200 OK"
-2025-05-12 12:34:45,580 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
-2025-05-12 12:34:45,583 - httpcore.http11 - DEBUG - receive_response_body.complete
-2025-05-12 12:34:45,583 - httpcore.http11 - DEBUG - response_closed.started
-2025-05-12 12:34:45,583 - httpcore.http11 - DEBUG - response_closed.complete
-2025-05-12 12:34:45,583 - httpcore.connection - DEBUG - close.started
-2025-05-12 12:34:45,583 - httpcore.connection - DEBUG - close.complete
-2025-05-12 12:35:26,193 - asyncio - DEBUG - Using proactor: IocpProactor
-2025-05-12 12:35:26,317 - asyncio - DEBUG - Using proactor: IocpProactor
-2025-05-12 12:35:26,495 - httpcore.connection - DEBUG - connect_tcp.started host='api.gradio.app' port=443 local_address=None timeout=3 socket_options=None
-2025-05-12 12:35:26,511 - httpcore.connection - DEBUG - connect_tcp.started host='checkip.amazonaws.com' port=443 local_address=None timeout=3 socket_options=None
-2025-05-12 12:35:26,616 - httpcore.connection - DEBUG - connect_tcp.started host='localhost' port=7860 local_address=None timeout=5.0 socket_options=None
-2025-05-12 12:35:26,637 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000013642D19AC0>
-2025-05-12 12:35:26,637 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x0000013642AADF50> server_hostname='checkip.amazonaws.com' timeout=3
-2025-05-12 12:35:26,684 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000013642D19400>
-2025-05-12 12:35:26,684 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x0000013642AADAD0> server_hostname='api.gradio.app' timeout=3
-2025-05-12 12:35:26,721 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000013642D199D0>
-2025-05-12 12:35:26,721 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
-2025-05-12 12:35:26,721 - httpcore.http11 - DEBUG - send_request_headers.complete
-2025-05-12 12:35:26,721 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
-2025-05-12 12:35:26,721 - httpcore.http11 - DEBUG - send_request_body.complete
-2025-05-12 12:35:26,721 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
-2025-05-12 12:35:26,813 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'', [(b'Date', b'Mon, 12 May 2025 04:35:26 GMT'), (b'Content-Type', b'text/plain;charset=UTF-8'), (b'Content-Length', b'15'), (b'Connection', b'keep-alive'), (b'Server', b'nginx'), (b'Vary', b'Origin'), (b'Vary', b'Access-Control-Request-Method'), (b'Vary', b'Access-Control-Request-Headers')])
-2025-05-12 12:35:26,813 - httpx - INFO - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
-2025-05-12 12:35:26,813 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
-2025-05-12 12:35:26,813 - httpcore.http11 - DEBUG - receive_response_body.complete
-2025-05-12 12:35:26,813 - httpcore.http11 - DEBUG - response_closed.started
-2025-05-12 12:35:26,813 - httpcore.http11 - DEBUG - response_closed.complete
-2025-05-12 12:35:26,813 - httpcore.connection - DEBUG - close.started
-2025-05-12 12:35:26,813 - httpcore.connection - DEBUG - close.complete
-2025-05-12 12:35:27,014 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000013642D19340>
-2025-05-12 12:35:27,014 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
-2025-05-12 12:35:27,014 - httpcore.http11 - DEBUG - send_request_headers.complete
-2025-05-12 12:35:27,014 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
-2025-05-12 12:35:27,014 - httpcore.http11 - DEBUG - send_request_body.complete
-2025-05-12 12:35:27,014 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
-2025-05-12 12:35:27,045 - httpcore.connection - DEBUG - connect_tcp.started host='api.gradio.app' port=443 local_address=None timeout=5 socket_options=None
-2025-05-12 12:35:27,176 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 12 May 2025 04:35:27 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'21'), (b'Connection', b'keep-alive'), (b'Server', b'nginx/1.18.0'), (b'Access-Control-Allow-Origin', b'*')])
-2025-05-12 12:35:27,176 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
-2025-05-12 12:35:27,176 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
-2025-05-12 12:35:27,176 - httpcore.http11 - DEBUG - receive_response_body.complete
-2025-05-12 12:35:27,176 - httpcore.http11 - DEBUG - response_closed.started
-2025-05-12 12:35:27,176 - httpcore.http11 - DEBUG - response_closed.complete
-2025-05-12 12:35:27,176 - httpcore.connection - DEBUG - close.started
-2025-05-12 12:35:27,176 - httpcore.connection - DEBUG - close.complete
-2025-05-12 12:35:27,223 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000013641E532C0>
-2025-05-12 12:35:27,223 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001361F205750> server_hostname='api.gradio.app' timeout=5
-2025-05-12 12:35:27,540 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000013641E8F680>
-2025-05-12 12:35:27,540 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
-2025-05-12 12:35:27,540 - httpcore.http11 - DEBUG - send_request_headers.complete
-2025-05-12 12:35:27,540 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
-2025-05-12 12:35:27,540 - httpcore.http11 - DEBUG - send_request_body.complete
-2025-05-12 12:35:27,540 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
-2025-05-12 12:35:27,810 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 12 May 2025 04:35:27 GMT'), (b'Content-Type', b'text/html; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Server', b'nginx/1.18.0'), (b'Access-Control-Allow-Origin', b'*'), (b'Content-Encoding', b'gzip')])
-2025-05-12 12:35:27,811 - httpx - INFO - HTTP Request: POST https://api.gradio.app/gradio-initiated-analytics/ "HTTP/1.1 200 OK"
-2025-05-12 12:35:27,811 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
-2025-05-12 12:35:27,811 - httpcore.http11 - DEBUG - receive_response_body.complete
-2025-05-12 12:35:27,811 - httpcore.http11 - DEBUG - response_closed.started
-2025-05-12 12:35:27,811 - httpcore.http11 - DEBUG - response_closed.complete
-2025-05-12 12:35:27,811 - httpcore.connection - DEBUG - close.started
-2025-05-12 12:35:27,811 - httpcore.connection - DEBUG - close.complete
-2025-05-12 12:35:28,677 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000013642573F80>
-2025-05-12 12:35:28,677 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
-2025-05-12 12:35:28,678 - httpcore.http11 - DEBUG - send_request_headers.complete
-2025-05-12 12:35:28,678 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
-2025-05-12 12:35:28,678 - httpcore.http11 - DEBUG - send_request_body.complete
-2025-05-12 12:35:28,678 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
-2025-05-12 12:35:28,685 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Mon, 12 May 2025 04:35:28 GMT'), (b'server', b'uvicorn'), (b'content-length', b'5'), (b'content-type', b'application/json'), (b'access-control-allow-methods', b'GET, POST, PUT, DELETE, OPTIONS'), (b'access-control-allow-headers', b'Origin, Content-Type, Accept')])
-2025-05-12 12:35:28,685 - httpx - INFO - HTTP Request: GET http://localhost:7860/startup-events "HTTP/1.1 200 OK"
-2025-05-12 12:35:28,685 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
-2025-05-12 12:35:28,685 - httpcore.http11 - DEBUG - receive_response_body.complete
-2025-05-12 12:35:28,685 - httpcore.http11 - DEBUG - response_closed.started
-2025-05-12 12:35:28,685 - httpcore.http11 - DEBUG - response_closed.complete
-2025-05-12 12:35:28,685 - httpcore.connection - DEBUG - close.started
-2025-05-12 12:35:28,685 - httpcore.connection - DEBUG - close.complete
-2025-05-12 12:35:28,685 - httpcore.connection - DEBUG - connect_tcp.started host='localhost' port=7860 local_address=None timeout=3 socket_options=None
-2025-05-12 12:35:30,714 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000013642D1A6C0>
-2025-05-12 12:35:30,715 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'HEAD']>
-2025-05-12 12:35:30,715 - httpcore.http11 - DEBUG - send_request_headers.complete
-2025-05-12 12:35:30,715 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'HEAD']>
-2025-05-12 12:35:30,715 - httpcore.http11 - DEBUG - send_request_body.complete
-2025-05-12 12:35:30,715 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'HEAD']>
-2025-05-12 12:35:30,771 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Mon, 12 May 2025 04:35:30 GMT'), (b'server', b'uvicorn'), (b'content-length', b'60576'), (b'content-type', b'text/html; charset=utf-8'), (b'access-control-allow-methods', b'GET, POST, PUT, DELETE, OPTIONS'), (b'access-control-allow-headers', b'Origin, Content-Type, Accept')])
-2025-05-12 12:35:30,771 - httpx - INFO - HTTP Request: HEAD http://localhost:7860/ "HTTP/1.1 200 OK"
-2025-05-12 12:35:30,771 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'HEAD']>
-2025-05-12 12:35:30,771 - httpcore.http11 - DEBUG - receive_response_body.complete
-2025-05-12 12:35:30,771 - httpcore.http11 - DEBUG - response_closed.started
-2025-05-12 12:35:30,771 - httpcore.http11 - DEBUG - response_closed.complete
-2025-05-12 12:35:30,771 - httpcore.connection - DEBUG - close.started
-2025-05-12 12:35:30,771 - httpcore.connection - DEBUG - close.complete
-2025-05-12 12:35:31,013 - httpcore.connection - DEBUG - connect_tcp.started host='api.gradio.app' port=443 local_address=None timeout=5 socket_options=None
-2025-05-12 12:35:31,179 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000013643D56840>
-2025-05-12 12:35:31,179 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x0000013643D79A50> server_hostname='api.gradio.app' timeout=5
-2025-05-12 12:35:31,513 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000013643D56750>
-2025-05-12 12:35:31,513 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
-2025-05-12 12:35:31,513 - httpcore.http11 - DEBUG - send_request_headers.complete
-2025-05-12 12:35:31,513 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
-2025-05-12 12:35:31,513 - httpcore.http11 - DEBUG - send_request_body.complete
-2025-05-12 12:35:31,513 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
-2025-05-12 12:35:31,691 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 12 May 2025 04:35:31 GMT'), (b'Content-Type', b'text/html; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Server', b'nginx/1.18.0'), (b'Access-Control-Allow-Origin', b'*'), (b'Content-Encoding', b'gzip')])
-2025-05-12 12:35:31,691 - httpx - INFO - HTTP Request: POST https://api.gradio.app/gradio-launched-telemetry/ "HTTP/1.1 200 OK"
-2025-05-12 12:35:31,691 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
-2025-05-12 12:35:31,691 - httpcore.http11 - DEBUG - receive_response_body.complete
-2025-05-12 12:35:31,691 - httpcore.http11 - DEBUG - response_closed.started
-2025-05-12 12:35:31,691 - httpcore.http11 - DEBUG - response_closed.complete
-2025-05-12 12:35:31,691 - httpcore.connection - DEBUG - close.started
-2025-05-12 12:35:31,691 - httpcore.connection - DEBUG - close.complete
-2025-05-12 12:40:16,680 - asyncio - DEBUG - Using proactor: IocpProactor
-2025-05-12 12:40:16,811 - asyncio - DEBUG - Using proactor: IocpProactor
-2025-05-12 12:40:16,972 - httpcore.connection - DEBUG - connect_tcp.started host='api.gradio.app' port=443 local_address=None timeout=3 socket_options=None
-2025-05-12 12:40:17,006 - httpcore.connection - DEBUG - connect_tcp.started host='checkip.amazonaws.com' port=443 local_address=None timeout=3 socket_options=None
-2025-05-12 12:40:17,107 - httpcore.connection - DEBUG - connect_tcp.started host='127.0.0.1' port=7860 local_address=None timeout=5.0 socket_options=None
-2025-05-12 12:40:17,121 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000269D8F85EB0>
-2025-05-12 12:40:17,121 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x00000269D8D1DE50> server_hostname='checkip.amazonaws.com' timeout=3
-2025-05-12 12:40:17,128 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000269D8842A50>
-2025-05-12 12:40:17,128 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
-2025-05-12 12:40:17,128 - httpcore.http11 - DEBUG - send_request_headers.complete
-2025-05-12 12:40:17,128 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
-2025-05-12 12:40:17,128 - httpcore.http11 - DEBUG - send_request_body.complete
-2025-05-12 12:40:17,128 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
-2025-05-12 12:40:17,128 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Mon, 12 May 2025 04:40:16 GMT'), (b'server', b'uvicorn'), (b'content-length', b'5'), (b'content-type', b'application/json'), (b'access-control-allow-methods', b'GET, POST, PUT, DELETE, OPTIONS'), (b'access-control-allow-headers', b'Origin, Content-Type, Accept')])
-2025-05-12 12:40:17,128 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/startup-events "HTTP/1.1 200 OK"
-2025-05-12 12:40:17,128 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
-2025-05-12 12:40:17,128 - httpcore.http11 - DEBUG - receive_response_body.complete
-2025-05-12 12:40:17,128 - httpcore.http11 - DEBUG - response_closed.started
-2025-05-12 12:40:17,128 - httpcore.http11 - DEBUG - response_closed.complete
-2025-05-12 12:40:17,128 - httpcore.connection - DEBUG - close.started
-2025-05-12 12:40:17,128 - httpcore.connection - DEBUG - close.complete
-2025-05-12 12:40:17,128 - httpcore.connection - DEBUG - connect_tcp.started host='127.0.0.1' port=7860 local_address=None timeout=3 socket_options=None
-2025-05-12 12:40:17,128 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000269D9FC84A0>
-2025-05-12 12:40:17,128 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'HEAD']>
-2025-05-12 12:40:17,128 - httpcore.http11 - DEBUG - send_request_headers.complete
-2025-05-12 12:40:17,128 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'HEAD']>
-2025-05-12 12:40:17,128 - httpcore.http11 - DEBUG - send_request_body.complete
-2025-05-12 12:40:17,128 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'HEAD']>
-2025-05-12 12:40:17,145 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Mon, 12 May 2025 04:40:16 GMT'), (b'server', b'uvicorn'), (b'content-length', b'60577'), (b'content-type', b'text/html; charset=utf-8'), (b'access-control-allow-methods', b'GET, POST, PUT, DELETE, OPTIONS'), (b'access-control-allow-headers', b'Origin, Content-Type, Accept')])
-2025-05-12 12:40:17,145 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
-2025-05-12 12:40:17,145 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'HEAD']>
-2025-05-12 12:40:17,145 - httpcore.http11 - DEBUG - receive_response_body.complete
-2025-05-12 12:40:17,145 - httpcore.http11 - DEBUG - response_closed.started
-2025-05-12 12:40:17,145 - httpcore.http11 - DEBUG - response_closed.complete
-2025-05-12 12:40:17,145 - httpcore.connection - DEBUG - close.started
-2025-05-12 12:40:17,145 - httpcore.connection - DEBUG - close.complete
-2025-05-12 12:40:17,161 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000269D8F85850>
-2025-05-12 12:40:17,161 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x00000269D8D1DBD0> server_hostname='api.gradio.app' timeout=3
-2025-05-12 12:40:17,224 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000269D8F85DC0>
-2025-05-12 12:40:17,224 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
-2025-05-12 12:40:17,224 - httpcore.http11 - DEBUG - send_request_headers.complete
-2025-05-12 12:40:17,224 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
-2025-05-12 12:40:17,224 - httpcore.http11 - DEBUG - send_request_body.complete
-2025-05-12 12:40:17,224 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
-2025-05-12 12:40:17,321 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'', [(b'Date', b'Mon, 12 May 2025 04:40:17 GMT'), (b'Content-Type', b'text/plain;charset=UTF-8'), (b'Content-Length', b'15'), (b'Connection', b'keep-alive'), (b'Server', b'nginx'), (b'Vary', b'Origin'), (b'Vary', b'Access-Control-Request-Method'), (b'Vary', b'Access-Control-Request-Headers')])
-2025-05-12 12:40:17,321 - httpx - INFO - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
-2025-05-12 12:40:17,321 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
-2025-05-12 12:40:17,321 - httpcore.http11 - DEBUG - receive_response_body.complete
-2025-05-12 12:40:17,321 - httpcore.http11 - DEBUG - response_closed.started
-2025-05-12 12:40:17,321 - httpcore.http11 - DEBUG - response_closed.complete
-2025-05-12 12:40:17,321 - httpcore.connection - DEBUG - close.started
-2025-05-12 12:40:17,335 - httpcore.connection - DEBUG - close.complete
-2025-05-12 12:40:17,384 - httpcore.connection - DEBUG - connect_tcp.started host='checkip.amazonaws.com' port=443 local_address=None timeout=3 socket_options=None
-2025-05-12 12:40:17,487 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000269D9FCBE30>
-2025-05-12 12:40:17,487 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x00000269D9FEE650> server_hostname='checkip.amazonaws.com' timeout=3
-2025-05-12 12:40:17,519 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000269D8F85790>
-2025-05-12 12:40:17,519 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
-2025-05-12 12:40:17,521 - httpcore.http11 - DEBUG - send_request_headers.complete
-2025-05-12 12:40:17,521 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
-2025-05-12 12:40:17,521 - httpcore.http11 - DEBUG - send_request_body.complete
-2025-05-12 12:40:17,521 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
-2025-05-12 12:40:17,571 - httpcore.connection - DEBUG - connect_tcp.started host='api.gradio.app' port=443 local_address=None timeout=5 socket_options=None
-2025-05-12 12:40:17,587 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000269D9FCBD40>
-2025-05-12 12:40:17,587 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
-2025-05-12 12:40:17,587 - httpcore.http11 - DEBUG - send_request_headers.complete
-2025-05-12 12:40:17,587 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
-2025-05-12 12:40:17,587 - httpcore.http11 - DEBUG - send_request_body.complete
-2025-05-12 12:40:17,587 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
-2025-05-12 12:40:17,694 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'', [(b'Date', b'Mon, 12 May 2025 04:40:17 GMT'), (b'Content-Type', b'text/plain;charset=UTF-8'), (b'Content-Length', b'15'), (b'Connection', b'keep-alive'), (b'Server', b'nginx'), (b'Vary', b'Origin'), (b'Vary', b'Access-Control-Request-Method'), (b'Vary', b'Access-Control-Request-Headers')])
-2025-05-12 12:40:17,694 - httpx - INFO - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
-2025-05-12 12:40:17,694 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
-2025-05-12 12:40:17,694 - httpcore.http11 - DEBUG - receive_response_body.complete
-2025-05-12 12:40:17,694 - httpcore.http11 - DEBUG - response_closed.started
-2025-05-12 12:40:17,694 - httpcore.http11 - DEBUG - response_closed.complete
-2025-05-12 12:40:17,694 - httpcore.connection - DEBUG - close.started
-2025-05-12 12:40:17,695 - httpcore.connection - DEBUG - close.complete
-2025-05-12 12:40:17,700 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 12 May 2025 04:40:17 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'21'), (b'Connection', b'keep-alive'), (b'Server', b'nginx/1.18.0'), (b'Access-Control-Allow-Origin', b'*')])
-2025-05-12 12:40:17,700 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
-2025-05-12 12:40:17,700 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
-2025-05-12 12:40:17,700 - httpcore.http11 - DEBUG - receive_response_body.complete
-2025-05-12 12:40:17,700 - httpcore.http11 - DEBUG - response_closed.started
-2025-05-12 12:40:17,700 - httpcore.http11 - DEBUG - response_closed.complete
-2025-05-12 12:40:17,700 - httpcore.connection - DEBUG - close.started
-2025-05-12 12:40:17,700 - httpcore.connection - DEBUG - close.complete
-2025-05-12 12:40:17,745 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000269D7F214F0>
-2025-05-12 12:40:17,745 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x00000269D8D1DD50> server_hostname='api.gradio.app' timeout=5
-2025-05-12 12:40:17,931 - httpcore.connection - DEBUG - connect_tcp.started host='api.gradio.app' port=443 local_address=None timeout=5 socket_options=None
-2025-05-12 12:40:18,108 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000269DA00DA60>
-2025-05-12 12:40:18,108 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x00000269D9FEF4D0> server_hostname='api.gradio.app' timeout=5
-2025-05-12 12:40:18,108 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000269D8916A80>
-2025-05-12 12:40:18,108 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
-2025-05-12 12:40:18,108 - httpcore.http11 - DEBUG - send_request_headers.complete
-2025-05-12 12:40:18,109 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
-2025-05-12 12:40:18,109 - httpcore.http11 - DEBUG - send_request_body.complete
-2025-05-12 12:40:18,109 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
-2025-05-12 12:40:18,377 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 12 May 2025 04:40:18 GMT'), (b'Content-Type', b'text/html; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Server', b'nginx/1.18.0'), (b'Access-Control-Allow-Origin', b'*'), (b'Content-Encoding', b'gzip')])
-2025-05-12 12:40:18,377 - httpx - INFO - HTTP Request: POST https://api.gradio.app/gradio-initiated-analytics/ "HTTP/1.1 200 OK"
-2025-05-12 12:40:18,377 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
-2025-05-12 12:40:18,377 - httpcore.http11 - DEBUG - receive_response_body.complete
-2025-05-12 12:40:18,377 - httpcore.http11 - DEBUG - response_closed.started
-2025-05-12 12:40:18,377 - httpcore.http11 - DEBUG - response_closed.complete
-2025-05-12 12:40:18,377 - httpcore.connection - DEBUG - close.started
-2025-05-12 12:40:18,378 - httpcore.connection - DEBUG - close.complete
-2025-05-12 12:40:18,451 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000269D895E9F0>
-2025-05-12 12:40:18,451 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
-2025-05-12 12:40:18,451 - httpcore.http11 - DEBUG - send_request_headers.complete
-2025-05-12 12:40:18,451 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
-2025-05-12 12:40:18,451 - httpcore.http11 - DEBUG - send_request_body.complete
-2025-05-12 12:40:18,451 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
-2025-05-12 12:40:18,642 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 12 May 2025 04:40:18 GMT'), (b'Content-Type', b'text/html; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Server', b'nginx/1.18.0'), (b'Access-Control-Allow-Origin', b'*'), (b'Content-Encoding', b'gzip')])
-2025-05-12 12:40:18,642 - httpx - INFO - HTTP Request: POST https://api.gradio.app/gradio-launched-telemetry/ "HTTP/1.1 200 OK"
-2025-05-12 12:40:18,642 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
-2025-05-12 12:40:18,642 - httpcore.http11 - DEBUG - receive_response_body.complete
-2025-05-12 12:40:18,642 - httpcore.http11 - DEBUG - response_closed.started
-2025-05-12 12:40:18,642 - httpcore.http11 - DEBUG - response_closed.complete
-2025-05-12 12:40:18,642 - httpcore.connection - DEBUG - close.started
-2025-05-12 12:40:18,643 - httpcore.connection - DEBUG - close.complete
-2025-05-12 12:58:38,771 - asyncio - DEBUG - Using proactor: IocpProactor
-2025-05-12 12:58:38,898 - asyncio - DEBUG - Using proactor: IocpProactor
-2025-05-12 12:58:39,087 - httpcore.connection - DEBUG - connect_tcp.started host='checkip.amazonaws.com' port=443 local_address=None timeout=3 socket_options=None
-2025-05-12 12:58:39,087 - httpcore.connection - DEBUG - connect_tcp.started host='api.gradio.app' port=443 local_address=None timeout=3 socket_options=None
-2025-05-12 12:58:39,199 - httpcore.connection - DEBUG - connect_tcp.started host='127.0.0.1' port=7862 local_address=None timeout=5.0 socket_options=None
-2025-05-12 12:58:39,203 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000027ED93391F0>
-2025-05-12 12:58:39,204 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x0000027ED90CDF50> server_hostname='checkip.amazonaws.com' timeout=3
-2025-05-12 12:58:39,204 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000027ED9281040>
-2025-05-12 12:58:39,204 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
-2025-05-12 12:58:39,204 - httpcore.http11 - DEBUG - send_request_headers.complete
-2025-05-12 12:58:39,204 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
-2025-05-12 12:58:39,204 - httpcore.http11 - DEBUG - send_request_body.complete
-2025-05-12 12:58:39,204 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
-2025-05-12 12:58:39,211 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Mon, 12 May 2025 04:58:38 GMT'), (b'server', b'uvicorn'), (b'content-length', b'5'), (b'content-type', b'application/json'), (b'access-control-allow-methods', b'GET, POST, PUT, DELETE, OPTIONS'), (b'access-control-allow-headers', b'Origin, Content-Type, Accept')])
-2025-05-12 12:58:39,211 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7862/startup-events "HTTP/1.1 200 OK"
-2025-05-12 12:58:39,211 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
-2025-05-12 12:58:39,211 - httpcore.http11 - DEBUG - receive_response_body.complete
-2025-05-12 12:58:39,211 - httpcore.http11 - DEBUG - response_closed.started
-2025-05-12 12:58:39,212 - httpcore.http11 - DEBUG - response_closed.complete
-2025-05-12 12:58:39,212 - httpcore.connection - DEBUG - close.started
-2025-05-12 12:58:39,212 - httpcore.connection - DEBUG - close.complete
-2025-05-12 12:58:39,219 - httpcore.connection - DEBUG - connect_tcp.started host='127.0.0.1' port=7862 local_address=None timeout=3 socket_options=None
-2025-05-12 12:58:39,219 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000027ED9363D70>
-2025-05-12 12:58:39,219 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'HEAD']>
-2025-05-12 12:58:39,219 - httpcore.http11 - DEBUG - send_request_headers.complete
-2025-05-12 12:58:39,219 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'HEAD']>
-2025-05-12 12:58:39,221 - httpcore.http11 - DEBUG - send_request_body.complete
-2025-05-12 12:58:39,221 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'HEAD']>
-2025-05-12 12:58:39,228 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Mon, 12 May 2025 04:58:38 GMT'), (b'server', b'uvicorn'), (b'content-length', b'60576'), (b'content-type', b'text/html; charset=utf-8'), (b'access-control-allow-methods', b'GET, POST, PUT, DELETE, OPTIONS'), (b'access-control-allow-headers', b'Origin, Content-Type, Accept')])
-2025-05-12 12:58:39,228 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7862/ "HTTP/1.1 200 OK"
-2025-05-12 12:58:39,228 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'HEAD']>
-2025-05-12 12:58:39,228 - httpcore.http11 - DEBUG - receive_response_body.complete
-2025-05-12 12:58:39,228 - httpcore.http11 - DEBUG - response_closed.started
-2025-05-12 12:58:39,228 - httpcore.http11 - DEBUG - response_closed.complete
-2025-05-12 12:58:39,228 - httpcore.connection - DEBUG - close.started
-2025-05-12 12:58:39,228 - httpcore.connection - DEBUG - close.complete
-2025-05-12 12:58:39,269 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000027ED93399D0>
-2025-05-12 12:58:39,269 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x0000027ED90CDAD0> server_hostname='api.gradio.app' timeout=3
-2025-05-12 12:58:39,312 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000027ED92D20C0>
-2025-05-12 12:58:39,313 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
-2025-05-12 12:58:39,313 - httpcore.http11 - DEBUG - send_request_headers.complete
-2025-05-12 12:58:39,313 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
-2025-05-12 12:58:39,313 - httpcore.http11 - DEBUG - send_request_body.complete
-2025-05-12 12:58:39,313 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
-2025-05-12 12:58:39,406 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'', [(b'Date', b'Mon, 12 May 2025 04:58:39 GMT'), (b'Content-Type', b'text/plain;charset=UTF-8'), (b'Content-Length', b'15'), (b'Connection', b'keep-alive'), (b'Server', b'nginx'), (b'Vary', b'Origin'), (b'Vary', b'Access-Control-Request-Method'), (b'Vary', b'Access-Control-Request-Headers')])
-2025-05-12 12:58:39,406 - httpx - INFO - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
-2025-05-12 12:58:39,407 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
-2025-05-12 12:58:39,407 - httpcore.http11 - DEBUG - receive_response_body.complete
-2025-05-12 12:58:39,407 - httpcore.http11 - DEBUG - response_closed.started
-2025-05-12 12:58:39,407 - httpcore.http11 - DEBUG - response_closed.complete
-2025-05-12 12:58:39,407 - httpcore.connection - DEBUG - close.started
-2025-05-12 12:58:39,407 - httpcore.connection - DEBUG - close.complete
-2025-05-12 12:58:39,484 - httpcore.connection - DEBUG - connect_tcp.started host='checkip.amazonaws.com' port=443 local_address=None timeout=3 socket_options=None
-2025-05-12 12:58:39,591 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000027EDA37BB30>
-2025-05-12 12:58:39,591 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x0000027EDA39D4D0> server_hostname='checkip.amazonaws.com' timeout=3
-2025-05-12 12:58:39,593 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000027ED93398E0>
-2025-05-12 12:58:39,593 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
-2025-05-12 12:58:39,593 - httpcore.http11 - DEBUG - send_request_headers.complete
-2025-05-12 12:58:39,593 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
-2025-05-12 12:58:39,593 - httpcore.http11 - DEBUG - send_request_body.complete
-2025-05-12 12:58:39,593 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
-2025-05-12 12:58:39,655 - httpcore.connection - DEBUG - connect_tcp.started host='api.gradio.app' port=443 local_address=None timeout=5 socket_options=None
-2025-05-12 12:58:39,672 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000027EDA37BA40>
-2025-05-12 12:58:39,672 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
-2025-05-12 12:58:39,672 - httpcore.http11 - DEBUG - send_request_headers.complete
-2025-05-12 12:58:39,672 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
-2025-05-12 12:58:39,672 - httpcore.http11 - DEBUG - send_request_body.complete
-2025-05-12 12:58:39,672 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
-2025-05-12 12:58:39,764 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 12 May 2025 04:58:39 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'21'), (b'Connection', b'keep-alive'), (b'Server', b'nginx/1.18.0'), (b'Access-Control-Allow-Origin', b'*')])
-2025-05-12 12:58:39,764 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
-2025-05-12 12:58:39,764 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
-2025-05-12 12:58:39,764 - httpcore.http11 - DEBUG - receive_response_body.complete
-2025-05-12 12:58:39,764 - httpcore.http11 - DEBUG - response_closed.started
-2025-05-12 12:58:39,764 - httpcore.http11 - DEBUG - response_closed.complete
-2025-05-12 12:58:39,767 - httpcore.connection - DEBUG - close.started
-2025-05-12 12:58:39,767 - httpcore.connection - DEBUG - close.complete
-2025-05-12 12:58:39,771 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'', [(b'Date', b'Mon, 12 May 2025 04:58:39 GMT'), (b'Content-Type', b'text/plain;charset=UTF-8'), (b'Content-Length', b'15'), (b'Connection', b'keep-alive'), (b'Server', b'nginx'), (b'Vary', b'Origin'), (b'Vary', b'Access-Control-Request-Method'), (b'Vary', b'Access-Control-Request-Headers')])
-2025-05-12 12:58:39,771 - httpx - INFO - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
-2025-05-12 12:58:39,771 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
-2025-05-12 12:58:39,771 - httpcore.http11 - DEBUG - receive_response_body.complete
-2025-05-12 12:58:39,771 - httpcore.http11 - DEBUG - response_closed.started
-2025-05-12 12:58:39,771 - httpcore.http11 - DEBUG - response_closed.complete
-2025-05-12 12:58:39,771 - httpcore.connection - DEBUG - close.started
-2025-05-12 12:58:39,771 - httpcore.connection - DEBUG - close.complete
-2025-05-12 12:58:39,846 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000027ED9021640>
-2025-05-12 12:58:39,846 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x0000027ED90CDD50> server_hostname='api.gradio.app' timeout=5
-2025-05-12 12:58:40,020 - httpcore.connection - DEBUG - connect_tcp.started host='api.gradio.app' port=443 local_address=None timeout=5 socket_options=None
-2025-05-12 12:58:40,171 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000027EDA3BD730>
-2025-05-12 12:58:40,171 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x0000027EDA39E650> server_hostname='api.gradio.app' timeout=5
-2025-05-12 12:58:40,189 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000027EDA3BC410>
-2025-05-12 12:58:40,189 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
-2025-05-12 12:58:40,189 - httpcore.http11 - DEBUG - send_request_headers.complete
-2025-05-12 12:58:40,189 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
-2025-05-12 12:58:40,189 - httpcore.http11 - DEBUG - send_request_body.complete
-2025-05-12 12:58:40,189 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
-2025-05-12 12:58:40,450 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 12 May 2025 04:58:40 GMT'), (b'Content-Type', b'text/html; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Server', b'nginx/1.18.0'), (b'Access-Control-Allow-Origin', b'*'), (b'Content-Encoding', b'gzip')])
-2025-05-12 12:58:40,450 - httpx - INFO - HTTP Request: POST https://api.gradio.app/gradio-initiated-analytics/ "HTTP/1.1 200 OK"
-2025-05-12 12:58:40,450 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
-2025-05-12 12:58:40,450 - httpcore.http11 - DEBUG - receive_response_body.complete
-2025-05-12 12:58:40,450 - httpcore.http11 - DEBUG - response_closed.started
-2025-05-12 12:58:40,450 - httpcore.http11 - DEBUG - response_closed.complete
-2025-05-12 12:58:40,450 - httpcore.connection - DEBUG - close.started
-2025-05-12 12:58:40,450 - httpcore.connection - DEBUG - close.complete
-2025-05-12 12:58:40,527 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000027ED8CC4530>
-2025-05-12 12:58:40,527 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
-2025-05-12 12:58:40,527 - httpcore.http11 - DEBUG - send_request_headers.complete
-2025-05-12 12:58:40,527 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
-2025-05-12 12:58:40,527 - httpcore.http11 - DEBUG - send_request_body.complete
-2025-05-12 12:58:40,527 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
-2025-05-12 12:58:40,696 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 12 May 2025 04:58:40 GMT'), (b'Content-Type', b'text/html; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Server', b'nginx/1.18.0'), (b'Access-Control-Allow-Origin', b'*'), (b'Content-Encoding', b'gzip')])
-2025-05-12 12:58:40,696 - httpx - INFO - HTTP Request: POST https://api.gradio.app/gradio-launched-telemetry/ "HTTP/1.1 200 OK"
-2025-05-12 12:58:40,696 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
-2025-05-12 12:58:40,696 - httpcore.http11 - DEBUG - receive_response_body.complete
-2025-05-12 12:58:40,696 - httpcore.http11 - DEBUG - response_closed.started
-2025-05-12 12:58:40,696 - httpcore.http11 - DEBUG - response_closed.complete
-2025-05-12 12:58:40,696 - httpcore.connection - DEBUG - close.started
-2025-05-12 12:58:40,696 - httpcore.connection - DEBUG - close.complete
-2025-05-12 13:03:47,090 - asyncio - DEBUG - Using proactor: IocpProactor
-2025-05-12 13:03:47,213 - asyncio - DEBUG - Using proactor: IocpProactor
-2025-05-12 13:03:47,394 - httpcore.connection - DEBUG - connect_tcp.started host='api.gradio.app' port=443 local_address=None timeout=3 socket_options=None
-2025-05-12 13:03:47,394 - httpcore.connection - DEBUG - connect_tcp.started host='checkip.amazonaws.com' port=443 local_address=None timeout=3 socket_options=None
-2025-05-12 13:03:47,490 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001F901445FD0>
-2025-05-12 13:03:47,490 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001F9011DDFD0> server_hostname='checkip.amazonaws.com' timeout=3
-2025-05-12 13:03:47,505 - httpcore.connection - DEBUG - connect_tcp.started host='127.0.0.1' port=7863 local_address=None timeout=5.0 socket_options=None
-2025-05-12 13:03:47,521 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001F901446660>
-2025-05-12 13:03:47,521 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
-2025-05-12 13:03:47,521 - httpcore.http11 - DEBUG - send_request_headers.complete
-2025-05-12 13:03:47,521 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
-2025-05-12 13:03:47,521 - httpcore.http11 - DEBUG - send_request_body.complete
-2025-05-12 13:03:47,522 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
-2025-05-12 13:03:47,522 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Mon, 12 May 2025 05:03:47 GMT'), (b'server', b'uvicorn'), (b'content-length', b'5'), (b'content-type', b'application/json'), (b'access-control-allow-methods', b'GET, POST, PUT, DELETE, OPTIONS'), (b'access-control-allow-headers', b'Origin, Content-Type, Accept')])
-2025-05-12 13:03:47,522 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7863/startup-events "HTTP/1.1 200 OK"
-2025-05-12 13:03:47,522 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
-2025-05-12 13:03:47,522 - httpcore.http11 - DEBUG - receive_response_body.complete
-2025-05-12 13:03:47,522 - httpcore.http11 - DEBUG - response_closed.started
-2025-05-12 13:03:47,522 - httpcore.http11 - DEBUG - response_closed.complete
-2025-05-12 13:03:47,522 - httpcore.connection - DEBUG - close.started
-2025-05-12 13:03:47,522 - httpcore.connection - DEBUG - close.complete
-2025-05-12 13:03:47,522 - httpcore.connection - DEBUG - connect_tcp.started host='127.0.0.1' port=7863 local_address=None timeout=3 socket_options=None
-2025-05-12 13:03:47,522 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001F902488380>
-2025-05-12 13:03:47,522 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'HEAD']>
-2025-05-12 13:03:47,522 - httpcore.http11 - DEBUG - send_request_headers.complete
-2025-05-12 13:03:47,522 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'HEAD']>
-2025-05-12 13:03:47,522 - httpcore.http11 - DEBUG - send_request_body.complete
-2025-05-12 13:03:47,522 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'HEAD']>
-2025-05-12 13:03:47,537 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Mon, 12 May 2025 05:03:47 GMT'), (b'server', b'uvicorn'), (b'content-length', b'60577'), (b'content-type', b'text/html; charset=utf-8'), (b'access-control-allow-methods', b'GET, POST, PUT, DELETE, OPTIONS'), (b'access-control-allow-headers', b'Origin, Content-Type, Accept')])
-2025-05-12 13:03:47,537 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7863/ "HTTP/1.1 200 OK"
-2025-05-12 13:03:47,537 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'HEAD']>
-2025-05-12 13:03:47,537 - httpcore.http11 - DEBUG - receive_response_body.complete
-2025-05-12 13:03:47,537 - httpcore.http11 - DEBUG - response_closed.started
-2025-05-12 13:03:47,537 - httpcore.http11 - DEBUG - response_closed.complete
-2025-05-12 13:03:47,537 - httpcore.connection - DEBUG - close.started
-2025-05-12 13:03:47,537 - httpcore.connection - DEBUG - close.complete
-2025-05-12 13:03:47,580 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001F901445970>
-2025-05-12 13:03:47,580 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001F9011DDB50> server_hostname='api.gradio.app' timeout=3
-2025-05-12 13:03:47,608 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001F901445EE0>
-2025-05-12 13:03:47,608 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
-2025-05-12 13:03:47,608 - httpcore.http11 - DEBUG - send_request_headers.complete
-2025-05-12 13:03:47,608 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
-2025-05-12 13:03:47,609 - httpcore.http11 - DEBUG - send_request_body.complete
-2025-05-12 13:03:47,609 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
-2025-05-12 13:03:47,702 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'', [(b'Date', b'Mon, 12 May 2025 05:03:47 GMT'), (b'Content-Type', b'text/plain;charset=UTF-8'), (b'Content-Length', b'15'), (b'Connection', b'keep-alive'), (b'Server', b'nginx'), (b'Vary', b'Origin'), (b'Vary', b'Access-Control-Request-Method'), (b'Vary', b'Access-Control-Request-Headers')])
-2025-05-12 13:03:47,702 - httpx - INFO - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
-2025-05-12 13:03:47,702 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
-2025-05-12 13:03:47,702 - httpcore.http11 - DEBUG - receive_response_body.complete
-2025-05-12 13:03:47,702 - httpcore.http11 - DEBUG - response_closed.started
-2025-05-12 13:03:47,702 - httpcore.http11 - DEBUG - response_closed.complete
-2025-05-12 13:03:47,702 - httpcore.connection - DEBUG - close.started
-2025-05-12 13:03:47,702 - httpcore.connection - DEBUG - close.complete
-2025-05-12 13:03:47,786 - httpcore.connection - DEBUG - connect_tcp.started host='checkip.amazonaws.com' port=443 local_address=None timeout=3 socket_options=None
-2025-05-12 13:03:47,882 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001F90248BF80>
-2025-05-12 13:03:47,882 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001F9024AE750> server_hostname='checkip.amazonaws.com' timeout=3
-2025-05-12 13:03:47,921 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001F901403B30>
-2025-05-12 13:03:47,921 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
-2025-05-12 13:03:47,921 - httpcore.http11 - DEBUG - send_request_headers.complete
-2025-05-12 13:03:47,921 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
-2025-05-12 13:03:47,921 - httpcore.http11 - DEBUG - send_request_body.complete
-2025-05-12 13:03:47,921 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
-2025-05-12 13:03:47,946 - httpcore.connection - DEBUG - connect_tcp.started host='api.gradio.app' port=443 local_address=None timeout=5 socket_options=None
-2025-05-12 13:03:47,977 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001F90248BE90>
-2025-05-12 13:03:47,977 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
-2025-05-12 13:03:47,977 - httpcore.http11 - DEBUG - send_request_headers.complete
-2025-05-12 13:03:47,977 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
-2025-05-12 13:03:47,977 - httpcore.http11 - DEBUG - send_request_body.complete
-2025-05-12 13:03:47,977 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
-2025-05-12 13:03:48,084 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'', [(b'Date', b'Mon, 12 May 2025 05:03:48 GMT'), (b'Content-Type', b'text/plain;charset=UTF-8'), (b'Content-Length', b'15'), (b'Connection', b'keep-alive'), (b'Server', b'nginx'), (b'Vary', b'Origin'), (b'Vary', b'Access-Control-Request-Method'), (b'Vary', b'Access-Control-Request-Headers')])
-2025-05-12 13:03:48,084 - httpx - INFO - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
-2025-05-12 13:03:48,084 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
-2025-05-12 13:03:48,084 - httpcore.http11 - DEBUG - receive_response_body.complete
-2025-05-12 13:03:48,084 - httpcore.http11 - DEBUG - response_closed.started
-2025-05-12 13:03:48,084 - httpcore.http11 - DEBUG - response_closed.complete
-2025-05-12 13:03:48,084 - httpcore.connection - DEBUG - close.started
-2025-05-12 13:03:48,084 - httpcore.connection - DEBUG - close.complete
-2025-05-12 13:03:48,091 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 12 May 2025 05:03:48 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'21'), (b'Connection', b'keep-alive'), (b'Server', b'nginx/1.18.0'), (b'Access-Control-Allow-Origin', b'*')])
-2025-05-12 13:03:48,092 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
-2025-05-12 13:03:48,092 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
-2025-05-12 13:03:48,092 - httpcore.http11 - DEBUG - receive_response_body.complete
-2025-05-12 13:03:48,092 - httpcore.http11 - DEBUG - response_closed.started
-2025-05-12 13:03:48,092 - httpcore.http11 - DEBUG - response_closed.complete
-2025-05-12 13:03:48,092 - httpcore.connection - DEBUG - close.started
-2025-05-12 13:03:48,092 - httpcore.connection - DEBUG - close.complete
-2025-05-12 13:03:48,121 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001F900D02510>
-2025-05-12 13:03:48,121 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001F9011DDDD0> server_hostname='api.gradio.app' timeout=5
-2025-05-12 13:03:48,321 - httpcore.connection - DEBUG - connect_tcp.started host='api.gradio.app' port=443 local_address=None timeout=5 socket_options=None
-2025-05-12 13:03:48,470 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001F901159070>
-2025-05-12 13:03:48,470 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
-2025-05-12 13:03:48,471 - httpcore.http11 - DEBUG - send_request_headers.complete
-2025-05-12 13:03:48,471 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
-2025-05-12 13:03:48,471 - httpcore.http11 - DEBUG - send_request_body.complete
-2025-05-12 13:03:48,471 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
-2025-05-12 13:03:48,501 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001F9024CDBB0>
-2025-05-12 13:03:48,501 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001F9024AF5D0> server_hostname='api.gradio.app' timeout=5
-2025-05-12 13:03:48,725 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 12 May 2025 05:03:48 GMT'), (b'Content-Type', b'text/html; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Server', b'nginx/1.18.0'), (b'Access-Control-Allow-Origin', b'*'), (b'Content-Encoding', b'gzip')])
-2025-05-12 13:03:48,727 - httpx - INFO - HTTP Request: POST https://api.gradio.app/gradio-initiated-analytics/ "HTTP/1.1 200 OK"
-2025-05-12 13:03:48,727 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
-2025-05-12 13:03:48,727 - httpcore.http11 - DEBUG - receive_response_body.complete
-2025-05-12 13:03:48,727 - httpcore.http11 - DEBUG - response_closed.started
-2025-05-12 13:03:48,727 - httpcore.http11 - DEBUG - response_closed.complete
-2025-05-12 13:03:48,727 - httpcore.connection - DEBUG - close.started
-2025-05-12 13:03:48,727 - httpcore.connection - DEBUG - close.complete
-2025-05-12 13:03:48,837 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001F9004F5280>
-2025-05-12 13:03:48,837 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
-2025-05-12 13:03:48,837 - httpcore.http11 - DEBUG - send_request_headers.complete
-2025-05-12 13:03:48,837 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
-2025-05-12 13:03:48,837 - httpcore.http11 - DEBUG - send_request_body.complete
-2025-05-12 13:03:48,837 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
-2025-05-12 13:03:49,013 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 12 May 2025 05:03:49 GMT'), (b'Content-Type', b'text/html; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Server', b'nginx/1.18.0'), (b'Access-Control-Allow-Origin', b'*'), (b'Content-Encoding', b'gzip')])
-2025-05-12 13:03:49,013 - httpx - INFO - HTTP Request: POST https://api.gradio.app/gradio-launched-telemetry/ "HTTP/1.1 200 OK"
-2025-05-12 13:03:49,013 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
-2025-05-12 13:03:49,013 - httpcore.http11 - DEBUG - receive_response_body.complete
-2025-05-12 13:03:49,013 - httpcore.http11 - DEBUG - response_closed.started
-2025-05-12 13:03:49,013 - httpcore.http11 - DEBUG - response_closed.complete
-2025-05-12 13:03:49,013 - httpcore.connection - DEBUG - close.started
-2025-05-12 13:03:49,013 - httpcore.connection - DEBUG - close.complete
+2025-05-12 13:40:19,171 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-12 13:40:19,287 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-12 13:40:19,477 - httpcore.connection - DEBUG - connect_tcp.started host='api.gradio.app' port=443 local_address=None timeout=3 socket_options=None
+2025-05-12 13:40:19,484 - httpcore.connection - DEBUG - connect_tcp.started host='checkip.amazonaws.com' port=443 local_address=None timeout=3 socket_options=None
+2025-05-12 13:40:19,589 - httpcore.connection - DEBUG - connect_tcp.started host='127.0.0.1' port=7860 local_address=None timeout=5.0 socket_options=None
+2025-05-12 13:40:19,589 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000235D6B5AA80>
+2025-05-12 13:40:19,589 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000235D6B5A360>
+2025-05-12 13:40:19,589 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-05-12 13:40:19,589 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x00000235D68F5950> server_hostname='checkip.amazonaws.com' timeout=3
+2025-05-12 13:40:19,589 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-12 13:40:19,589 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-05-12 13:40:19,589 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-12 13:40:19,589 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-05-12 13:40:19,589 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Mon, 12 May 2025 05:40:19 GMT'), (b'server', b'uvicorn'), (b'content-length', b'5'), (b'content-type', b'application/json'), (b'access-control-allow-methods', b'GET, POST, PUT, DELETE, OPTIONS'), (b'access-control-allow-headers', b'Origin, Content-Type, Accept')])
+2025-05-12 13:40:19,589 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/startup-events "HTTP/1.1 200 OK"
+2025-05-12 13:40:19,589 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-05-12 13:40:19,589 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-12 13:40:19,589 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-12 13:40:19,589 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-12 13:40:19,589 - httpcore.connection - DEBUG - close.started
+2025-05-12 13:40:19,589 - httpcore.connection - DEBUG - close.complete
+2025-05-12 13:40:19,605 - httpcore.connection - DEBUG - connect_tcp.started host='127.0.0.1' port=7860 local_address=None timeout=3 socket_options=None
+2025-05-12 13:40:19,605 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000235D6BB8B60>
+2025-05-12 13:40:19,605 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'HEAD']>
+2025-05-12 13:40:19,605 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-12 13:40:19,605 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'HEAD']>
+2025-05-12 13:40:19,605 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-12 13:40:19,605 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'HEAD']>
+2025-05-12 13:40:19,637 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000235D6B59CA0>
+2025-05-12 13:40:19,637 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x00000235D68F59D0> server_hostname='api.gradio.app' timeout=3
+2025-05-12 13:40:19,637 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Mon, 12 May 2025 05:40:19 GMT'), (b'server', b'uvicorn'), (b'content-length', b'60577'), (b'content-type', b'text/html; charset=utf-8'), (b'access-control-allow-methods', b'GET, POST, PUT, DELETE, OPTIONS'), (b'access-control-allow-headers', b'Origin, Content-Type, Accept')])
+2025-05-12 13:40:19,637 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-05-12 13:40:19,637 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'HEAD']>
+2025-05-12 13:40:19,637 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-12 13:40:19,637 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-12 13:40:19,637 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-12 13:40:19,637 - httpcore.connection - DEBUG - close.started
+2025-05-12 13:40:19,637 - httpcore.connection - DEBUG - close.complete
+2025-05-12 13:40:19,696 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000235D6B5A270>
+2025-05-12 13:40:19,696 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-05-12 13:40:19,696 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-12 13:40:19,696 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-05-12 13:40:19,696 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-12 13:40:19,697 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-05-12 13:40:19,784 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'', [(b'Date', b'Mon, 12 May 2025 05:40:19 GMT'), (b'Content-Type', b'text/plain;charset=UTF-8'), (b'Content-Length', b'15'), (b'Connection', b'keep-alive'), (b'Server', b'nginx'), (b'Vary', b'Origin'), (b'Vary', b'Access-Control-Request-Method'), (b'Vary', b'Access-Control-Request-Headers')])
+2025-05-12 13:40:19,784 - httpx - INFO - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2025-05-12 13:40:19,784 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-05-12 13:40:19,784 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-12 13:40:19,784 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-12 13:40:19,784 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-12 13:40:19,784 - httpcore.connection - DEBUG - close.started
+2025-05-12 13:40:19,784 - httpcore.connection - DEBUG - close.complete
+2025-05-12 13:40:19,895 - httpcore.connection - DEBUG - connect_tcp.started host='checkip.amazonaws.com' port=443 local_address=None timeout=3 socket_options=None
+2025-05-12 13:40:19,983 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000235D6B59BE0>
+2025-05-12 13:40:19,983 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-05-12 13:40:19,983 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-12 13:40:19,983 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-05-12 13:40:19,983 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-12 13:40:19,983 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-05-12 13:40:19,983 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000235D7BD0440>
+2025-05-12 13:40:19,983 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x00000235D7BBB8D0> server_hostname='checkip.amazonaws.com' timeout=3
+2025-05-12 13:40:20,031 - httpcore.connection - DEBUG - connect_tcp.started host='api.gradio.app' port=443 local_address=None timeout=5 socket_options=None
+2025-05-12 13:40:20,097 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000235D7BD0350>
+2025-05-12 13:40:20,097 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-05-12 13:40:20,097 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-12 13:40:20,097 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-05-12 13:40:20,097 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-12 13:40:20,097 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-05-12 13:40:20,171 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 12 May 2025 05:40:19 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'21'), (b'Connection', b'keep-alive'), (b'Server', b'nginx/1.18.0'), (b'Access-Control-Allow-Origin', b'*')])
+2025-05-12 13:40:20,171 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-05-12 13:40:20,171 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-05-12 13:40:20,172 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-12 13:40:20,172 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-12 13:40:20,172 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-12 13:40:20,172 - httpcore.connection - DEBUG - close.started
+2025-05-12 13:40:20,172 - httpcore.connection - DEBUG - close.complete
+2025-05-12 13:40:20,197 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000235D652DAC0>
+2025-05-12 13:40:20,197 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x00000235D68F5AD0> server_hostname='api.gradio.app' timeout=5
+2025-05-12 13:40:20,198 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'', [(b'Date', b'Mon, 12 May 2025 05:40:19 GMT'), (b'Content-Type', b'text/plain;charset=UTF-8'), (b'Content-Length', b'15'), (b'Connection', b'keep-alive'), (b'Server', b'nginx'), (b'Vary', b'Origin'), (b'Vary', b'Access-Control-Request-Method'), (b'Vary', b'Access-Control-Request-Headers')])
+2025-05-12 13:40:20,198 - httpx - INFO - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2025-05-12 13:40:20,198 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-05-12 13:40:20,198 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-12 13:40:20,198 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-12 13:40:20,198 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-12 13:40:20,198 - httpcore.connection - DEBUG - close.started
+2025-05-12 13:40:20,198 - httpcore.connection - DEBUG - close.complete
+2025-05-12 13:40:20,418 - httpcore.connection - DEBUG - connect_tcp.started host='api.gradio.app' port=443 local_address=None timeout=5 socket_options=None
+2025-05-12 13:40:20,541 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000235D67DEF00>
+2025-05-12 13:40:20,541 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-05-12 13:40:20,541 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-12 13:40:20,541 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-05-12 13:40:20,541 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-12 13:40:20,541 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-05-12 13:40:20,604 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000235D7BD1FA0>
+2025-05-12 13:40:20,604 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x00000235D7BD89D0> server_hostname='api.gradio.app' timeout=5
+2025-05-12 13:40:20,812 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 12 May 2025 05:40:20 GMT'), (b'Content-Type', b'text/html; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Server', b'nginx/1.18.0'), (b'Access-Control-Allow-Origin', b'*'), (b'Content-Encoding', b'gzip')])
+2025-05-12 13:40:20,812 - httpx - INFO - HTTP Request: POST https://api.gradio.app/gradio-initiated-analytics/ "HTTP/1.1 200 OK"
+2025-05-12 13:40:20,812 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-05-12 13:40:20,812 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-12 13:40:20,812 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-12 13:40:20,812 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-12 13:40:20,813 - httpcore.connection - DEBUG - close.started
+2025-05-12 13:40:20,813 - httpcore.connection - DEBUG - close.complete
+2025-05-12 13:40:20,959 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000235D64127B0>
+2025-05-12 13:40:20,959 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-05-12 13:40:20,959 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-12 13:40:20,959 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-05-12 13:40:20,959 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-12 13:40:20,959 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-05-12 13:40:21,139 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 12 May 2025 05:40:20 GMT'), (b'Content-Type', b'text/html; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Server', b'nginx/1.18.0'), (b'Access-Control-Allow-Origin', b'*'), (b'Content-Encoding', b'gzip')])
+2025-05-12 13:40:21,139 - httpx - INFO - HTTP Request: POST https://api.gradio.app/gradio-launched-telemetry/ "HTTP/1.1 200 OK"
+2025-05-12 13:40:21,140 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-05-12 13:40:21,140 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-12 13:40:21,140 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-12 13:40:21,140 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-12 13:40:21,140 - httpcore.connection - DEBUG - close.started
+2025-05-12 13:40:21,141 - httpcore.connection - DEBUG - close.complete
+2025-05-12 13:45:11,073 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-12 13:45:11,199 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-12 13:45:11,383 - httpcore.connection - DEBUG - connect_tcp.started host='api.gradio.app' port=443 local_address=None timeout=3 socket_options=None
+2025-05-12 13:45:11,383 - httpcore.connection - DEBUG - connect_tcp.started host='checkip.amazonaws.com' port=443 local_address=None timeout=3 socket_options=None
+2025-05-12 13:45:11,481 - httpcore.connection - DEBUG - connect_tcp.started host='127.0.0.1' port=7860 local_address=None timeout=5.0 socket_options=None
+2025-05-12 13:45:11,481 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001C57A6968A0>
+2025-05-12 13:45:11,481 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-05-12 13:45:11,481 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-12 13:45:11,481 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-05-12 13:45:11,481 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-12 13:45:11,481 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-05-12 13:45:11,481 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Mon, 12 May 2025 05:45:11 GMT'), (b'server', b'uvicorn'), (b'content-length', b'5'), (b'content-type', b'application/json'), (b'access-control-allow-methods', b'GET, POST, PUT, DELETE, OPTIONS'), (b'access-control-allow-headers', b'Origin, Content-Type, Accept')])
+2025-05-12 13:45:11,481 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/startup-events "HTTP/1.1 200 OK"
+2025-05-12 13:45:11,481 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-05-12 13:45:11,481 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-12 13:45:11,481 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-12 13:45:11,481 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-12 13:45:11,481 - httpcore.connection - DEBUG - close.started
+2025-05-12 13:45:11,481 - httpcore.connection - DEBUG - close.complete
+2025-05-12 13:45:11,496 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001C57A0AD130>
+2025-05-12 13:45:11,496 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001C57A42DFD0> server_hostname='checkip.amazonaws.com' timeout=3
+2025-05-12 13:45:11,496 - httpcore.connection - DEBUG - connect_tcp.started host='127.0.0.1' port=7860 local_address=None timeout=3 socket_options=None
+2025-05-12 13:45:11,496 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001C57A6FC7A0>
+2025-05-12 13:45:11,496 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'HEAD']>
+2025-05-12 13:45:11,496 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-12 13:45:11,496 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'HEAD']>
+2025-05-12 13:45:11,496 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-12 13:45:11,496 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'HEAD']>
+2025-05-12 13:45:11,496 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Mon, 12 May 2025 05:45:11 GMT'), (b'server', b'uvicorn'), (b'content-length', b'60576'), (b'content-type', b'text/html; charset=utf-8'), (b'access-control-allow-methods', b'GET, POST, PUT, DELETE, OPTIONS'), (b'access-control-allow-headers', b'Origin, Content-Type, Accept')])
+2025-05-12 13:45:11,496 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-05-12 13:45:11,496 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'HEAD']>
+2025-05-12 13:45:11,496 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-12 13:45:11,496 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-12 13:45:11,496 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-12 13:45:11,496 - httpcore.connection - DEBUG - close.started
+2025-05-12 13:45:11,496 - httpcore.connection - DEBUG - close.complete
+2025-05-12 13:45:11,549 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001C57A695B20>
+2025-05-12 13:45:11,549 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001C57A42DB50> server_hostname='api.gradio.app' timeout=3
+2025-05-12 13:45:11,598 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001C57A632B10>
+2025-05-12 13:45:11,598 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-05-12 13:45:11,598 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-12 13:45:11,598 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-05-12 13:45:11,598 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-12 13:45:11,598 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-05-12 13:45:11,682 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'', [(b'Date', b'Mon, 12 May 2025 05:45:11 GMT'), (b'Content-Type', b'text/plain;charset=UTF-8'), (b'Content-Length', b'15'), (b'Connection', b'keep-alive'), (b'Server', b'nginx'), (b'Vary', b'Origin'), (b'Vary', b'Access-Control-Request-Method'), (b'Vary', b'Access-Control-Request-Headers')])
+2025-05-12 13:45:11,682 - httpx - INFO - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2025-05-12 13:45:11,682 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-05-12 13:45:11,682 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-12 13:45:11,682 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-12 13:45:11,682 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-12 13:45:11,682 - httpcore.connection - DEBUG - close.started
+2025-05-12 13:45:11,682 - httpcore.connection - DEBUG - close.complete
+2025-05-12 13:45:11,751 - httpcore.connection - DEBUG - connect_tcp.started host='checkip.amazonaws.com' port=443 local_address=None timeout=3 socket_options=None
+2025-05-12 13:45:11,853 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001C57B718380>
+2025-05-12 13:45:11,853 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001C57B6FE6D0> server_hostname='checkip.amazonaws.com' timeout=3
+2025-05-12 13:45:11,901 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001C57A48A0C0>
+2025-05-12 13:45:11,901 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-05-12 13:45:11,901 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-12 13:45:11,901 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-05-12 13:45:11,901 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-12 13:45:11,901 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-05-12 13:45:11,932 - httpcore.connection - DEBUG - connect_tcp.started host='api.gradio.app' port=443 local_address=None timeout=5 socket_options=None
+2025-05-12 13:45:11,932 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001C57B718290>
+2025-05-12 13:45:11,932 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-05-12 13:45:11,932 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-12 13:45:11,932 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-05-12 13:45:11,932 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-12 13:45:11,932 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-05-12 13:45:12,059 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'', [(b'Date', b'Mon, 12 May 2025 05:45:11 GMT'), (b'Content-Type', b'text/plain;charset=UTF-8'), (b'Content-Length', b'15'), (b'Connection', b'keep-alive'), (b'Server', b'nginx'), (b'Vary', b'Origin'), (b'Vary', b'Access-Control-Request-Method'), (b'Vary', b'Access-Control-Request-Headers')])
+2025-05-12 13:45:12,059 - httpx - INFO - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2025-05-12 13:45:12,059 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-05-12 13:45:12,059 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-12 13:45:12,059 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-12 13:45:12,059 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-12 13:45:12,059 - httpcore.connection - DEBUG - close.started
+2025-05-12 13:45:12,059 - httpcore.connection - DEBUG - close.complete
+2025-05-12 13:45:12,076 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 12 May 2025 05:45:11 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'21'), (b'Connection', b'keep-alive'), (b'Server', b'nginx/1.18.0'), (b'Access-Control-Allow-Origin', b'*')])
+2025-05-12 13:45:12,076 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-05-12 13:45:12,076 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-05-12 13:45:12,076 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-12 13:45:12,076 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-12 13:45:12,076 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-12 13:45:12,076 - httpcore.connection - DEBUG - close.started
+2025-05-12 13:45:12,076 - httpcore.connection - DEBUG - close.complete
+2025-05-12 13:45:12,112 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001C57A05C530>
+2025-05-12 13:45:12,112 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001C57A42DDD0> server_hostname='api.gradio.app' timeout=5
+2025-05-12 13:45:12,285 - httpcore.connection - DEBUG - connect_tcp.started host='api.gradio.app' port=443 local_address=None timeout=5 socket_options=None
+2025-05-12 13:45:12,452 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001C579F51580>
+2025-05-12 13:45:12,452 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-05-12 13:45:12,452 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-12 13:45:12,452 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-05-12 13:45:12,452 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-12 13:45:12,452 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-05-12 13:45:12,468 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001C57B719F70>
+2025-05-12 13:45:12,468 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001C57B6FF550> server_hostname='api.gradio.app' timeout=5
+2025-05-12 13:45:12,746 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 12 May 2025 05:45:12 GMT'), (b'Content-Type', b'text/html; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Server', b'nginx/1.18.0'), (b'Access-Control-Allow-Origin', b'*'), (b'Content-Encoding', b'gzip')])
+2025-05-12 13:45:12,746 - httpx - INFO - HTTP Request: POST https://api.gradio.app/gradio-initiated-analytics/ "HTTP/1.1 200 OK"
+2025-05-12 13:45:12,746 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-05-12 13:45:12,746 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-12 13:45:12,746 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-12 13:45:12,746 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-12 13:45:12,746 - httpcore.connection - DEBUG - close.started
+2025-05-12 13:45:12,746 - httpcore.connection - DEBUG - close.complete
+2025-05-12 13:45:12,817 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001C57A5693A0>
+2025-05-12 13:45:12,817 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-05-12 13:45:12,817 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-12 13:45:12,817 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-05-12 13:45:12,817 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-12 13:45:12,817 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-05-12 13:45:13,006 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 12 May 2025 05:45:12 GMT'), (b'Content-Type', b'text/html; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Server', b'nginx/1.18.0'), (b'Access-Control-Allow-Origin', b'*'), (b'Content-Encoding', b'gzip')])
+2025-05-12 13:45:13,006 - httpx - INFO - HTTP Request: POST https://api.gradio.app/gradio-launched-telemetry/ "HTTP/1.1 200 OK"
+2025-05-12 13:45:13,006 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-05-12 13:45:13,006 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-12 13:45:13,006 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-12 13:45:13,006 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-12 13:45:13,006 - httpcore.connection - DEBUG - close.started
+2025-05-12 13:45:13,006 - httpcore.connection - DEBUG - close.complete
+2025-05-12 13:48:39,883 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-12 13:48:39,883 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-12 13:48:39,883 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-12 13:48:40,481 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-12 13:48:40,494 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-12 13:48:41,539 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-initiated-analytics/ HTTP/1.1" 200 None
+2025-05-12 13:48:41,817 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "GET /pkg-version HTTP/1.1" 200 21
+2025-05-12 13:49:47,294 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-12 13:49:47,309 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-12 13:49:47,310 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-12 13:49:47,902 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-12 13:49:47,902 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-12 13:49:48,249 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "GET /pkg-version HTTP/1.1" 200 21
+2025-05-12 13:49:48,924 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-initiated-analytics/ HTTP/1.1" 200 None
+2025-05-12 13:50:17,011 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-12 13:50:17,025 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-12 13:50:17,025 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-12 13:50:17,178 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-12 13:50:17,192 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:7861
+2025-05-12 13:50:17,192 - urllib3.connectionpool - DEBUG - http://127.0.0.1:7861 "GET /startup-events HTTP/1.1" 200 5
+2025-05-12 13:50:17,202 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:7861
+2025-05-12 13:50:17,294 - urllib3.connectionpool - DEBUG - http://127.0.0.1:7861 "HEAD / HTTP/1.1" 200 0
+2025-05-12 13:50:17,294 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-12 13:50:17,555 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-12 13:50:17,564 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-12 13:50:17,774 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-12 13:50:17,778 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-12 13:50:17,967 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "GET /pkg-version HTTP/1.1" 200 21
+2025-05-12 13:50:18,587 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-initiated-analytics/ HTTP/1.1" 200 None
+2025-05-12 13:50:18,706 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-launched-telemetry/ HTTP/1.1" 200 None
+2025-05-12 13:53:55,693 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-12 13:53:55,705 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-12 13:53:55,705 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-12 13:53:55,837 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-12 13:53:55,849 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:7860
+2025-05-12 13:53:55,851 - urllib3.connectionpool - DEBUG - http://127.0.0.1:7860 "GET /startup-events HTTP/1.1" 200 5
+2025-05-12 13:53:55,859 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:7860
+2025-05-12 13:53:55,868 - urllib3.connectionpool - DEBUG - http://127.0.0.1:7860 "HEAD / HTTP/1.1" 200 0
+2025-05-12 13:53:55,869 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-12 13:53:56,398 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-12 13:53:56,400 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-12 13:53:56,454 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-12 13:53:56,454 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-12 13:53:56,714 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "GET /pkg-version HTTP/1.1" 200 21
+2025-05-12 13:53:57,411 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-launched-telemetry/ HTTP/1.1" 200 None
+2025-05-12 13:53:57,452 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-initiated-analytics/ HTTP/1.1" 200 None
+2025-05-12 13:54:30,561 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-12 13:54:30,574 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-12 13:54:30,574 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-12 13:54:31,227 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-12 13:54:31,227 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-12 13:54:31,519 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "GET /pkg-version HTTP/1.1" 200 21
+2025-05-12 13:54:32,256 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-initiated-analytics/ HTTP/1.1" 200 None
+2025-05-12 13:55:21,171 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-12 13:55:21,182 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-12 13:55:21,184 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-12 13:55:21,318 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-12 13:55:21,331 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8080
+2025-05-12 13:55:21,331 - urllib3.connectionpool - DEBUG - http://127.0.0.1:8080 "GET /startup-events HTTP/1.1" 200 5
+2025-05-12 13:55:21,341 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8080
+2025-05-12 13:55:21,350 - urllib3.connectionpool - DEBUG - http://127.0.0.1:8080 "HEAD / HTTP/1.1" 200 0
+2025-05-12 13:55:21,352 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-12 13:55:21,870 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-12 13:55:21,872 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-12 13:55:21,933 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-12 13:55:21,933 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-12 13:55:22,154 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "GET /pkg-version HTTP/1.1" 200 21
+2025-05-12 13:55:22,885 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-launched-telemetry/ HTTP/1.1" 200 None
+2025-05-12 13:55:22,930 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-initiated-analytics/ HTTP/1.1" 200 None
+2025-05-12 13:55:54,486 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 13:55:54,486 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 13:55:54,499 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): generativelanguage.googleapis.com:443
+2025-05-12 13:55:55,367 - urllib3.connectionpool - DEBUG - https://generativelanguage.googleapis.com:443 "POST /v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBDc73003zr5T8KVhem_kTOIa9nRIbcHsg HTTP/1.1" 200 None
+2025-05-12 13:55:55,383 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
