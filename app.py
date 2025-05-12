@@ -119,8 +119,7 @@ def generate_tts(text, api_key, voice_name, emotion, speed, custom_pronunciation
             voice_name=voice_name,
             emotion=emotion,
             speed=float(speed),
-            custom_pronunciation=custom_pronunciation,
-            progress_callback=lambda p: progress(p/100) # Gradio進度條需要0-1之間的值
+            custom_pronunciation=custom_pronunciation
         )
         
         # 生成語音文件列表 (mp3_files現在是字符串列表)
@@ -1063,8 +1062,7 @@ with gr.Blocks(
             generated_files,
             audio_zip,
             transcript_file_path,
-            mp3_files_state,  # 儲存 mp3_files 到狀態變量
-            step3_status_msg
+            mp3_files_state  # 儲存 mp3_files 到狀態變量
         ],
         api_name="generate_tts"
     )
