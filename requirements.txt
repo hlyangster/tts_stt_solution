@@ -1,0 +1,8 @@
+pysrt
+gradio
+pydub
+google-generativeai
+openai
+python-dotenv
+requests
+wheel
