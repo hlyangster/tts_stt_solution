@@ -18,22 +18,20 @@ from modules.homophone_replacement import HomophoneReplacer
 from modules.tts_generator import TTSGenerator, TTSGenerationError
 from modules.subtitle_corrector import SubtitleCorrector
 from modules.srt_generator import SRTGenerator
-from modules.audio_merge import AudioMerger, AudioMergeError  # 導入 AudioMerger
+from modules.audio_merge import AudioMerger, AudioMergeError
 from modules import TTS_VOICES, TTS_EMOTIONS
+from modules.file_manager import FileManager
+
+# 初始化檔案管理器
+file_manager = FileManager()
 
 # 檔案路徑設置
 current_dir = Path(__file__).parent
 data_dir = current_dir / "data"
 dictionary_path = data_dir / "default_dictionary.json"
-temp_dir = current_dir / "temp" / "audio"
-subtitle_dir = current_dir / "temp" / "subtitle"
-video_dir = current_dir / "temp" / "video"  # 新增視頻目錄
 
-# 確保資料和臨時目錄存在
+# 確保資料目錄存在
 os.makedirs(data_dir, exist_ok=True)
-os.makedirs(temp_dir, exist_ok=True)
-os.makedirs(subtitle_dir, exist_ok=True)
-os.makedirs(video_dir, exist_ok=True)  # 確保視頻目錄存在
 
 # 如果字典檔案不存在，創建預設字典
 if not dictionary_path.exists():
@@ -57,22 +55,30 @@ def process_text(input_text, language, google_api_key):
     try:
         # 驗證輸入
         if not input_text.strip():
-            return "請輸入文本", None
+            return "請輸入文本", None, None
         
         if not google_api_key.strip():
-            return "請提供 Google AI API 金鑰", None
+            return "請提供 Google AI API 金鑰", None, None
+        
+        # 創建新的處理識別碼
+        identifier = file_manager.create_identifier()
         
         # 調用預處理函數
         processed_text = preprocess_text(input_text, language, google_api_key)
         
-        return "處理成功!", processed_text
+        # 保存處理後的文本
+        output_path = file_manager.get_file_path(identifier, "step1", "processed.txt")
+        with open(output_path, "w", encoding="utf-8") as f:
+            f.write(processed_text)
+        
+        return "處理成功!", processed_text, identifier
     
     except PreprocessingError as e:
-        return f"錯誤: {str(e)}", None
+        return f"錯誤: {str(e)}", None, None
     except Exception as e:
-        return f"未知錯誤: {str(e)}", None
+        return f"未知錯誤: {str(e)}", None, None
 
-def replace_homophones(processed_text, google_api_key):
+def replace_homophones(processed_text, google_api_key, identifier):
     """多音字替換的回調函數"""
     try:
         if not processed_text or not processed_text.strip():
@@ -80,6 +86,9 @@ def replace_homophones(processed_text, google_api_key):
         
         if not google_api_key.strip():
             return "請提供 Google AI API 金鑰", None, None
+            
+        if not identifier:
+            return "無效的處理識別碼", None, None
         
         # 初始化多音字替換器
         homophone_replacer = HomophoneReplacer(dictionary_path)
@@ -96,12 +105,22 @@ def replace_homophones(processed_text, google_api_key):
         # 生成報告
         human_readable_report = homophone_replacer.get_replacement_report(report)
         
+        # 保存替換後的文本
+        output_path = file_manager.get_file_path(identifier, "step2", "replaced.txt")
+        with open(output_path, "w", encoding="utf-8") as f:
+            f.write(modified_text)
+            
+        # 保存替換報告
+        report_path = file_manager.get_file_path(identifier, "step2", "report.txt")
+        with open(report_path, "w", encoding="utf-8") as f:
+            f.write(human_readable_report)
+        
         return "多音字替換成功!", modified_text, human_readable_report
     
     except Exception as e:
         return f"多音字替換錯誤: {str(e)}", None, None
 
-def generate_tts(text, api_key, voice_name, emotion, speed, custom_pronunciation):
+def generate_tts(text, api_key, voice_name, emotion, speed, custom_pronunciation, identifier):
     """TTS語音生成的回調函數"""
     try:
         if not text or not text.strip():
@@ -109,12 +128,19 @@ def generate_tts(text, api_key, voice_name, emotion, speed, custom_pronunciation
         
         if not api_key.strip():
             return "請提供 Hailuo API 金鑰", None, None, None, None
+            
+        if not identifier:
+            return "無效的處理識別碼", None, None, None, None
         
-        # 初始化TTS生成器 (使用默認 group_id="1886392350196895842")
-        tts_generator = TTSGenerator(api_key, output_dir=temp_dir)
+        # 在temp目錄中創建音频輸出目錄
+        audio_output_dir = file_manager.get_file_path(identifier, "step3", "audio")
+        os.makedirs(audio_output_dir, exist_ok=True)
+        
+        # 初始化TTS生成器
+        tts_generator = TTSGenerator(api_key, output_dir=audio_output_dir)
         
         # 生成語音
-        mp3_files, zip_path = tts_generator.generate_speech(
+        mp3_files, _ = tts_generator.generate_speech(
             text,
             voice_name=voice_name,
             emotion=emotion,
@@ -122,17 +148,19 @@ def generate_tts(text, api_key, voice_name, emotion, speed, custom_pronunciation
             custom_pronunciation=custom_pronunciation
         )
         
-        # 生成語音文件列表 (mp3_files現在是字符串列表)
+        # 生成語音文件列表
         file_list = ""
         for i, file_path in enumerate(mp3_files):
             file_name = os.path.basename(file_path)
             file_list += f"{i+1}. {file_name}\n"
         
-        # 生成逐字稿文件
-        timestamp = int(time.time())
-        transcript_file = str(subtitle_dir / f"transcript_{timestamp}.txt")
-        
-        # 保存純文本作為逐字稿
+        # 將所有音频文件打包成zip
+        zip_path = file_manager.get_file_path(identifier, "step3", "audio.zip")
+        with zipfile.ZipFile(zip_path, 'w') as zipf:
+            for mp3_file in mp3_files:
+                zipf.write(mp3_file, os.path.basename(mp3_file))
+        # 保存逐字稿
+        transcript_file = file_manager.get_file_path(identifier, "step3", "transcript.txt")
         with open(transcript_file, "w", encoding="utf-8") as f:
             f.write(text)
         
@@ -144,44 +172,46 @@ def generate_tts(text, api_key, voice_name, emotion, speed, custom_pronunciation
         return f"未知錯誤: {str(e)}", None, None, None, None
 
 # 新增函數：僅生成字幕，不進行校正
-def generate_subtitle_only(audio_zip, whisper_api_key, language):
-    """只從音頻生成字幕的回調函數，不進行校正"""
+def generate_subtitle_only(audio_zip, whisper_api_key, language, identifier):
+    """只從音频生成字幕的回調函數，不進行校正"""
     try:
-        if not audio_zip or not os.path.exists(audio_zip):
-            return "請先上傳音頻文件", None, None
+        if not audio_zip:
+            return "請先上傳音频或生成音频文件", None, None
         
         if not whisper_api_key.strip():
             return "請提供 Whisper API 金鑰", None, None
+            
+        if not identifier:
+            return "無效的處理識別碼", None, None
         
-        timestamp = int(time.time())
-        progress(0.1, "解壓音頻文件...")
+        # 初始化字幕生成器
+        subtitle_generator = SubtitleGenerator(whisper_api_key)
         
-        # 創建臨時目錄解壓音頻文件
-        extract_dir = tempfile.mkdtemp()
+        # 創建音频臨時目錄
+        audio_temp_dir = file_manager.get_file_path(identifier, "step4", "audio_temp")
+        os.makedirs(audio_temp_dir, exist_ok=True)
         
-        # 解壓ZIP文件
+        # 解壓縮音频文件
         with zipfile.ZipFile(audio_zip, 'r') as zip_ref:
-            zip_ref.extractall(extract_dir)
+            zip_ref.extractall(audio_temp_dir)
         
-        # 獲取所有MP3文件
-        audio_files = sorted([os.path.join(extract_dir, f) for f in os.listdir(extract_dir) if f.endswith('.mp3')])
+        # 取得所有音频文件的路徑
+        audio_files = [os.path.join(audio_temp_dir, f) for f in os.listdir(audio_temp_dir) if f.endswith('.mp3')]
         
-        if not audio_files:
-            return "未在ZIP文件中找到MP3音頻", None, None
+        # 生成字幕
+        initial_srt_file = file_manager.get_file_path(identifier, "step4", "initial_subtitle.srt")
+        srt_content = subtitle_generator.generate_subtitle_from_audio(audio_files, language)
         
-        progress(0.3, "使用Whisper API生成字幕...")
+        # 保存字幕文件
+        with open(initial_srt_file, "w", encoding="utf-8") as f:
+            f.write(srt_content)
         
-        # 使用SRTGenerator從音頻文件生成SRT
-        srt_generator = SRTGenerator(temp_dir=str(subtitle_dir))
-        initial_srt_path = str(subtitle_dir / f"initial_srt_{timestamp}.srt")
+        # 清理臨時文件
+        for audio_file in audio_files:
+            os.remove(audio_file)
+        os.rmdir(audio_temp_dir)
         
-        # 使用Whisper API轉錄
-        success, srt_path = srt_generator.generate_srt_from_audio_files(
-            audio_files,
-            initial_srt_path,
-            whisper_api_key,
-            language
-        )
+        return "字幕生成成功!", srt_content, initial_srt_file
         
         if not success:
             return f"字幕生成失敗: {srt_path}", None, None
@@ -305,51 +335,6 @@ def auto_process_all(transcript_file_path, google_api_key, tts_api_key, whisper_
         error_msg = f"處理過程中發生錯誤: {str(e)}\n{traceback.format_exc()}"
         return error_msg, "處理出錯，請查看狀態信息", None, None
 
-# 修改後的校正字幕函數
-def correct_subtitles_only(transcript_file, initial_srt_file, gemini_api_key, batch_size):
-    """僅執行字幕校正部分"""
-    try:
-        if not transcript_file or not os.path.exists(transcript_file):
-            return "找不到逐字稿文件", None, None, None
-        
-        if not initial_srt_file or not os.path.exists(initial_srt_file):
-            return "找不到原始字幕文件", None, None, None
-        
-        if not gemini_api_key.strip():
-            return "請提供 Google Gemini API 金鑰", None, None, None
-        
-        timestamp = int(time.time())
-        progress(0.2, "讀取文件...")
-        
-        # 使用SubtitleCorrector校正字幕
-        progress(0.4, "校正字幕中...")
-        subtitle_corrector = SubtitleCorrector(gemini_api_key)
-        error, corrected_srt, reports = subtitle_corrector.correct_subtitles(
-            transcript_file,
-            initial_srt_file,
-            int(batch_size)
-        )
-        
-        if error:
-            return f"字幕校正失敗: {error}", None, None, None
-        
-        # 保存校正後的字幕
-        progress(0.8, "保存結果...")
-        corrected_srt_file = str(subtitle_dir / f"corrected_srt_{timestamp}.srt")
-        corrected_srt.save(corrected_srt_file, encoding="utf-8")
-        
-        # 保存修改報告
-        report_file = str(subtitle_dir / f"correction_report_{timestamp}.txt")
-        with open(report_file, "w", encoding="utf-8") as f:
-            f.write("\n".join(reports) if reports else "沒有進行任何修改")
-        
-        # 讀取校正後的字幕內容
-        with open(corrected_srt_file, "r", encoding="utf-8") as f:
-            corrected_content = f.read()
-        
-        progress(1.0, "完成!")
-        
-        return "字幕校正成功!", corrected_content, corrected_srt_file, report_file
     
     except Exception as e:
         return f"字幕校正過程中出錯: {str(e)}", None, None, None
@@ -471,48 +456,59 @@ def download_corrected_srt(subtitle_file):
     return subtitle_file
 
 # 新增函數：創建視頻預覽
-def create_video_preview(mp3_files, subtitle_file):
-    """從音頻文件和字幕文件創建視頻預覽"""
+def create_video_preview(mp3_files, subtitle_file, identifier):
+    """從音频文件和字幕文件創建視頻預覽"""
     try:
-        if not mp3_files or not all(os.path.exists(f) for f in mp3_files):
-            return "找不到音頻文件", None
+        if not mp3_files or not subtitle_file:
+            return "請先生成音频和字幕文件", None
+            
+        if not identifier:
+            return "無效的處理識別碼", None
         
-        if not subtitle_file or not os.path.exists(subtitle_file):
-            return "找不到字幕文件", None
+        # 創建臨時目錄
+        temp_dir = file_manager.get_file_path(identifier, "step5", "temp")
+        os.makedirs(temp_dir, exist_ok=True)
         
-        timestamp = int(time.time())
-        progress(0.1, "初始化音頻合併...")
+        # 將多個音频文件合併成一個
+        merged_audio = os.path.join(temp_dir, "merged_audio.mp3")
         
-        # 初始化音頻合併器
-        audio_merger = AudioMerger(output_dir=str(temp_dir))
+        if isinstance(mp3_files, list) and len(mp3_files) > 1:
+            # 合併多個音频文件
+            audio_segments = [AudioSegment.from_mp3(mp3_file) for mp3_file in mp3_files]
+            combined_audio = sum(audio_segments)
+            combined_audio.export(merged_audio, format="mp3")
+        else:
+            # 如果只有一個音频文件，直接使用它
+            merged_audio = mp3_files[0] if isinstance(mp3_files, list) else mp3_files
         
-        # 合併所有音頻文件
-        progress(0.3, "合併音頻文件...")
-        merged_audio = str(temp_dir / f"merged_audio_{timestamp}.mp3")
-        success, merged_audio_path = audio_merger.merge_audio_files(mp3_files, merged_audio)
+        # 創建視頻
+        video_path = file_manager.get_file_path(identifier, "step5", "preview.mp4")
         
-        if not success:
-            return f"音頻合併失敗: {merged_audio_path}", None
+        # 使用ffmpeg創建視頻
+        audio_duration = AudioSegment.from_mp3(merged_audio).duration_seconds
         
-        progress(0.5, "創建視頻...")
+        # 創建黑色背景視頻
+        cmd = [
+            "ffmpeg", "-y",
+            "-f", "lavfi", "-i", f"color=c=black:s=1280x720:d={audio_duration}",
+            "-i", merged_audio,
+            "-vf", f"subtitles='{subtitle_file}':force_style='Fontsize=24'",
+            "-c:v", "libx264", "-c:a", "aac",
+            "-shortest",
+            video_path
+        ]
         
-        # 使用FFmpeg創建視頻
-        video_output = str(video_dir / f"preview_video_{timestamp}.mp4")
-        success, video_path = audio_merger.create_video_with_subtitles(
-            merged_audio_path,
-            subtitle_file,
-            video_output
-        )
+        subprocess.run(cmd, check=True)
         
-        if not success:
-            return f"視頻創建失敗: {video_path}", None
-        
-        progress(1.0, "完成!")
+        # 清理臨時文件
+        if isinstance(mp3_files, list) and len(mp3_files) > 1:
+            os.remove(merged_audio)
+        os.rmdir(temp_dir)
         
         return "視頻預覽創建成功!", video_path
     
-    except AudioMergeError as e:
-        return f"視頻創建錯誤: {str(e)}", None
+    except Exception as e:
+        return f"視頻預覽創建失敗: {str(e)}", None
     except Exception as e:
         return f"未知錯誤: {str(e)}", None
 
@@ -595,7 +591,6 @@ def batch_process_all_files(transcript_files, google_api_key, tts_api_key, whisp
 # 定義Gradio界面
 with gr.Blocks(
     title="AI語音生成與字幕系統",
-    queue=True,
     css="""
     .wrap-text textarea {
         white-space: pre-wrap !important;
@@ -611,6 +606,8 @@ with gr.Blocks(
     preprocessed_text_state = gr.State("")
     # 創建一個共享的狀態變量來存儲步驟3生成的 MP3 檔案
     mp3_files_state = gr.State([])
+    # 創建一個共享的狀態變量來存儲處理識別碼
+    identifier_state = gr.State("")
     
     with gr.Tabs() as tabs:
         # 第一步：文本預處理部分
@@ -1010,13 +1007,13 @@ with gr.Blocks(
     # 設置回調
     # 步驟1的回調
     def process_and_save(input_text, language, google_api_key):
-        status, result = process_text(input_text, language, google_api_key)
-        return status, result, result  # 同時更新狀態變量
+        status, result, identifier = process_text(input_text, language, google_api_key)
+        return status, result, result, identifier  # 更新狀態變量和識別碼
     
     process_btn.click(
         fn=process_and_save,
         inputs=[input_text, language, google_api_key],
-        outputs=[status_msg, processed_text, preprocessed_text_state],
+        outputs=[status_msg, processed_text, preprocessed_text_state, identifier_state],
         api_name="process_text"
     )
     
@@ -1028,8 +1025,13 @@ with gr.Blocks(
     )
     
     # 步驟2的多音字替換回調
+    def replace_homophones_and_save(processed_text, google_api_key):
+        identifier = file_manager.create_identifier()
+        status, result, report = replace_homophones(processed_text, google_api_key, identifier)
+        return status, result, report
+
     replace_btn.click(
-        fn=replace_homophones,
+        fn=replace_homophones_and_save,
         inputs=[step2_processed_text, step2_google_api_key],
         outputs=[step2_status_msg, replaced_text, replacement_report],
         api_name="replace_homophones"
@@ -1043,8 +1045,8 @@ with gr.Blocks(
     )
     
     # 步驟3的TTS生成回調
-    def generate_tts_and_save(text, api_key, voice_name, emotion, speed, custom_pronunciation):
-        status, file_list, zip_path, transcript_file, mp3_files = generate_tts(text, api_key, voice_name, emotion, speed, custom_pronunciation)
+    def generate_tts_and_save(text, api_key, voice_name, emotion, speed, custom_pronunciation, identifier):
+        status, file_list, zip_path, transcript_file, mp3_files = generate_tts(text, api_key, voice_name, emotion, speed, custom_pronunciation, identifier)
         return status, file_list, zip_path, transcript_file, mp3_files
 
     generate_btn.click(
@@ -1055,7 +1057,8 @@ with gr.Blocks(
             voice_name,
             emotion,
             speed,
-            custom_pronunciation
+            custom_pronunciation,
+            identifier_state  # 增加識別碼參數
         ],
         outputs=[
             step3_status_msg,
@@ -1063,30 +1066,7 @@ with gr.Blocks(
             audio_zip,
             transcript_file_path,
             mp3_files_state  # 儲存 mp3_files 到狀態變量
-        ],
-        api_name="generate_tts"
-    )
-    
-    # 從步驟3到步驟4的回調 - 只傳遞數據
-    def prepare_step4(audio_zip, preprocessed_text):
-        """準備步驟4的數據，使用步驟1的預處理文本作為逐字稿"""
-        if not audio_zip:
-            return None, None, None, "請先生成語音文件", "準備失敗：請先生成語音文件"
-        
-        # 使用預處理後的文本作為逐字稿
-        transcript_content = preprocessed_text
-        
-        # 創建臨時文件來存儲逐字稿
-        transcript_file = "temp_transcript.txt"
-        with open(transcript_file, "w", encoding="utf-8") as f:
-            f.write(transcript_content)
-        
-        return audio_zip, transcript_file, "zh", transcript_content, "資料已送出：音頻和逐字稿已傳遞到字幕生成步驟"
-
-    next_step_btn3.click(
-        fn=prepare_step4,
-        inputs=[audio_zip, preprocessed_text_state],
-        outputs=[step4_audio_zip, step4_transcript_file, step4_language, transcript_preview, step4_status_msg]
+        ]
     )
     
     # 當上傳逐字稿文件時更新預覽
@@ -1097,12 +1077,16 @@ with gr.Blocks(
     )
     
     # 生成字幕按鈕回調 - 修改為只生成不校正
+    def generate_subtitle_and_save(audio_zip, whisper_api_key, language, identifier):
+        return generate_subtitle_only(audio_zip, whisper_api_key, language, identifier)
+
     generate_subtitle_btn.click(
-        fn=generate_subtitle_only,
+        fn=generate_subtitle_and_save,
         inputs=[
             step4_audio_zip,
             step4_whisper_api_key,
-            step4_language
+            step4_language,
+            identifier_state
         ],
         outputs=[
             step4_status_msg,
@@ -1112,12 +1096,13 @@ with gr.Blocks(
     )
     
     # 校正字幕按鈕回調 - 使用生成的原始字幕進行校正
-    def correct_subtitle_and_save(transcript_file, initial_srt_file, gemini_api_key, batch_size):
+    def correct_subtitle_and_save(transcript_file, initial_srt_file, gemini_api_key, batch_size, identifier):
         status, corrected_srt_content, subtitle_file, correction_report = correct_subtitles_only(
             transcript_file,
             initial_srt_file,
             gemini_api_key,
-            batch_size
+            batch_size,
+            identifier
         )
         return status, corrected_srt_content, subtitle_file, correction_report
 
@@ -1127,7 +1112,8 @@ with gr.Blocks(
             step4_transcript_file,
             initial_srt_file,
             step4_gemini_api_key,
-            batch_size
+            batch_size,
+            identifier_state
         ],
         outputs=[
             step4_status_msg,
@@ -1145,6 +1131,35 @@ with gr.Blocks(
     )
 
     # 從步驟4到步驟5的回調 - 只傳遞數據
+    # 從步驟3到步驟4的回調 - 只傳遞數據
+    def prepare_step4_and_save(audio_zip, preprocessed_text, identifier):
+        """準備步驟4的數據，使用步驟1的預處理文本作為逐字稿"""
+        if not audio_zip:
+            return None, None, None, "請先生成語音文件", "準備失敗：請先生成語音文件"
+            
+        if not identifier:
+            return None, None, None, "無效的處理識別碼", "準備失敗：無效的處理識別碼"
+        
+        # 使用預處理後的文本作為逐字稿
+        transcript_content = preprocessed_text
+        
+        # 創建逐字稿文件
+        transcript_file = file_manager.get_file_path(identifier, "step4", "transcript.txt")
+        with open(transcript_file, "w", encoding="utf-8") as f:
+            f.write(transcript_content)
+        
+        # 確保使用正確的音频zip檔案路徑
+        audio_zip_path = file_manager.get_file_path(identifier, "step3", "audio.zip")
+        
+        return audio_zip_path, transcript_file, "zh", transcript_content, "資料已送出：音频和逐字稿已傳遞到字幕生成步驟"
+
+    next_step_btn3.click(
+        fn=prepare_step4_and_save,
+        inputs=[audio_zip, preprocessed_text_state, identifier_state],
+        outputs=[step4_audio_zip, step4_transcript_file, step4_language, transcript_preview, step4_status_msg]
+    )
+
+    # 從步驟4到步驟5的回調 - 只傳遞數據
     def prepare_step5(subtitle_file, corrected_srt_content):
         return subtitle_file, corrected_srt_content, "資料已送出：字幕已傳遞到預覽效果步驟", subtitle_file
 
@@ -1154,14 +1169,14 @@ with gr.Blocks(
         outputs=[step5_subtitle_content, step5_subtitle_file, step4_status_msg]
     )
 
-    # 步驟5的視頻預覽回調
-    def create_video_preview_callback(mp3_files, subtitle_file):
-        status, video_path = create_video_preview(mp3_files, subtitle_file)
+    # 步驟5的視频預覽回調
+    def create_video_preview_callback(mp3_files, subtitle_file, identifier):
+        status, video_path = create_video_preview(mp3_files, subtitle_file, identifier)
         return status, video_path
 
     create_preview_btn.click(
         fn=create_video_preview_callback,
-        inputs=[mp3_files_state, step5_subtitle_file],
+        inputs=[mp3_files_state, step5_subtitle_file, identifier_state],
         outputs=[step5_status_msg, video_preview]
     )
 
@@ -1192,4 +1207,4 @@ with gr.Blocks(
     )
 
 if __name__ == "__main__":
-    app.launch(server_port=8080)
+    app.launch(server_port=7862)

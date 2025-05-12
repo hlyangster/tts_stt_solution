@@ -306,3 +306,468 @@
 2025-05-12 13:55:54,499 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): generativelanguage.googleapis.com:443
 2025-05-12 13:55:55,367 - urllib3.connectionpool - DEBUG - https://generativelanguage.googleapis.com:443 "POST /v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBDc73003zr5T8KVhem_kTOIa9nRIbcHsg HTTP/1.1" 200 None
 2025-05-12 13:55:55,383 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 14:00:19,167 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 14:00:19,167 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 14:00:19,176 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 14:00:19,176 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 14:02:43,996 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 14:02:44,715 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 14:02:46,092 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 14:02:46,093 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 14:02:46,102 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 14:02:46,103 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 14:04:11,496 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 14:04:11,497 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 14:04:11,506 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 14:04:11,507 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 14:04:17,314 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 14:04:17,314 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 14:04:20,903 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 14:04:20,904 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 14:04:20,913 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 14:04:20,914 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 14:07:56,920 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 14:07:56,921 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 14:07:56,931 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 14:07:56,932 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 14:16:01,151 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 14:16:01,151 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): generativelanguage.googleapis.com:443
+2025-05-12 14:16:01,985 - urllib3.connectionpool - DEBUG - https://generativelanguage.googleapis.com:443 "POST /v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBDc73003zr5T8KVhem_kTOIa9nRIbcHsg HTTP/1.1" 200 None
+2025-05-12 14:16:01,997 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 14:16:02,937 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 14:16:02,938 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 14:16:02,944 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 14:16:02,945 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 14:16:07,921 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 14:16:08,553 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 14:16:09,694 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 14:16:09,694 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 14:16:09,705 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 14:16:09,705 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 14:16:34,202 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-12 14:16:34,218 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-12 14:16:34,219 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-12 14:16:34,811 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-12 14:16:34,818 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-12 14:16:35,830 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-initiated-analytics/ HTTP/1.1" 200 None
+2025-05-12 14:16:36,152 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "GET /pkg-version HTTP/1.1" 200 21
+2025-05-12 14:16:50,134 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-12 14:16:50,154 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-12 14:16:50,154 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-12 14:16:50,828 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-12 14:16:50,828 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-12 14:16:51,087 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "GET /pkg-version HTTP/1.1" 200 21
+2025-05-12 14:16:51,860 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-initiated-analytics/ HTTP/1.1" 200 None
+2025-05-12 14:17:37,932 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-12 14:17:37,944 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-12 14:17:37,944 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-12 14:17:38,521 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-12 14:17:38,521 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-12 14:17:38,896 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "GET /pkg-version HTTP/1.1" 200 21
+2025-05-12 14:17:39,517 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-initiated-analytics/ HTTP/1.1" 200 None
+2025-05-12 14:17:54,580 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-12 14:17:54,592 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-12 14:17:54,593 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-12 14:17:55,227 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-12 14:17:55,243 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-12 14:17:55,529 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "GET /pkg-version HTTP/1.1" 200 21
+2025-05-12 14:17:56,232 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-initiated-analytics/ HTTP/1.1" 200 None
+2025-05-12 14:18:28,772 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-12 14:18:28,784 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-12 14:18:28,784 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-12 14:18:28,909 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-12 14:18:28,921 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8081
+2025-05-12 14:18:28,921 - urllib3.connectionpool - DEBUG - http://127.0.0.1:8081 "GET /startup-events HTTP/1.1" 200 5
+2025-05-12 14:18:28,930 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8081
+2025-05-12 14:18:28,946 - urllib3.connectionpool - DEBUG - http://127.0.0.1:8081 "HEAD / HTTP/1.1" 200 0
+2025-05-12 14:18:28,946 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-12 14:18:29,389 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-12 14:18:29,390 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-12 14:18:29,527 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-12 14:18:29,529 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-12 14:18:29,758 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "GET /pkg-version HTTP/1.1" 200 21
+2025-05-12 14:18:30,407 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-initiated-analytics/ HTTP/1.1" 200 None
+2025-05-12 14:18:30,477 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-launched-telemetry/ HTTP/1.1" 200 None
+2025-05-12 14:18:53,583 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 14:18:53,583 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 14:18:53,584 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): generativelanguage.googleapis.com:443
+2025-05-12 14:18:54,762 - urllib3.connectionpool - DEBUG - https://generativelanguage.googleapis.com:443 "POST /v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBDc73003zr5T8KVhem_kTOIa9nRIbcHsg HTTP/1.1" 200 None
+2025-05-12 14:18:54,764 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 14:18:55,751 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 14:18:55,752 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 14:24:17,162 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-12 14:24:17,173 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-12 14:24:17,173 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-12 14:24:17,299 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-12 14:24:17,311 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8080
+2025-05-12 14:24:17,311 - urllib3.connectionpool - DEBUG - http://127.0.0.1:8080 "GET /startup-events HTTP/1.1" 200 5
+2025-05-12 14:24:17,318 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8080
+2025-05-12 14:24:17,328 - urllib3.connectionpool - DEBUG - http://127.0.0.1:8080 "HEAD / HTTP/1.1" 200 0
+2025-05-12 14:24:17,328 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-12 14:24:17,876 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-12 14:24:17,876 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-12 14:24:17,907 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-12 14:24:17,917 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-12 14:24:18,105 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "GET /pkg-version HTTP/1.1" 200 21
+2025-05-12 14:24:18,868 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-launched-telemetry/ HTTP/1.1" 200 None
+2025-05-12 14:24:18,919 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-initiated-analytics/ HTTP/1.1" 200 None
+2025-05-12 14:25:00,801 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 14:25:00,801 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 14:25:00,801 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): generativelanguage.googleapis.com:443
+2025-05-12 14:25:01,721 - urllib3.connectionpool - DEBUG - https://generativelanguage.googleapis.com:443 "POST /v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBDc73003zr5T8KVhem_kTOIa9nRIbcHsg HTTP/1.1" 200 None
+2025-05-12 14:25:01,721 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 14:25:02,238 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 14:25:02,239 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 14:25:04,070 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 14:25:04,734 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 14:25:05,692 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 14:25:05,693 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 14:25:20,384 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 14:25:20,385 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.minimaxi.chat:443
+2025-05-12 14:25:23,470 - urllib3.connectionpool - DEBUG - https://api.minimaxi.chat:443 "POST /v1/t2a_v2?GroupId=1886392350196895842 HTTP/1.1" 200 None
+2025-05-12 14:25:23,721 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 14:25:43,093 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 14:25:43,093 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.minimaxi.chat:443
+2025-05-12 14:25:46,273 - urllib3.connectionpool - DEBUG - https://api.minimaxi.chat:443 "POST /v1/t2a_v2?GroupId=1886392350196895842 HTTP/1.1" 200 None
+2025-05-12 14:25:46,526 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 14:27:09,543 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-12 14:27:09,556 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-12 14:27:09,556 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-12 14:27:09,680 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-12 14:27:09,692 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8080
+2025-05-12 14:27:09,692 - urllib3.connectionpool - DEBUG - http://127.0.0.1:8080 "GET /startup-events HTTP/1.1" 200 5
+2025-05-12 14:27:09,692 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8080
+2025-05-12 14:27:09,711 - urllib3.connectionpool - DEBUG - http://127.0.0.1:8080 "HEAD / HTTP/1.1" 200 0
+2025-05-12 14:27:09,711 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-12 14:27:10,210 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-12 14:27:10,214 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-12 14:27:10,267 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-12 14:27:10,269 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-12 14:27:11,225 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-launched-telemetry/ HTTP/1.1" 200 None
+2025-05-12 14:27:11,229 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-initiated-analytics/ HTTP/1.1" 200 None
+2025-05-12 14:27:11,446 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "GET /pkg-version HTTP/1.1" 200 21
+2025-05-12 14:27:43,318 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 14:27:43,318 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 14:27:43,318 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): generativelanguage.googleapis.com:443
+2025-05-12 14:27:44,151 - urllib3.connectionpool - DEBUG - https://generativelanguage.googleapis.com:443 "POST /v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBDc73003zr5T8KVhem_kTOIa9nRIbcHsg HTTP/1.1" 200 None
+2025-05-12 14:27:44,151 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 14:27:44,615 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 14:27:44,615 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 14:27:45,996 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 14:27:46,652 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 14:27:47,493 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 14:27:47,495 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 14:28:00,836 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 14:28:00,837 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.minimaxi.chat:443
+2025-05-12 14:28:03,929 - urllib3.connectionpool - DEBUG - https://api.minimaxi.chat:443 "POST /v1/t2a_v2?GroupId=1886392350196895842 HTTP/1.1" 200 None
+2025-05-12 14:28:04,188 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 14:29:32,865 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-12 14:29:32,879 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-12 14:29:32,879 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-12 14:29:33,007 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-12 14:29:33,019 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8080
+2025-05-12 14:29:33,021 - urllib3.connectionpool - DEBUG - http://127.0.0.1:8080 "GET /startup-events HTTP/1.1" 200 5
+2025-05-12 14:29:33,032 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8080
+2025-05-12 14:29:33,042 - urllib3.connectionpool - DEBUG - http://127.0.0.1:8080 "HEAD / HTTP/1.1" 200 0
+2025-05-12 14:29:33,044 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-12 14:29:33,587 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-12 14:29:33,589 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-12 14:29:33,623 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-12 14:29:33,626 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-12 14:29:33,879 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "GET /pkg-version HTTP/1.1" 200 21
+2025-05-12 14:29:34,619 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-launched-telemetry/ HTTP/1.1" 200 None
+2025-05-12 14:29:34,667 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-initiated-analytics/ HTTP/1.1" 200 None
+2025-05-12 14:30:00,768 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 14:30:00,768 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 14:30:00,768 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): generativelanguage.googleapis.com:443
+2025-05-12 14:30:01,684 - urllib3.connectionpool - DEBUG - https://generativelanguage.googleapis.com:443 "POST /v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBDc73003zr5T8KVhem_kTOIa9nRIbcHsg HTTP/1.1" 200 None
+2025-05-12 14:30:01,685 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 14:30:02,122 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 14:30:02,124 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 14:30:04,363 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 14:30:05,045 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 14:30:06,142 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 14:30:06,143 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 14:30:21,406 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 14:30:21,408 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.minimaxi.chat:443
+2025-05-12 14:30:23,994 - urllib3.connectionpool - DEBUG - https://api.minimaxi.chat:443 "POST /v1/t2a_v2?GroupId=1886392350196895842 HTTP/1.1" 200 None
+2025-05-12 14:30:24,268 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.minimaxi.chat:443
+2025-05-12 14:30:26,368 - urllib3.connectionpool - DEBUG - https://api.minimaxi.chat:443 "POST /v1/t2a_v2?GroupId=1886392350196895842 HTTP/1.1" 200 None
+2025-05-12 14:30:26,894 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 14:30:51,930 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 14:30:51,945 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 14:34:00,814 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 14:34:00,816 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 14:34:02,106 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 14:34:02,108 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 14:34:02,491 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 14:34:02,493 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 14:34:02,683 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 14:34:02,685 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 14:34:02,874 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 14:34:02,876 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 14:34:03,049 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 14:34:03,051 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 14:34:03,690 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 14:34:03,693 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 14:34:04,119 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 14:34:04,120 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 14:34:04,320 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 14:34:04,322 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 14:34:04,499 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 14:34:04,501 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 14:34:06,661 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 14:34:06,663 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 14:34:06,871 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 14:34:06,872 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 14:34:07,081 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 14:34:07,083 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 14:34:07,263 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 14:34:07,265 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 14:34:07,454 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 14:34:07,470 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 14:34:07,635 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 14:34:07,636 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 14:34:24,365 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 14:34:24,367 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 14:34:24,831 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 14:34:24,832 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 14:34:25,002 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 14:34:25,003 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 14:34:26,874 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 14:34:26,876 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 14:34:27,099 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 14:34:27,101 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 14:34:30,266 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 14:34:30,267 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 14:34:30,441 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 14:34:30,443 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 14:45:19,779 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-12 14:45:19,789 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-12 14:45:20,359 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-12 14:45:20,361 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-12 14:45:20,711 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "GET /pkg-version HTTP/1.1" 200 21
+2025-05-12 14:45:21,422 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-initiated-analytics/ HTTP/1.1" 200 None
+2025-05-12 14:52:39,784 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-12 14:52:39,794 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-12 14:52:40,321 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-12 14:52:40,323 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-12 14:52:41,318 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-initiated-analytics/ HTTP/1.1" 200 None
+2025-05-12 14:52:41,727 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "GET /pkg-version HTTP/1.1" 200 21
+2025-05-12 14:59:45,034 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-12 14:59:45,050 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-12 14:59:45,485 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-12 14:59:45,501 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-12 14:59:46,484 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-initiated-analytics/ HTTP/1.1" 200 None
+2025-05-12 14:59:46,976 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "GET /pkg-version HTTP/1.1" 200 21
+2025-05-12 15:10:20,192 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-12 15:10:20,203 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-12 15:10:20,752 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-12 15:10:20,762 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-12 15:10:21,769 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-initiated-analytics/ HTTP/1.1" 200 None
+2025-05-12 15:10:22,099 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "GET /pkg-version HTTP/1.1" 200 21
+2025-05-12 15:12:52,802 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-12 15:12:52,813 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-12 15:12:52,817 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-12 15:12:53,529 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-12 15:12:53,533 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-12 15:12:53,811 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "GET /pkg-version HTTP/1.1" 200 21
+2025-05-12 15:12:54,526 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-initiated-analytics/ HTTP/1.1" 200 None
+2025-05-12 15:13:22,928 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-12 15:13:22,942 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-12 15:13:22,943 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-12 15:13:23,616 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-12 15:13:23,617 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-12 15:13:23,890 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "GET /pkg-version HTTP/1.1" 200 21
+2025-05-12 15:13:24,656 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-initiated-analytics/ HTTP/1.1" 200 None
+2025-05-12 15:14:03,400 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-12 15:14:03,413 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-12 15:14:03,413 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-12 15:14:03,575 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-12 15:14:03,588 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8081
+2025-05-12 15:14:03,590 - urllib3.connectionpool - DEBUG - http://127.0.0.1:8081 "GET /startup-events HTTP/1.1" 200 5
+2025-05-12 15:14:03,598 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8081
+2025-05-12 15:14:03,599 - urllib3.connectionpool - DEBUG - http://127.0.0.1:8081 "HEAD / HTTP/1.1" 200 0
+2025-05-12 15:14:03,599 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-12 15:14:04,069 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-12 15:14:04,069 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-12 15:14:04,122 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-12 15:14:04,122 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-12 15:14:04,391 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "GET /pkg-version HTTP/1.1" 200 21
+2025-05-12 15:14:05,091 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-launched-telemetry/ HTTP/1.1" 200 None
+2025-05-12 15:14:05,124 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-initiated-analytics/ HTTP/1.1" 200 None
+2025-05-12 15:14:32,899 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 15:14:32,899 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 15:14:32,899 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): generativelanguage.googleapis.com:443
+2025-05-12 15:14:33,788 - urllib3.connectionpool - DEBUG - https://generativelanguage.googleapis.com:443 "POST /v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBDc73003zr5T8KVhem_kTOIa9nRIbcHsg HTTP/1.1" 200 None
+2025-05-12 15:14:33,788 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 15:14:34,277 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 15:14:34,277 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 15:14:35,791 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 15:14:37,131 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 15:14:37,957 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 15:14:37,958 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 15:14:53,398 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 15:14:53,400 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.minimaxi.chat:443
+2025-05-12 15:14:55,967 - urllib3.connectionpool - DEBUG - https://api.minimaxi.chat:443 "POST /v1/t2a_v2?GroupId=1886392350196895842 HTTP/1.1" 200 None
+2025-05-12 15:14:56,204 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.minimaxi.chat:443
+2025-05-12 15:14:58,212 - urllib3.connectionpool - DEBUG - https://api.minimaxi.chat:443 "POST /v1/t2a_v2?GroupId=1886392350196895842 HTTP/1.1" 200 None
+2025-05-12 15:14:58,737 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.minimaxi.chat:443
+2025-05-12 15:15:01,873 - urllib3.connectionpool - DEBUG - https://api.minimaxi.chat:443 "POST /v1/t2a_v2?GroupId=1886392350196895842 HTTP/1.1" 200 None
+2025-05-12 15:15:02,487 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.minimaxi.chat:443
+2025-05-12 15:15:04,949 - urllib3.connectionpool - DEBUG - https://api.minimaxi.chat:443 "POST /v1/t2a_v2?GroupId=1886392350196895842 HTTP/1.1" 200 None
+2025-05-12 15:15:05,715 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 15:15:07,021 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 15:15:07,035 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 15:45:32,684 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-12 15:45:32,698 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-12 15:45:33,306 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-12 15:45:33,307 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-12 15:45:33,668 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "GET /pkg-version HTTP/1.1" 200 21
+2025-05-12 15:45:34,351 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-initiated-analytics/ HTTP/1.1" 200 None
+2025-05-12 15:47:16,367 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-12 15:47:16,376 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-12 15:47:16,912 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-12 15:47:16,912 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-12 15:47:17,918 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-initiated-analytics/ HTTP/1.1" 200 None
+2025-05-12 15:47:18,294 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "GET /pkg-version HTTP/1.1" 200 21
+2025-05-12 15:48:28,359 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-12 15:48:28,368 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-12 15:48:28,373 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-12 15:48:29,025 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-12 15:48:29,025 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-12 15:48:29,291 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "GET /pkg-version HTTP/1.1" 200 21
+2025-05-12 15:48:30,039 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-initiated-analytics/ HTTP/1.1" 200 None
+2025-05-12 15:49:21,104 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-12 15:49:21,114 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-12 15:49:21,118 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-12 15:49:21,250 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-12 15:49:21,264 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:7860
+2025-05-12 15:49:21,264 - urllib3.connectionpool - DEBUG - http://127.0.0.1:7860 "GET /startup-events HTTP/1.1" 200 5
+2025-05-12 15:49:21,270 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:7860
+2025-05-12 15:49:21,283 - urllib3.connectionpool - DEBUG - http://127.0.0.1:7860 "HEAD / HTTP/1.1" 200 0
+2025-05-12 15:49:21,283 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-12 15:49:21,700 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-12 15:49:21,700 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-12 15:49:21,844 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-12 15:49:21,860 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-12 15:49:22,058 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "GET /pkg-version HTTP/1.1" 200 21
+2025-05-12 15:49:22,722 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-initiated-analytics/ HTTP/1.1" 200 None
+2025-05-12 15:49:22,782 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-launched-telemetry/ HTTP/1.1" 200 None
+2025-05-12 15:49:44,735 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 15:49:44,735 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 15:49:44,735 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): generativelanguage.googleapis.com:443
+2025-05-12 15:49:45,648 - urllib3.connectionpool - DEBUG - https://generativelanguage.googleapis.com:443 "POST /v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBDc73003zr5T8KVhem_kTOIa9nRIbcHsg HTTP/1.1" 200 None
+2025-05-12 15:49:45,668 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 15:49:46,700 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 15:49:46,702 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): generativelanguage.googleapis.com:443
+2025-05-12 15:49:47,532 - urllib3.connectionpool - DEBUG - https://generativelanguage.googleapis.com:443 "POST /v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBDc73003zr5T8KVhem_kTOIa9nRIbcHsg HTTP/1.1" 200 None
+2025-05-12 15:49:47,532 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 15:49:48,570 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 15:49:48,571 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 15:49:49,651 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 15:49:49,653 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): generativelanguage.googleapis.com:443
+2025-05-12 15:49:50,501 - urllib3.connectionpool - DEBUG - https://generativelanguage.googleapis.com:443 "POST /v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBDc73003zr5T8KVhem_kTOIa9nRIbcHsg HTTP/1.1" 200 None
+2025-05-12 15:49:50,503 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 15:49:51,128 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 15:49:51,130 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): generativelanguage.googleapis.com:443
+2025-05-12 15:49:52,007 - urllib3.connectionpool - DEBUG - https://generativelanguage.googleapis.com:443 "POST /v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBDc73003zr5T8KVhem_kTOIa9nRIbcHsg HTTP/1.1" 200 None
+2025-05-12 15:49:52,011 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 15:50:34,721 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 15:50:34,723 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): generativelanguage.googleapis.com:443
+2025-05-12 15:50:35,594 - urllib3.connectionpool - DEBUG - https://generativelanguage.googleapis.com:443 "POST /v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBDc73003zr5T8KVhem_kTOIa9nRIbcHsg HTTP/1.1" 200 None
+2025-05-12 15:50:35,597 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 15:50:36,949 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 15:50:36,952 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): generativelanguage.googleapis.com:443
+2025-05-12 15:50:37,767 - urllib3.connectionpool - DEBUG - https://generativelanguage.googleapis.com:443 "POST /v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBDc73003zr5T8KVhem_kTOIa9nRIbcHsg HTTP/1.1" 200 None
+2025-05-12 15:50:37,770 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 15:50:42,631 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-12 15:50:42,631 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-12 15:50:42,631 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-12 15:50:43,226 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-12 15:50:43,226 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-12 15:50:43,600 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "GET /pkg-version HTTP/1.1" 200 21
+2025-05-12 15:50:44,244 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-initiated-analytics/ HTTP/1.1" 200 None
+2025-05-12 15:51:16,444 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 15:51:16,444 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): generativelanguage.googleapis.com:443
+2025-05-12 15:51:17,351 - urllib3.connectionpool - DEBUG - https://generativelanguage.googleapis.com:443 "POST /v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBDc73003zr5T8KVhem_kTOIa9nRIbcHsg HTTP/1.1" 200 None
+2025-05-12 15:51:17,351 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 15:51:26,872 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-12 15:51:26,872 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-12 15:51:26,872 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-12 15:51:27,006 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-12 15:51:27,018 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:7861
+2025-05-12 15:51:27,019 - urllib3.connectionpool - DEBUG - http://127.0.0.1:7861 "GET /startup-events HTTP/1.1" 200 5
+2025-05-12 15:51:27,030 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:7861
+2025-05-12 15:51:27,040 - urllib3.connectionpool - DEBUG - http://127.0.0.1:7861 "HEAD / HTTP/1.1" 200 0
+2025-05-12 15:51:27,042 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-12 15:51:27,396 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-12 15:51:27,398 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-12 15:51:27,567 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-12 15:51:27,570 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-12 15:51:27,917 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "GET /pkg-version HTTP/1.1" 200 21
+2025-05-12 15:51:28,424 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-initiated-analytics/ HTTP/1.1" 200 None
+2025-05-12 15:51:28,491 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-launched-telemetry/ HTTP/1.1" 200 None
+2025-05-12 15:51:51,919 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 15:51:51,919 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 15:51:51,919 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): generativelanguage.googleapis.com:443
+2025-05-12 15:51:52,780 - urllib3.connectionpool - DEBUG - https://generativelanguage.googleapis.com:443 "POST /v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBDc73003zr5T8KVhem_kTOIa9nRIbcHsg HTTP/1.1" 200 None
+2025-05-12 15:51:52,791 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 15:52:44,475 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-12 15:52:44,475 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-12 15:52:44,475 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-12 15:52:45,119 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-12 15:52:45,119 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-12 15:52:45,417 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "GET /pkg-version HTTP/1.1" 200 21
+2025-05-12 15:52:46,162 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-initiated-analytics/ HTTP/1.1" 200 None
+2025-05-12 15:53:00,333 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 15:53:00,334 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): generativelanguage.googleapis.com:443
+2025-05-12 15:53:01,200 - urllib3.connectionpool - DEBUG - https://generativelanguage.googleapis.com:443 "POST /v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBDc73003zr5T8KVhem_kTOIa9nRIbcHsg HTTP/1.1" 200 None
+2025-05-12 15:53:01,200 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 15:53:15,191 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-12 15:53:15,191 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-12 15:53:15,191 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-12 15:53:15,314 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-12 15:53:15,326 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:7862
+2025-05-12 15:53:15,328 - urllib3.connectionpool - DEBUG - http://127.0.0.1:7862 "GET /startup-events HTTP/1.1" 200 5
+2025-05-12 15:53:15,336 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:7862
+2025-05-12 15:53:15,346 - urllib3.connectionpool - DEBUG - http://127.0.0.1:7862 "HEAD / HTTP/1.1" 200 0
+2025-05-12 15:53:15,346 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-12 15:53:15,792 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-12 15:53:15,792 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-12 15:53:15,955 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-12 15:53:15,958 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-12 15:53:16,192 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "GET /pkg-version HTTP/1.1" 200 21
+2025-05-12 15:53:16,841 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-initiated-analytics/ HTTP/1.1" 200 None
+2025-05-12 15:53:16,882 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-launched-telemetry/ HTTP/1.1" 200 None
+2025-05-12 15:53:34,074 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 15:53:34,074 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 15:53:34,074 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): generativelanguage.googleapis.com:443
+2025-05-12 15:53:34,912 - urllib3.connectionpool - DEBUG - https://generativelanguage.googleapis.com:443 "POST /v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBDc73003zr5T8KVhem_kTOIa9nRIbcHsg HTTP/1.1" 200 None
+2025-05-12 15:53:34,918 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 15:53:36,314 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 15:53:36,314 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 15:53:38,138 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 15:53:38,756 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 15:53:39,894 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 15:53:39,895 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 15:53:52,381 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 15:53:52,384 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.minimaxi.chat:443
+2025-05-12 15:53:55,580 - urllib3.connectionpool - DEBUG - https://api.minimaxi.chat:443 "POST /v1/t2a_v2?GroupId=1886392350196895842 HTTP/1.1" 200 None
+2025-05-12 15:53:55,826 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.minimaxi.chat:443
+2025-05-12 15:53:57,740 - urllib3.connectionpool - DEBUG - https://api.minimaxi.chat:443 "POST /v1/t2a_v2?GroupId=1886392350196895842 HTTP/1.1" 200 None
+2025-05-12 15:53:58,193 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 15:54:03,271 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 15:54:03,967 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 15:54:03,981 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 15:54:03,983 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 15:54:04,117 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 15:54:04,121 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 15:54:06,607 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 15:54:06,612 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 15:54:07,009 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 15:54:07,024 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 15:54:07,178 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 15:54:07,182 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-12 15:54:27,392 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-12 15:54:27,393 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
