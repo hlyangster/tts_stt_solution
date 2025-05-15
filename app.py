@@ -67,7 +67,7 @@ def process_text(input_text, language, google_api_key):
         processed_text = preprocess_text(input_text, language, google_api_key)
         
         # 保存處理後的文本
-        output_path = file_manager.get_file_path(identifier, "step1", "processed.txt")
+        output_path = file_manager.get_file_path(identifier, "step1", "preprocessed.txt")
         with open(output_path, "w", encoding="utf-8") as f:
             f.write(processed_text)
         
@@ -1025,23 +1025,22 @@ with gr.Blocks(
     )
     
     # 步驟2的多音字替換回調
-    def replace_homophones_and_save(processed_text, google_api_key):
-        identifier = file_manager.create_identifier()
+    def replace_homophones_and_save(processed_text, google_api_key, identifier):
         status, result, report = replace_homophones(processed_text, google_api_key, identifier)
-        return status, result, report
+        return status, result, report, identifier
 
     replace_btn.click(
         fn=replace_homophones_and_save,
-        inputs=[step2_processed_text, step2_google_api_key],
-        outputs=[step2_status_msg, replaced_text, replacement_report],
+        inputs=[step2_processed_text, step2_google_api_key, identifier_state],
+        outputs=[step2_status_msg, replaced_text, replacement_report, identifier_state],
         api_name="replace_homophones"
     )
     
     # 從步驟2到步驟3的回調 - 只傳遞數據
     next_step_btn2.click(
-        fn=lambda t: (t, "資料已送出：文本已傳遞到語音生成步驟"),
-        inputs=[replaced_text],  # 使用 replaced_text (多音字替換後的文本)
-        outputs=[step3_replaced_text, step2_status_msg]
+        fn=lambda t, identifier: (t, identifier, "資料已送出：文本已傳遞到語音生成步驟"),
+        inputs=[replaced_text, identifier_state],
+        outputs=[step3_replaced_text, identifier_state, step2_status_msg]
     )
     
     # 步驟3的TTS生成回調
@@ -1140,8 +1139,14 @@ with gr.Blocks(
         if not identifier:
             return None, None, None, "無效的處理識別碼", "準備失敗：無效的處理識別碼"
         
-        # 使用預處理後的文本作為逐字稿
-        transcript_content = preprocessed_text
+        # 從temp目錄讀取最新的預處理文本
+        preprocessed_file = file_manager.get_latest_file("step1", "preprocessed.txt")
+        if not preprocessed_file or not os.path.exists(preprocessed_file):
+            return None, None, None, "找不到預處理文本", "準備失敗：找不到預處理文本"
+            
+        # 讀取預處理後的文本作為逐字稿
+        with open(preprocessed_file, "r", encoding="utf-8") as f:
+            transcript_content = f.read()
         
         # 創建逐字稿文件
         transcript_file = file_manager.get_file_path(identifier, "step4", "transcript.txt")
