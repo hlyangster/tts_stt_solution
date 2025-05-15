@@ -185,7 +185,7 @@ def generate_subtitle_only(audio_zip, whisper_api_key, language, identifier):
             return "無效的處理識別碼", None, None
         
         # 初始化字幕生成器
-        subtitle_generator = SubtitleGenerator(whisper_api_key)
+        subtitle_generator = SRTGenerator()
         
         # 創建音频臨時目錄
         audio_temp_dir = file_manager.get_file_path(identifier, "step4", "audio_temp")
