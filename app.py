@@ -191,8 +191,13 @@ def generate_subtitle_only(audio_zip, whisper_api_key, language, identifier):
         audio_temp_dir = file_manager.get_file_path(identifier, "step4", "audio_temp")
         os.makedirs(audio_temp_dir, exist_ok=True)
         
+        # 確保使用正確的音频zip檔案路徑
+        audio_zip_path = file_manager.get_file_path(identifier, "step3", "audio.zip")
+        if not os.path.exists(audio_zip_path):
+            return "找不到音频zip檔案", None, None
+
         # 解壓縮音频文件
-        with zipfile.ZipFile(audio_zip, 'r') as zip_ref:
+        with zipfile.ZipFile(audio_zip_path, 'r') as zip_ref:
             zip_ref.extractall(audio_temp_dir)
         
         # 取得所有音频文件的路徑
@@ -200,7 +205,7 @@ def generate_subtitle_only(audio_zip, whisper_api_key, language, identifier):
         
         # 生成字幕
         initial_srt_file = file_manager.get_file_path(identifier, "step4", "initial_subtitle.srt")
-        srt_content = subtitle_generator.generate_subtitle_from_audio(audio_files, language)
+        success, srt_content = subtitle_generator.generate_srt_from_audio_files(audio_files, initial_srt_file, whisper_api_key, language)
         
         # 保存字幕文件
         with open(initial_srt_file, "w", encoding="utf-8") as f:
@@ -1134,15 +1139,15 @@ with gr.Blocks(
     def prepare_step4_and_save(audio_zip, preprocessed_text, identifier):
         """準備步驟4的數據，使用步驟1的預處理文本作為逐字稿"""
         if not audio_zip:
-            return None, None, None, "請先生成語音文件", "準備失敗：請先生成語音文件"
+            return None, None, None, None, "準備失敗：請先生成語音文件"
             
         if not identifier:
-            return None, None, None, "無效的處理識別碼", "準備失敗：無效的處理識別碼"
+            return None, None, None, None, "準備失敗：無效的處理識別碼"
         
         # 從temp目錄讀取最新的預處理文本
         preprocessed_file = file_manager.get_latest_file("step1", "preprocessed.txt")
         if not preprocessed_file or not os.path.exists(preprocessed_file):
-            return None, None, None, "找不到預處理文本", "準備失敗：找不到預處理文本"
+            return None, None, None, None, "準備失敗：找不到預處理文本"
             
         # 讀取預處理後的文本作為逐字稿
         with open(preprocessed_file, "r", encoding="utf-8") as f:
@@ -1153,8 +1158,10 @@ with gr.Blocks(
         with open(transcript_file, "w", encoding="utf-8") as f:
             f.write(transcript_content)
         
-        # 確保使用正確的音频zip檔案路徑
+        # 從temp目錄取得音频zip檔案
         audio_zip_path = file_manager.get_file_path(identifier, "step3", "audio.zip")
+        if not os.path.exists(audio_zip_path):
+            return None, None, None, None, "準備失敗：找不到音頻文件"
         
         return audio_zip_path, transcript_file, "zh", transcript_content, "資料已送出：音频和逐字稿已傳遞到字幕生成步驟"
 
