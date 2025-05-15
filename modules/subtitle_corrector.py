@@ -229,8 +229,8 @@ class SubtitleCorrector:
                 processed_indices = set()
                 
                 for line in corrected_lines:
-                    # 確保只處理「處理→」標記的編號字幕行
-                    match = re.match(r'(?:處理→ )?編號(\d+):(.*)', line)
+                    # 嚴格匹配「處理→」標記的編號字幕行
+                    match = re.match(r'處理→ 編號(\d+)[:：](.*)', line.strip())
                     if match:
                         index = int(match.group(1))
                         corrected_text = match.group(2).strip()
