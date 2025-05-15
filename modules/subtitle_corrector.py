@@ -101,25 +101,41 @@ class SubtitleCorrector:
         
         Args:
             transcript_file: 逐字稿文件路徑
-            srt_file: SRT文件路徑
             batch_size: 批次大小
             
         Returns:
             (錯誤信息, 更新後的SRT對象, 修改報告列表)
         """
-        # 檢查測試用逐字稿檔案是否存在
-        if not os.path.exists(transcript_file):
-            return f"錯誤: 找不到逐字稿檔案: {transcript_file}", None, None
-        else:
-            with open(transcript_file, 'r', encoding='utf-8') as f:
-                transcript_content = f.read()
+        # 讀取逐字稿檔案內容
+        try:
+            # 如果是文件對象，直接讀取
+            if hasattr(transcript_file, 'read'):
+                transcript_content = transcript_file.read()
+                if isinstance(transcript_content, bytes):
+                    transcript_content = transcript_content.decode('utf-8')
+            # 如果是文件路徑，打開並讀取
+            else:
+                if not os.path.exists(transcript_file):
+                    return f"錯誤: 找不到逐字稿檔案: {transcript_file}", None, None
+                with open(transcript_file, 'r', encoding='utf-8') as f:
+                    transcript_content = f.read()
             transcript_content = self.preprocess_transcript(transcript_content)
 
-        # 檢查測試用 srt 檔案是否存在
-        if not os.path.exists(srt_file):
-            return f"錯誤: 找不到口語稿檔案: {srt_file}", None, None
-        else:
-            original_srt_data = self.parse_srt(srt_file)
+        # 處理 srt 檔案
+        try:
+            # 如果是文件對象
+            if hasattr(srt_file, 'read'):
+                # 如果是 TemporaryFile，需要獲取其名稱
+                if hasattr(srt_file, 'name'):
+                    original_srt_data = self.parse_srt(srt_file.name)
+                else:
+                    return "錯誤: 無法處理提供的 SRT 檔案格式", None, None
+            # 如果是文件路徑
+            else:
+                if not os.path.exists(srt_file):
+                    return f"錯誤: 找不到口語稿檔案: {srt_file}", None, None
+                original_srt_data = self.parse_srt(srt_file)
+            
             if original_srt_data is None:
                 return "錯誤: 解析口語稿檔案失敗，請確認檔案內容", None, None
         

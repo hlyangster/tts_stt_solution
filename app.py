@@ -445,16 +445,14 @@ def generate_subtitle(audio_zip, transcript_file, whisper_api_key, gemini_api_ke
             os.remove(audio_file)
         os.rmdir(extract_dir)
         
-        return "字幕生成和校正成功!", combined_srt, corrected_content, corrected_srt_path
-        
         # 保存修改報告
-        report_file = str(subtitle_dir / f"correction_report_{timestamp}.txt")
+        report_file = file_manager.get_file_path(identifier, "step4", f"correction_report.txt")
         with open(report_file, "w", encoding="utf-8") as f:
             f.write("\n".join(reports) if reports else "沒有進行任何修改")
         
         progress(1.0, "完成!")
         
-        return "字幕生成與校正成功!", corrected_srt_file, report_file, initial_srt_path
+        return "字幕生成與校正成功!", combined_srt, corrected_content, corrected_srt_path
     
     except Exception as e:
         return f"字幕生成過程中出錯: {str(e)}", None, None, None
@@ -1139,14 +1137,36 @@ with gr.Blocks(
     
     # 校正字幕按鈕回調 - 使用生成的原始字幕進行校正
     def correct_subtitle_and_save(transcript_file, initial_srt_file, gemini_api_key, batch_size, identifier):
-        status, corrected_srt_content, subtitle_file, correction_report = correct_subtitles_only(
-            transcript_file,
-            initial_srt_file,
-            gemini_api_key,
-            batch_size,
-            identifier
-        )
-        return status, corrected_srt_content, subtitle_file, correction_report
+        try:
+            # 初始化字幕校正器
+            subtitle_corrector = SubtitleCorrector(gemini_api_key)
+            
+            # 進行字幕校正
+            error, corrected_srt, reports = subtitle_corrector.correct_subtitles(
+                transcript_file,
+                initial_srt_file,
+                int(batch_size)
+            )
+            
+            if error:
+                return error, None, None, None
+            
+            # 保存校正後的字幕
+            corrected_srt_path = file_manager.get_file_path(identifier, "step4", "corrected_subtitle.srt")
+            corrected_content = corrected_srt.to_string()
+            
+            with open(corrected_srt_path, "w", encoding="utf-8") as f:
+                f.write(corrected_content)
+            
+            # 保存修改報告
+            report_path = file_manager.get_file_path(identifier, "step4", "correction_report.txt")
+            with open(report_path, "w", encoding="utf-8") as f:
+                f.write("\n".join(reports) if reports else "沒有進行任何修改")
+            
+            return "字幕校正成功!", corrected_content, corrected_srt_path, report_path
+            
+        except Exception as e:
+            return f"字幕校正過程中出錯: {str(e)}", None, None, None
 
     correct_subtitle_btn.click(
         fn=correct_subtitle_and_save,
