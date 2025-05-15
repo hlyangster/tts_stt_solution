@@ -203,31 +203,42 @@ def generate_subtitle_only(audio_zip, whisper_api_key, language, identifier):
         # 取得所有音频文件的路徑
         audio_files = [os.path.join(audio_temp_dir, f) for f in os.listdir(audio_temp_dir) if f.endswith('.mp3')]
         
+        if not audio_files:
+            return "未找到任何MP3音頻文件", None, None
+        
         # 生成字幕
         initial_srt_file = file_manager.get_file_path(identifier, "step4", "initial_subtitle.srt")
-        success, srt_content = subtitle_generator.generate_srt_from_audio_files(audio_files, initial_srt_file, whisper_api_key, language)
         
-        # 保存字幕文件
+        # 為每個音頻文件生成字幕並合併
+        all_srt_content = []
+        current_index = 1  # SRT字幕索引
+        
+        for audio_file in sorted(audio_files):
+            # 使用Whisper API轉錄音頻
+            srt_content = subtitle_generator.transcribe(audio_file, whisper_api_key, language)
+            if srt_content:
+                # 獲取音頻時長用於時間戳校正
+                audio_duration = subtitle_generator.get_audio_duration(audio_file)
+                # 校正時間戳
+                corrected_srt = subtitle_generator.correct_timestamps_proportionally(srt_content, audio_duration)
+                all_srt_content.append(corrected_srt)
+        
+        # 合併所有SRT內容
+        combined_srt = "\n\n".join(all_srt_content)
+        
+        # 保存合併後的字幕文件
         with open(initial_srt_file, "w", encoding="utf-8") as f:
-            f.write(srt_content)
+            f.write(combined_srt)
         
         # 清理臨時文件
         for audio_file in audio_files:
             os.remove(audio_file)
         os.rmdir(audio_temp_dir)
         
-        return "字幕生成成功!", srt_content, initial_srt_file
+        if not combined_srt:
+            return "字幕生成失敗：未能從音頻中提取文字", None, None
         
-        if not success:
-            return f"字幕生成失敗: {srt_path}", None, None
-        
-        # 讀取生成的SRT內容
-        with open(initial_srt_path, 'r', encoding='utf-8') as f:
-            srt_content = f.read()
-        
-        progress(1.0, "完成!")
-        
-        return "字幕生成成功!", srt_content, initial_srt_path
+        return "字幕生成成功!", combined_srt, initial_srt_file
     
     except Exception as e:
         return f"字幕生成過程中出錯: {str(e)}", None, None
@@ -359,7 +370,9 @@ def generate_subtitle(audio_zip, transcript_file, whisper_api_key, gemini_api_ke
         if not gemini_api_key.strip():
             return "請提供 Google Gemini API 金鑰", None, None, None
         
-        timestamp = int(time.time())
+        # 從音頻文件名中提取識別碼
+        identifier = os.path.basename(audio_zip).split('_')[0]
+        
         progress(0.1, "解壓音頻文件...")
         
         # 創建臨時目錄解壓音頻文件
@@ -378,19 +391,31 @@ def generate_subtitle(audio_zip, transcript_file, whisper_api_key, gemini_api_ke
         progress(0.3, "使用Whisper API生成字幕...")
         
         # 使用SRTGenerator從音頻文件生成SRT
-        srt_generator = SRTGenerator(temp_dir=str(subtitle_dir))
-        initial_srt_path = str(subtitle_dir / f"initial_srt_{timestamp}.srt")
+        srt_generator = SRTGenerator()
+        
+        # 使用file_manager獲取檔案路徑
+        initial_srt_path = file_manager.get_file_path(identifier, "step4", "initial_subtitle.srt")
         
         # 使用Whisper API轉錄
-        success, srt_path = srt_generator.generate_srt_from_audio_files(
-            audio_files,
-            initial_srt_path,
-            whisper_api_key,
-            language
-        )
+        all_srt_content = []
+        for audio_file in audio_files:
+            srt_content = srt_generator.transcribe(audio_file, whisper_api_key, language)
+            if srt_content:
+                # 獲取音頻時長用於時間戳校正
+                audio_duration = srt_generator.get_audio_duration(audio_file)
+                # 校正時間戳
+                corrected_srt = srt_generator.correct_timestamps_proportionally(srt_content, audio_duration)
+                all_srt_content.append(corrected_srt)
         
-        if not success:
-            return f"字幕生成失敗: {srt_path}", None, None, None
+        # 合併所有SRT內容
+        combined_srt = "\n\n".join(all_srt_content)
+        
+        if not combined_srt:
+            return "字幕生成失敗：未能從音頻中提取文字", None, None, None
+        
+        # 保存原始字幕
+        with open(initial_srt_path, "w", encoding="utf-8") as f:
+            f.write(combined_srt)
         
         progress(0.6, "校正字幕中...")
         
@@ -406,8 +431,21 @@ def generate_subtitle(audio_zip, transcript_file, whisper_api_key, gemini_api_ke
             return f"字幕校正失敗: {error}", None, None, None
         
         # 保存校正後的字幕
-        corrected_srt_file = str(subtitle_dir / f"corrected_srt_{timestamp}.srt")
-        corrected_srt.save(corrected_srt_file, encoding="utf-8")
+        corrected_srt_path = file_manager.get_file_path(identifier, "step4", "corrected_subtitle.srt")
+        
+        # 讀取校正後的字幕內容
+        corrected_content = corrected_srt.to_string()
+        
+        # 保存校正後的字幕
+        with open(corrected_srt_path, "w", encoding="utf-8") as f:
+            f.write(corrected_content)
+        
+        # 清理臨時文件
+        for audio_file in audio_files:
+            os.remove(audio_file)
+        os.rmdir(extract_dir)
+        
+        return "字幕生成和校正成功!", combined_srt, corrected_content, corrected_srt_path
         
         # 保存修改報告
         report_file = str(subtitle_dir / f"correction_report_{timestamp}.txt")
