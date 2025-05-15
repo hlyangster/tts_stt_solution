@@ -1153,7 +1153,11 @@ with gr.Blocks(
             
             # 保存校正後的字幕
             corrected_srt_path = file_manager.get_file_path(identifier, "step4", "corrected_subtitle.srt")
-            corrected_content = str(corrected_srt)
+            
+            # 將 SubRipFile 物件轉換為可讀的文本格式
+            corrected_content = ""
+            for sub in corrected_srt:
+                corrected_content += f"{sub.index}\n{sub.start} --> {sub.end}\n{sub.text}\n\n"
             
             with open(corrected_srt_path, "w", encoding="utf-8") as f:
                 f.write(corrected_content)

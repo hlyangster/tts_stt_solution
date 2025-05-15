@@ -35,7 +35,12 @@ class SubtitleCorrector:
             subs = pysrt.open(srt_path, encoding='utf-8')
             srt_data = {}
             for sub in subs:
-                srt_data[sub.index] = {"time": str(sub.start) + " --> " + str(sub.end), "text": sub.text}
+                # 确保文本内容是字符串形式
+                text_content = str(sub.text) if sub.text else ""
+                srt_data[sub.index] = {
+                    "time": str(sub.start) + " --> " + str(sub.end),
+                    "text": text_content.strip()
+                }
             return srt_data
         except Exception as e:
             print(f"解析字幕檔案錯誤: {e}")
@@ -145,6 +150,7 @@ class SubtitleCorrector:
         
         # 創建工作副本
         srt_data = original_srt_data.copy()
+        processed_srt_data = original_srt_data.copy()  # 新增一個存儲最終結果的字典
         
         # 儲存所有報告
         all_reports = []
@@ -152,6 +158,8 @@ class SubtitleCorrector:
 
         # 使用固定數量的重疊
         overlap = 2  # 固定重疊2條字幕
+        
+        print(f"共有 {len(keys)} 條字幕需要處理")
         
         # 處理每個批次，使用固定重疊數量
         for i in range(0, len(keys), batch_size - overlap):
@@ -190,19 +198,19 @@ class SubtitleCorrector:
                     try:
                         # 添加間隔時間以避免觸發限流
                         if i > 0:
-                            print(f"等待 {retry_delay} 秒以避免達到API限制...".encode('utf-8').decode('utf-8'))
+                            print(f"等待 {retry_delay} 秒以避免達到API限制...")
                             time.sleep(retry_delay)
                         
                         response = self.model.generate_content(prompt)
                         corrected_subtitle = response.text
-                        print(f"第 {i // (batch_size - overlap) + 1} 批次 Gemini 模型的回應：".encode('utf-8').decode('utf-8'))
-                        print(corrected_subtitle.encode('utf-8').decode('utf-8'))
+                        print(f"第 {i // (batch_size - overlap) + 1} 批次 Gemini 模型的回應：")
+                        print(corrected_subtitle)
                         break  # 成功獲取回應，跳出重試循環
                         
                     except Exception as retry_error:
                         retry_count += 1
                         if "429" in str(retry_error):
-                            print(f"遇到配額限制 (429)，重試 {retry_count}/{max_retries}...".encode('utf-8').decode('utf-8'))
+                            print(f"遇到配額限制 (429)，重試 {retry_count}/{max_retries}...")
                             retry_delay *= 2  # 指數退避策略
                         else:
                             # 其他錯誤，直接拋出
@@ -229,13 +237,14 @@ class SubtitleCorrector:
                         
                         # 確保此編號在當前批次中且需要處理
                         if index in batch_keys:
-                            srt_data[index]['text'] = corrected_text
+                            processed_srt_data[index]['text'] = corrected_text  # 將校正後的內容存入最終結果字典
                             processed_indices.add(index)
+                            print(f"已處理編號 {index} 的字幕")
                 
                 # 檢查是否所有批次中的編號都被處理了
                 for index in batch_keys:
                     if index not in processed_indices:
-                        print(f"警告：編號 {index} 在AI處理後丟失，保持原始字幕內容".encode('utf-8').decode('utf-8'))
+                        print(f"警告：編號 {index} 在AI處理後丟失，保持原始字幕內容")
                 
                 # 處理報告部分
                 if len(parts) > 1:
@@ -247,20 +256,43 @@ class SubtitleCorrector:
                 return f"第 {i // (batch_size - overlap) + 1} 批次修正過程失敗：{e}", None, None
         
         # 驗證修改後的SRT結構
-        is_valid, error_msg = self.validate_srt(original_srt_data, srt_data)
+        is_valid, error_msg = self.validate_srt(original_srt_data, processed_srt_data)
         if not is_valid:
             return f"SRT結構驗證失敗: {error_msg}", None, None
         
+        print(f"完成所有字幕的處理，共處理了 {len(processed_indices)} 條字幕")
+        
         # 寫回 SRT 檔案
         new_subs = []
-        for index, data in sorted(srt_data.items()):  # 確保按編號順序排序
-            time_str = data['time']
-            start_str, end_str = time_str.split(" --> ")
-            start = pysrt.srtitem.SubRipTime.from_string(start_str)
-            end = pysrt.srtitem.SubRipTime.from_string(end_str)
-            new_subs.append(pysrt.SubRipItem(index=index, start=start, end=end, text=data['text']))
+        for index, data in sorted(processed_srt_data.items()):  # 確保按編號順序排序
+            try:
+                time_str = data['time']
+                start_str, end_str = time_str.split(" --> ")
+                start = pysrt.srtitem.SubRipTime.from_string(start_str)
+                end = pysrt.srtitem.SubRipTime.from_string(end_str)
+                
+                # 確保文本內容是字符串形式
+                text_content = str(data['text']).strip() if data['text'] else ""
+                
+                # 創建新的字幕項目
+                sub_item = pysrt.SubRipItem(
+                    index=index,
+                    start=start,
+                    end=end,
+                    text=text_content
+                )
+                new_subs.append(sub_item)
+            except Exception as e:
+                print(f"警告：處理字幕項目 {index} 時出錯：{e}".encode('utf-8').decode('utf-8'))
+                continue
+        
+        # 檢查是否有成功創建字幕
+        if not new_subs:
+            return "無法創建有效的字幕項目", None, None
         
         # 將 new_subs 轉換為 SubRipFile 物件
-        new_srt = pysrt.SubRipFile(items=new_subs)
-        
-        return None, new_srt, all_reports
+        try:
+            new_srt = pysrt.SubRipFile(items=new_subs)
+            return None, new_srt, all_reports
+        except Exception as e:
+            return f"創建字幕文件失敗：{e}", None, None
