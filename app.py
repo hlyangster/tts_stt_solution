@@ -1153,7 +1153,7 @@ with gr.Blocks(
             
             # 保存校正後的字幕
             corrected_srt_path = file_manager.get_file_path(identifier, "step4", "corrected_subtitle.srt")
-            corrected_content = corrected_srt.to_string()
+            corrected_content = str(corrected_srt)
             
             with open(corrected_srt_path, "w", encoding="utf-8") as f:
                 f.write(corrected_content)

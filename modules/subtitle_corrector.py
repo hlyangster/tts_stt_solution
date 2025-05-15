@@ -120,6 +120,8 @@ class SubtitleCorrector:
                 with open(transcript_file, 'r', encoding='utf-8') as f:
                     transcript_content = f.read()
             transcript_content = self.preprocess_transcript(transcript_content)
+        except Exception as e:
+            return f"讀取逐字稿檔案時出錯: {str(e)}", None, None
 
         # 處理 srt 檔案
         try:
@@ -138,6 +140,8 @@ class SubtitleCorrector:
             
             if original_srt_data is None:
                 return "錯誤: 解析口語稿檔案失敗，請確認檔案內容", None, None
+        except Exception as e:
+            return f"處理 SRT 檔案時出錯: {str(e)}", None, None
         
         # 創建工作副本
         srt_data = original_srt_data.copy()
@@ -186,19 +190,19 @@ class SubtitleCorrector:
                     try:
                         # 添加間隔時間以避免觸發限流
                         if i > 0:
-                            print(f"等待 {retry_delay} 秒以避免達到API限制...")
+                            print(f"等待 {retry_delay} 秒以避免達到API限制...".encode('utf-8').decode('utf-8'))
                             time.sleep(retry_delay)
                         
                         response = self.model.generate_content(prompt)
                         corrected_subtitle = response.text
-                        print(f"第 {i // (batch_size - overlap) + 1} 批次 Gemini 模型的回應：")
-                        print(corrected_subtitle)
+                        print(f"第 {i // (batch_size - overlap) + 1} 批次 Gemini 模型的回應：".encode('utf-8').decode('utf-8'))
+                        print(corrected_subtitle.encode('utf-8').decode('utf-8'))
                         break  # 成功獲取回應，跳出重試循環
                         
                     except Exception as retry_error:
                         retry_count += 1
                         if "429" in str(retry_error):
-                            print(f"遇到配額限制 (429)，重試 {retry_count}/{max_retries}...")
+                            print(f"遇到配額限制 (429)，重試 {retry_count}/{max_retries}...".encode('utf-8').decode('utf-8'))
                             retry_delay *= 2  # 指數退避策略
                         else:
                             # 其他錯誤，直接拋出
@@ -231,7 +235,7 @@ class SubtitleCorrector:
                 # 檢查是否所有批次中的編號都被處理了
                 for index in batch_keys:
                     if index not in processed_indices:
-                        print(f"警告：編號 {index} 在AI處理後丟失，保持原始字幕內容")
+                        print(f"警告：編號 {index} 在AI處理後丟失，保持原始字幕內容".encode('utf-8').decode('utf-8'))
                 
                 # 處理報告部分
                 if len(parts) > 1:
