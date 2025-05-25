@@ -145,7 +145,8 @@ def generate_tts(text, api_key, voice_name, emotion, speed, custom_pronunciation
             voice_name=voice_name,
             emotion=emotion,
             speed=float(speed),
-            custom_pronunciation=custom_pronunciation
+            custom_pronunciation=custom_pronunciation,
+            identifier=identifier
         )
         
         # 生成語音文件列表
@@ -1200,9 +1201,6 @@ with gr.Blocks(
     # 從步驟3到步驟4的回調 - 只傳遞數據
     def prepare_step4_and_save(audio_zip, preprocessed_text, identifier):
         """準備步驟4的數據，使用步驟1的預處理文本作為逐字稿"""
-        if not audio_zip:
-            return None, None, None, None, "準備失敗：請先生成語音文件"
-            
         if not identifier:
             return None, None, None, None, "準備失敗：無效的處理識別碼"
         
@@ -1215,17 +1213,12 @@ with gr.Blocks(
         with open(preprocessed_file, "r", encoding="utf-8") as f:
             transcript_content = f.read()
         
-        # 創建逐字稿文件
-        transcript_file = file_manager.get_file_path(identifier, "step4", "transcript.txt")
-        with open(transcript_file, "w", encoding="utf-8") as f:
-            f.write(transcript_content)
-        
-        # 從temp目錄取得音频zip檔案
-        audio_zip_path = file_manager.get_file_path(identifier, "step3", "audio.zip")
+        # 直接使用 step3 的音頻文件
+        audio_zip_path = file_manager.get_latest_file("step3", "audio.zip")
         if not os.path.exists(audio_zip_path):
             return None, None, None, None, "準備失敗：找不到音頻文件"
         
-        return audio_zip_path, transcript_file, "zh", transcript_content, "資料已送出：音频和逐字稿已傳遞到字幕生成步驟"
+        return audio_zip_path, preprocessed_file, "zh", transcript_content, "資料已送出：音频和逐字稿已傳遞到字幕生成步驟"
 
     next_step_btn3.click(
         fn=prepare_step4_and_save,

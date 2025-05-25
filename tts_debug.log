@@ -1758,3 +1758,647 @@
 2025-05-25 16:07:20,920 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
 2025-05-25 16:07:21,350 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "GET /pkg-version HTTP/1.1" 200 21
 2025-05-25 16:07:21,768 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-initiated-analytics/ HTTP/1.1" 200 None
+2025-05-25 16:07:22,686 - urllib3.connectionpool - DEBUG - http://localhost:7863 "GET /startup-events HTTP/1.1" 200 5
+2025-05-25 16:07:22,694 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:7863
+2025-05-25 16:07:24,749 - urllib3.connectionpool - DEBUG - http://localhost:7863 "HEAD / HTTP/1.1" 200 0
+2025-05-25 16:07:24,751 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-25 16:07:25,455 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-launched-telemetry/ HTTP/1.1" 200 None
+2025-05-25 16:08:34,929 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-25 16:08:34,929 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-25 16:08:34,929 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): generativelanguage.googleapis.com:443
+2025-05-25 16:08:35,597 - urllib3.connectionpool - DEBUG - https://generativelanguage.googleapis.com:443 "POST /v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBDc73003zr5T8KVhem_kTOIa9nRIbcHsg HTTP/1.1" 200 None
+2025-05-25 16:08:35,600 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-25 16:08:36,911 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-25 16:08:36,913 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-25 16:08:39,392 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-25 16:08:40,204 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-25 16:08:48,417 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-25 16:08:48,418 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-25 16:08:48,661 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-25 16:08:48,661 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-25 16:08:48,932 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-25 16:08:48,933 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-25 16:08:49,498 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-25 16:08:49,499 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-25 16:08:49,696 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-25 16:08:49,697 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-25 16:08:52,059 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-25 16:08:52,764 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-25 16:09:26,787 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-25 16:09:29,251 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-25 16:09:32,771 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-25 16:09:32,771 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-25 16:10:08,441 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-25 16:10:08,443 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.minimaxi.chat:443
+2025-05-25 16:10:10,795 - urllib3.connectionpool - DEBUG - https://api.minimaxi.chat:443 "POST /v1/t2a_v2?GroupId=1886392350196895842 HTTP/1.1" 200 None
+2025-05-25 16:10:11,022 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.minimaxi.chat:443
+2025-05-25 16:10:14,577 - urllib3.connectionpool - DEBUG - https://api.minimaxi.chat:443 "POST /v1/t2a_v2?GroupId=1886392350196895842 HTTP/1.1" 200 None
+2025-05-25 16:10:15,635 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.minimaxi.chat:443
+2025-05-25 16:10:18,555 - urllib3.connectionpool - DEBUG - https://api.minimaxi.chat:443 "POST /v1/t2a_v2?GroupId=1886392350196895842 HTTP/1.1" 200 None
+2025-05-25 16:10:19,823 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-25 16:10:57,693 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-25 16:10:57,736 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-25 16:10:57,747 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-25 16:10:57,749 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-25 16:10:58,633 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-25 16:10:58,639 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-25 16:10:58,820 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-25 16:10:58,826 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-25 16:11:18,297 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-25 16:11:18,818 - openai._base_client - DEBUG - Request options: {'method': 'post', 'url': '/audio/transcriptions', 'headers': {'Content-Type': 'multipart/form-data'}, 'files': [('file', SerializationIterator(index=0, iterator=SerializationIterator(index=0, iterator=<_io.BufferedReader name='temp\\20250525_160834_step4_audio_temp\\01.mp3'>)))], 'idempotency_key': 'stainless-python-retry-532643a5-d616-49f1-b759-d0871c29034d', 'json_data': {'model': 'whisper-1', 'language': 'zh', 'response_format': 'srt'}}
+2025-05-25 16:11:18,882 - openai._base_client - DEBUG - Sending HTTP Request: POST https://api.openai.com/v1/audio/transcriptions
+2025-05-25 16:11:18,883 - httpcore.connection - DEBUG - connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=5.0 socket_options=None
+2025-05-25 16:11:18,952 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001B530976900>
+2025-05-25 16:11:18,952 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001B530630DD0> server_hostname='api.openai.com' timeout=5.0
+2025-05-25 16:11:18,979 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001B5306F7B00>
+2025-05-25 16:11:18,979 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-05-25 16:11:18,979 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-25 16:11:18,979 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-05-25 16:11:19,081 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-25 16:11:19,081 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-05-25 16:11:22,659 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 25 May 2025 08:11:22 GMT'), (b'Content-Type', b'text/plain; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-expose-headers', b'X-Request-ID'), (b'openai-organization', b'genhaus'), (b'openai-processing-ms', b'1918'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), (b'via', b'envoy-router-dc9d5f6f7-7fcw5'), (b'x-envoy-upstream-service-time', b'1920'), (b'x-ratelimit-limit-requests', b'500'), (b'x-ratelimit-remaining-requests', b'499'), (b'x-ratelimit-reset-requests', b'120ms'), (b'x-request-id', b'req_bf91150803fc911faf0ab6e3b72b6974'), (b'cf-cache-status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=yfklZ.fAMFW3uI5uJtyPtOnUOrSSWE7XSonnjdyyFZs-1748160682-1.0.1.1-J3RYvImUWqksL8gk9blxIHAU2t_pK1SAngJn2thC8zTNxsb92V8uObspiozez9GmmB9GbIzexcLQlJhm0Eb26TExqsZgi2epFBKYyXrzAQ4; path=/; expires=Sun, 25-May-25 08:41:22 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'X-Content-Type-Options', b'nosniff'), (b'Set-Cookie', b'_cfuvid=UIiViHjyuOShHkkQ.TmgSd7bEFrgxwquZ8J8QOvlzYk-1748160682246-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'94538fb138b0f05b-KHH'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-05-25 16:11:22,661 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-05-25 16:11:22,661 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-05-25 16:11:22,662 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-25 16:11:22,662 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-25 16:11:22,662 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-25 16:11:22,662 - openai._base_client - DEBUG - HTTP Response: POST https://api.openai.com/v1/audio/transcriptions "200 OK" Headers([('date', 'Sun, 25 May 2025 08:11:22 GMT'), ('content-type', 'text/plain; charset=utf-8'), ('transfer-encoding', 'chunked'), ('connection', 'keep-alive'), ('access-control-expose-headers', 'X-Request-ID'), ('openai-organization', 'genhaus'), ('openai-processing-ms', '1918'), ('openai-version', '2020-10-01'), ('strict-transport-security', 'max-age=31536000; includeSubDomains; preload'), ('via', 'envoy-router-dc9d5f6f7-7fcw5'), ('x-envoy-upstream-service-time', '1920'), ('x-ratelimit-limit-requests', '500'), ('x-ratelimit-remaining-requests', '499'), ('x-ratelimit-reset-requests', '120ms'), ('x-request-id', 'req_bf91150803fc911faf0ab6e3b72b6974'), ('cf-cache-status', 'DYNAMIC'), ('set-cookie', '__cf_bm=yfklZ.fAMFW3uI5uJtyPtOnUOrSSWE7XSonnjdyyFZs-1748160682-1.0.1.1-J3RYvImUWqksL8gk9blxIHAU2t_pK1SAngJn2thC8zTNxsb92V8uObspiozez9GmmB9GbIzexcLQlJhm0Eb26TExqsZgi2epFBKYyXrzAQ4; path=/; expires=Sun, 25-May-25 08:41:22 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('x-content-type-options', 'nosniff'), ('set-cookie', '_cfuvid=UIiViHjyuOShHkkQ.TmgSd7bEFrgxwquZ8J8QOvlzYk-1748160682246-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('server', 'cloudflare'), ('cf-ray', '94538fb138b0f05b-KHH'), ('content-encoding', 'gzip'), ('alt-svc', 'h3=":443"; ma=86400')])
+2025-05-25 16:11:22,662 - openai._base_client - DEBUG - request_id: req_bf91150803fc911faf0ab6e3b72b6974
+2025-05-25 16:11:23,626 - pydub.converter - DEBUG - subprocess.call(['ffmpeg', '-y', '-i', 'temp\\20250525_160834_step4_audio_temp\\01.mp3', '-acodec', 'pcm_s16le', '-vn', '-f', 'wav', '-'])
+2025-05-25 16:11:24,639 - openai._base_client - DEBUG - Request options: {'method': 'post', 'url': '/audio/transcriptions', 'headers': {'Content-Type': 'multipart/form-data'}, 'files': [('file', SerializationIterator(index=0, iterator=SerializationIterator(index=0, iterator=<_io.BufferedReader name='temp\\20250525_160834_step4_audio_temp\\02.mp3'>)))], 'idempotency_key': 'stainless-python-retry-defe2183-7fd5-4363-b5ae-18bc5c29688b', 'json_data': {'model': 'whisper-1', 'language': 'zh', 'response_format': 'srt'}}
+2025-05-25 16:11:24,639 - openai._base_client - DEBUG - Sending HTTP Request: POST https://api.openai.com/v1/audio/transcriptions
+2025-05-25 16:11:24,639 - httpcore.connection - DEBUG - connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=5.0 socket_options=None
+2025-05-25 16:11:24,670 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001B530A5C0E0>
+2025-05-25 16:11:24,670 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001B530A2DBD0> server_hostname='api.openai.com' timeout=5.0
+2025-05-25 16:11:24,696 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001B530A2BFB0>
+2025-05-25 16:11:24,696 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-05-25 16:11:24,697 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-25 16:11:24,697 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-05-25 16:11:24,806 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-25 16:11:24,806 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-05-25 16:11:29,154 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 25 May 2025 08:11:28 GMT'), (b'Content-Type', b'text/plain; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-expose-headers', b'X-Request-ID'), (b'openai-organization', b'genhaus'), (b'openai-processing-ms', b'2661'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), (b'via', b'envoy-router-6d88f968d4-mwvcs'), (b'x-envoy-upstream-service-time', b'2664'), (b'x-ratelimit-limit-requests', b'500'), (b'x-ratelimit-remaining-requests', b'499'), (b'x-ratelimit-reset-requests', b'120ms'), (b'x-request-id', b'req_8f85373356094b09dcd9ab0805b09d28'), (b'cf-cache-status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=56YCGWkdxxbzy2Qu.4gw6e692RAAo.bNlC8oUX8ODu0-1748160688-1.0.1.1-IFC_rI7j1bT4YxmV80g7sDg9AhfYEu2J5NChevplT9VmE.iCNt5d9RYm3zXd8FXq8gVkVeN9OB32FZrKs.nzPhRqJICeXjgLhzzMg1auLG8; path=/; expires=Sun, 25-May-25 08:41:28 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'X-Content-Type-Options', b'nosniff'), (b'Set-Cookie', b'_cfuvid=C0dG69Mqo9l1GEPdW_ZdgO1u2zMWM.rudSR35hUGplU-1748160688741-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'94538fd4fa3ff06f-KHH'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-05-25 16:11:29,154 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-05-25 16:11:29,154 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-05-25 16:11:29,155 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-25 16:11:29,155 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-25 16:11:29,155 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-25 16:11:29,155 - openai._base_client - DEBUG - HTTP Response: POST https://api.openai.com/v1/audio/transcriptions "200 OK" Headers([('date', 'Sun, 25 May 2025 08:11:28 GMT'), ('content-type', 'text/plain; charset=utf-8'), ('transfer-encoding', 'chunked'), ('connection', 'keep-alive'), ('access-control-expose-headers', 'X-Request-ID'), ('openai-organization', 'genhaus'), ('openai-processing-ms', '2661'), ('openai-version', '2020-10-01'), ('strict-transport-security', 'max-age=31536000; includeSubDomains; preload'), ('via', 'envoy-router-6d88f968d4-mwvcs'), ('x-envoy-upstream-service-time', '2664'), ('x-ratelimit-limit-requests', '500'), ('x-ratelimit-remaining-requests', '499'), ('x-ratelimit-reset-requests', '120ms'), ('x-request-id', 'req_8f85373356094b09dcd9ab0805b09d28'), ('cf-cache-status', 'DYNAMIC'), ('set-cookie', '__cf_bm=56YCGWkdxxbzy2Qu.4gw6e692RAAo.bNlC8oUX8ODu0-1748160688-1.0.1.1-IFC_rI7j1bT4YxmV80g7sDg9AhfYEu2J5NChevplT9VmE.iCNt5d9RYm3zXd8FXq8gVkVeN9OB32FZrKs.nzPhRqJICeXjgLhzzMg1auLG8; path=/; expires=Sun, 25-May-25 08:41:28 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('x-content-type-options', 'nosniff'), ('set-cookie', '_cfuvid=C0dG69Mqo9l1GEPdW_ZdgO1u2zMWM.rudSR35hUGplU-1748160688741-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('server', 'cloudflare'), ('cf-ray', '94538fd4fa3ff06f-KHH'), ('content-encoding', 'gzip'), ('alt-svc', 'h3=":443"; ma=86400')])
+2025-05-25 16:11:29,155 - openai._base_client - DEBUG - request_id: req_8f85373356094b09dcd9ab0805b09d28
+2025-05-25 16:11:29,180 - pydub.converter - DEBUG - subprocess.call(['ffmpeg', '-y', '-i', 'temp\\20250525_160834_step4_audio_temp\\02.mp3', '-acodec', 'pcm_s16le', '-vn', '-f', 'wav', '-'])
+2025-05-25 16:11:29,239 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-25 16:11:31,217 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-25 16:11:33,285 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-25 16:25:42,521 - httpcore.connection - DEBUG - close.started
+2025-05-25 16:25:42,521 - httpcore.connection - DEBUG - close.complete
+2025-05-25 17:01:32,803 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-25 17:01:32,804 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-25 17:01:32,804 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-25 17:01:32,940 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-25 17:01:32,957 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:7863
+2025-05-25 17:01:33,563 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-25 17:01:33,571 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-25 17:01:33,875 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "GET /pkg-version HTTP/1.1" 200 21
+2025-05-25 17:01:34,603 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-initiated-analytics/ HTTP/1.1" 200 None
+2025-05-25 17:01:34,995 - urllib3.connectionpool - DEBUG - http://localhost:7863 "GET /startup-events HTTP/1.1" 200 5
+2025-05-25 17:01:35,003 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:7863
+2025-05-25 17:01:37,138 - urllib3.connectionpool - DEBUG - http://localhost:7863 "HEAD / HTTP/1.1" 200 0
+2025-05-25 17:01:37,138 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-25 17:01:38,125 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-launched-telemetry/ HTTP/1.1" 200 None
+2025-05-25 17:03:57,260 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-25 17:03:57,260 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-25 17:03:57,260 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-25 17:03:57,388 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-25 17:03:57,402 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:7863
+2025-05-25 17:03:57,878 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-25 17:03:57,880 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-25 17:03:58,323 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "GET /pkg-version HTTP/1.1" 200 21
+2025-05-25 17:03:58,971 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-initiated-analytics/ HTTP/1.1" 200 None
+2025-05-25 17:03:59,438 - urllib3.connectionpool - DEBUG - http://localhost:7863 "GET /startup-events HTTP/1.1" 200 5
+2025-05-25 17:03:59,446 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:7863
+2025-05-25 17:04:01,510 - urllib3.connectionpool - DEBUG - http://localhost:7863 "HEAD / HTTP/1.1" 200 0
+2025-05-25 17:04:01,521 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-25 17:04:02,563 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-launched-telemetry/ HTTP/1.1" 200 None
+2025-05-25 17:04:31,541 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-25 17:04:31,541 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-25 17:04:31,541 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): generativelanguage.googleapis.com:443
+2025-05-25 17:04:33,276 - urllib3.connectionpool - DEBUG - https://generativelanguage.googleapis.com:443 "POST /v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBDc73003zr5T8KVhem_kTOIa9nRIbcHsg HTTP/1.1" 200 None
+2025-05-25 17:04:33,276 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-25 17:04:35,925 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-25 17:04:35,926 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-25 17:04:40,268 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-25 17:04:42,480 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-25 17:04:44,486 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-25 17:04:44,487 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-25 17:05:24,677 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-25 17:05:24,679 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.minimaxi.chat:443
+2025-05-25 17:05:27,525 - urllib3.connectionpool - DEBUG - https://api.minimaxi.chat:443 "POST /v1/t2a_v2?GroupId=1886392350196895842 HTTP/1.1" 200 None
+2025-05-25 17:05:27,859 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.minimaxi.chat:443
+2025-05-25 17:05:29,904 - urllib3.connectionpool - DEBUG - https://api.minimaxi.chat:443 "POST /v1/t2a_v2?GroupId=1886392350196895842 HTTP/1.1" 200 None
+2025-05-25 17:05:30,189 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.minimaxi.chat:443
+2025-05-25 17:05:32,565 - urllib3.connectionpool - DEBUG - https://api.minimaxi.chat:443 "POST /v1/t2a_v2?GroupId=1886392350196895842 HTTP/1.1" 200 None
+2025-05-25 17:05:33,402 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.minimaxi.chat:443
+2025-05-25 17:05:35,221 - urllib3.connectionpool - DEBUG - https://api.minimaxi.chat:443 "POST /v1/t2a_v2?GroupId=1886392350196895842 HTTP/1.1" 200 None
+2025-05-25 17:05:35,570 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.minimaxi.chat:443
+2025-05-25 17:05:37,760 - urllib3.connectionpool - DEBUG - https://api.minimaxi.chat:443 "POST /v1/t2a_v2?GroupId=1886392350196895842 HTTP/1.1" 200 None
+2025-05-25 17:05:38,426 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.minimaxi.chat:443
+2025-05-25 17:05:40,655 - urllib3.connectionpool - DEBUG - https://api.minimaxi.chat:443 "POST /v1/t2a_v2?GroupId=1886392350196895842 HTTP/1.1" 200 None
+2025-05-25 17:05:41,384 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-25 17:06:05,255 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-25 17:06:05,259 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-25 17:06:14,338 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-25 17:06:14,340 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-25 17:06:14,596 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-25 17:06:14,600 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-25 17:06:14,745 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-25 17:06:14,748 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-25 17:06:18,166 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-25 17:06:18,169 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-25 17:06:18,357 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-25 17:06:18,360 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-25 17:06:18,548 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-25 17:06:18,552 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-25 17:06:18,722 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-25 17:06:18,724 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-25 17:06:18,916 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-25 17:06:18,919 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-25 17:06:19,093 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-25 17:06:19,096 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-25 17:06:19,256 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-25 17:06:19,259 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-25 17:06:49,200 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-25 17:06:49,201 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-25 17:06:49,977 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-25 17:06:49,977 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-25 17:14:24,787 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-25 17:14:24,788 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-25 17:14:24,789 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-25 17:14:24,905 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-25 17:14:25,444 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-25 17:14:25,448 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-25 17:14:25,955 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "GET /pkg-version HTTP/1.1" 200 21
+2025-05-25 17:14:26,632 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-initiated-analytics/ HTTP/1.1" 200 None
+2025-05-25 17:14:51,265 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-25 17:14:51,266 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-25 17:14:51,266 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-25 17:14:51,403 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-25 17:14:51,416 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:7864
+2025-05-25 17:14:51,418 - urllib3.connectionpool - DEBUG - http://127.0.0.1:7864 "GET /startup-events HTTP/1.1" 200 5
+2025-05-25 17:14:51,422 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:7864
+2025-05-25 17:14:51,438 - urllib3.connectionpool - DEBUG - http://127.0.0.1:7864 "HEAD / HTTP/1.1" 200 0
+2025-05-25 17:14:51,440 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-25 17:14:51,966 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-25 17:14:51,972 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-25 17:14:52,070 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-25 17:14:52,073 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-25 17:14:52,305 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "GET /pkg-version HTTP/1.1" 200 21
+2025-05-25 17:14:53,194 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-initiated-analytics/ HTTP/1.1" 200 None
+2025-05-25 17:14:53,194 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-launched-telemetry/ HTTP/1.1" 200 None
+2025-05-25 17:15:56,039 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-25 17:15:56,039 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-25 17:15:56,039 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): generativelanguage.googleapis.com:443
+2025-05-25 17:15:57,705 - urllib3.connectionpool - DEBUG - https://generativelanguage.googleapis.com:443 "POST /v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBDc73003zr5T8KVhem_kTOIa9nRIbcHsg HTTP/1.1" 200 None
+2025-05-25 17:15:57,705 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-25 17:15:58,744 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-25 17:15:58,744 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-25 17:15:59,406 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-25 17:15:59,407 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-25 17:15:59,614 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-25 17:15:59,615 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-25 17:16:03,835 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-25 17:16:06,200 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-25 17:16:08,873 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-25 17:16:08,873 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-25 17:16:09,090 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-25 17:16:09,091 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-25 17:16:09,317 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-25 17:16:09,317 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-25 17:16:19,069 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-25 17:16:19,069 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.minimaxi.chat:443
+2025-05-25 17:16:22,268 - urllib3.connectionpool - DEBUG - https://api.minimaxi.chat:443 "POST /v1/t2a_v2?GroupId=1886392350196895842 HTTP/1.1" 200 None
+2025-05-25 17:16:22,534 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.minimaxi.chat:443
+2025-05-25 17:16:24,357 - urllib3.connectionpool - DEBUG - https://api.minimaxi.chat:443 "POST /v1/t2a_v2?GroupId=1886392350196895842 HTTP/1.1" 200 None
+2025-05-25 17:16:24,646 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.minimaxi.chat:443
+2025-05-25 17:16:26,888 - urllib3.connectionpool - DEBUG - https://api.minimaxi.chat:443 "POST /v1/t2a_v2?GroupId=1886392350196895842 HTTP/1.1" 200 None
+2025-05-25 17:16:27,551 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.minimaxi.chat:443
+2025-05-25 17:16:29,755 - urllib3.connectionpool - DEBUG - https://api.minimaxi.chat:443 "POST /v1/t2a_v2?GroupId=1886392350196895842 HTTP/1.1" 200 None
+2025-05-25 17:16:30,297 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.minimaxi.chat:443
+2025-05-25 17:16:32,265 - urllib3.connectionpool - DEBUG - https://api.minimaxi.chat:443 "POST /v1/t2a_v2?GroupId=1886392350196895842 HTTP/1.1" 200 None
+2025-05-25 17:16:32,583 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.minimaxi.chat:443
+2025-05-25 17:16:34,384 - urllib3.connectionpool - DEBUG - https://api.minimaxi.chat:443 "POST /v1/t2a_v2?GroupId=1886392350196895842 HTTP/1.1" 200 None
+2025-05-25 17:16:34,816 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.minimaxi.chat:443
+2025-05-25 17:16:36,584 - urllib3.connectionpool - DEBUG - https://api.minimaxi.chat:443 "POST /v1/t2a_v2?GroupId=1886392350196895842 HTTP/1.1" 200 None
+2025-05-25 17:16:37,002 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.minimaxi.chat:443
+2025-05-25 17:16:39,072 - urllib3.connectionpool - DEBUG - https://api.minimaxi.chat:443 "POST /v1/t2a_v2?GroupId=1886392350196895842 HTTP/1.1" 200 None
+2025-05-25 17:16:39,482 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.minimaxi.chat:443
+2025-05-25 17:16:41,310 - urllib3.connectionpool - DEBUG - https://api.minimaxi.chat:443 "POST /v1/t2a_v2?GroupId=1886392350196895842 HTTP/1.1" 200 None
+2025-05-25 17:16:41,771 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-25 17:16:45,639 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-25 17:16:45,666 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-25 17:16:47,001 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-25 17:16:47,005 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-25 17:16:47,198 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-25 17:16:47,202 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-25 17:16:47,425 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-25 17:16:47,429 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-25 17:16:53,524 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-25 17:16:53,524 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-25 17:16:54,490 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-25 17:16:54,493 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-25 17:16:54,692 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-25 17:16:54,694 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-25 17:16:54,879 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-25 17:16:54,883 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-25 17:17:01,588 - python_multipart.multipart - DEBUG - Calling on_part_begin with no data
+2025-05-25 17:17:01,588 - python_multipart.multipart - DEBUG - Calling on_header_field with data[42:61]
+2025-05-25 17:17:01,588 - python_multipart.multipart - DEBUG - Calling on_header_value with data[63:130]
+2025-05-25 17:17:01,588 - python_multipart.multipart - DEBUG - Calling on_header_end with no data
+2025-05-25 17:17:01,588 - python_multipart.multipart - DEBUG - Calling on_header_field with data[132:144]
+2025-05-25 17:17:01,588 - python_multipart.multipart - DEBUG - Calling on_header_value with data[146:174]
+2025-05-25 17:17:01,588 - python_multipart.multipart - DEBUG - Calling on_header_end with no data
+2025-05-25 17:17:01,588 - python_multipart.multipart - DEBUG - Calling on_headers_finished with no data
+2025-05-25 17:17:01,588 - python_multipart.multipart - DEBUG - Calling on_part_data with data[178:130240]
+2025-05-25 17:17:01,588 - python_multipart.multipart - DEBUG - Calling on_part_data with data[0:131072]
+2025-05-25 17:17:01,588 - python_multipart.multipart - DEBUG - Calling on_part_data with data[0:131072]
+2025-05-25 17:17:01,588 - python_multipart.multipart - DEBUG - Calling on_part_data with data[0:31635]
+2025-05-25 17:17:01,588 - python_multipart.multipart - DEBUG - Calling on_part_end with no data
+2025-05-25 17:17:01,588 - python_multipart.multipart - DEBUG - Calling on_end with no data
+2025-05-25 17:17:11,244 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-25 17:17:11,812 - openai._base_client - DEBUG - Request options: {'method': 'post', 'url': '/audio/transcriptions', 'headers': {'Content-Type': 'multipart/form-data'}, 'files': [('file', SerializationIterator(index=0, iterator=SerializationIterator(index=0, iterator=<_io.BufferedReader name='temp\\20250525_171556_step4_audio_temp\\01.mp3'>)))], 'idempotency_key': 'stainless-python-retry-8b9b1df7-a897-406f-95f4-8e2c70080bf4', 'json_data': {'model': 'whisper-1', 'language': 'zh', 'response_format': 'srt'}}
+2025-05-25 17:17:11,880 - openai._base_client - DEBUG - Sending HTTP Request: POST https://api.openai.com/v1/audio/transcriptions
+2025-05-25 17:17:11,880 - httpcore.connection - DEBUG - connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=5.0 socket_options=None
+2025-05-25 17:17:11,935 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000020F2CDC56D0>
+2025-05-25 17:17:11,935 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x0000020F2CB3FF50> server_hostname='api.openai.com' timeout=5.0
+2025-05-25 17:17:11,967 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000020F2CF64650>
+2025-05-25 17:17:11,967 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-05-25 17:17:11,967 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-25 17:17:11,967 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-05-25 17:17:11,968 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-25 17:17:11,968 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-05-25 17:17:14,622 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 25 May 2025 09:17:14 GMT'), (b'Content-Type', b'text/plain; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-expose-headers', b'X-Request-ID'), (b'openai-organization', b'genhaus'), (b'openai-processing-ms', b'638'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), (b'via', b'envoy-router-dc9d5f6f7-sld8q'), (b'x-envoy-upstream-service-time', b'640'), (b'x-ratelimit-limit-requests', b'500'), (b'x-ratelimit-remaining-requests', b'499'), (b'x-ratelimit-reset-requests', b'120ms'), (b'x-request-id', b'req_67a70c3d2765a2b9abe39f317ba3c5f7'), (b'cf-cache-status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=B3GMr9ARo12c30HKQARC3XGs9Sw5mSF4HNK.67xt.aU-1748164634-1.0.1.1-QJsIk190M.LEWWHufCMDWaDlus2jR_6aZc8UBg93dG4FVGNLNdWtdFq9cTpmPTwvj04htyIBrY3oB9VHmZAyWtNvoMsZJIlzPz4_LNsQfC8; path=/; expires=Sun, 25-May-25 09:47:14 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'X-Content-Type-Options', b'nosniff'), (b'Set-Cookie', b'_cfuvid=XgFqKtHKHbWqHUqddAfR8xkV5Or79JU5G3Apc1oe7Ow-1748164634266-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9453f033b985c91e-KHH'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-05-25 17:17:14,622 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-05-25 17:17:14,622 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-05-25 17:17:14,622 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-25 17:17:14,622 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-25 17:17:14,622 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-25 17:17:14,622 - openai._base_client - DEBUG - HTTP Response: POST https://api.openai.com/v1/audio/transcriptions "200 OK" Headers([('date', 'Sun, 25 May 2025 09:17:14 GMT'), ('content-type', 'text/plain; charset=utf-8'), ('transfer-encoding', 'chunked'), ('connection', 'keep-alive'), ('access-control-expose-headers', 'X-Request-ID'), ('openai-organization', 'genhaus'), ('openai-processing-ms', '638'), ('openai-version', '2020-10-01'), ('strict-transport-security', 'max-age=31536000; includeSubDomains; preload'), ('via', 'envoy-router-dc9d5f6f7-sld8q'), ('x-envoy-upstream-service-time', '640'), ('x-ratelimit-limit-requests', '500'), ('x-ratelimit-remaining-requests', '499'), ('x-ratelimit-reset-requests', '120ms'), ('x-request-id', 'req_67a70c3d2765a2b9abe39f317ba3c5f7'), ('cf-cache-status', 'DYNAMIC'), ('set-cookie', '__cf_bm=B3GMr9ARo12c30HKQARC3XGs9Sw5mSF4HNK.67xt.aU-1748164634-1.0.1.1-QJsIk190M.LEWWHufCMDWaDlus2jR_6aZc8UBg93dG4FVGNLNdWtdFq9cTpmPTwvj04htyIBrY3oB9VHmZAyWtNvoMsZJIlzPz4_LNsQfC8; path=/; expires=Sun, 25-May-25 09:47:14 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('x-content-type-options', 'nosniff'), ('set-cookie', '_cfuvid=XgFqKtHKHbWqHUqddAfR8xkV5Or79JU5G3Apc1oe7Ow-1748164634266-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('server', 'cloudflare'), ('cf-ray', '9453f033b985c91e-KHH'), ('content-encoding', 'gzip'), ('alt-svc', 'h3=":443"; ma=86400')])
+2025-05-25 17:17:14,622 - openai._base_client - DEBUG - request_id: req_67a70c3d2765a2b9abe39f317ba3c5f7
+2025-05-25 17:17:14,660 - pydub.converter - DEBUG - subprocess.call(['ffmpeg', '-y', '-i', 'temp\\20250525_171556_step4_audio_temp\\01.mp3', '-acodec', 'pcm_s16le', '-vn', '-f', 'wav', '-'])
+2025-05-25 17:17:14,927 - openai._base_client - DEBUG - Request options: {'method': 'post', 'url': '/audio/transcriptions', 'headers': {'Content-Type': 'multipart/form-data'}, 'files': [('file', SerializationIterator(index=0, iterator=SerializationIterator(index=0, iterator=<_io.BufferedReader name='temp\\20250525_171556_step4_audio_temp\\02.mp3'>)))], 'idempotency_key': 'stainless-python-retry-83695aa4-3402-47bd-8931-51ec17943706', 'json_data': {'model': 'whisper-1', 'language': 'zh', 'response_format': 'srt'}}
+2025-05-25 17:17:14,927 - openai._base_client - DEBUG - Sending HTTP Request: POST https://api.openai.com/v1/audio/transcriptions
+2025-05-25 17:17:14,927 - httpcore.connection - DEBUG - connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=5.0 socket_options=None
+2025-05-25 17:17:14,993 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000020F2D0447A0>
+2025-05-25 17:17:14,993 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x0000020F2D0405D0> server_hostname='api.openai.com' timeout=5.0
+2025-05-25 17:17:15,119 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000020F2D012E10>
+2025-05-25 17:17:15,119 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-05-25 17:17:15,119 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-25 17:17:15,119 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-05-25 17:17:15,287 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-25 17:17:15,287 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-05-25 17:17:16,900 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 25 May 2025 09:17:16 GMT'), (b'Content-Type', b'text/plain; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-expose-headers', b'X-Request-ID'), (b'openai-organization', b'genhaus'), (b'openai-processing-ms', b'863'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), (b'via', b'envoy-router-7c4bf98c9f-8g7tq'), (b'x-envoy-upstream-service-time', b'869'), (b'x-ratelimit-limit-requests', b'500'), (b'x-ratelimit-remaining-requests', b'499'), (b'x-ratelimit-reset-requests', b'120ms'), (b'x-request-id', b'req_9cecd3c2c506e3d05875380cb2bf5f0f'), (b'cf-cache-status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=jN0EVwl1NEt6.WxOXYBO1A.lgJBgK2gtdUFM2VHU9No-1748164636-1.0.1.1-3LlFE_N0H_7FOFdmBf_msiA.2Legfp3qakpW_x4XYl__JdNbx3DNYpW.br_3ZI_W1sw68L8ELpZPHKzdgV_SVWM8XL56g3azDBFG_evQStU; path=/; expires=Sun, 25-May-25 09:47:16 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'X-Content-Type-Options', b'nosniff'), (b'Set-Cookie', b'_cfuvid=exR9n2epA5Ex9Xh3YXwlSL_Nc_xcWN_rReTkEDw68gc-1748164636540-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9453f0476b68f062-KHH'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-05-25 17:17:16,900 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-05-25 17:17:16,900 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-05-25 17:17:16,900 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-25 17:17:16,900 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-25 17:17:16,900 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-25 17:17:16,900 - openai._base_client - DEBUG - HTTP Response: POST https://api.openai.com/v1/audio/transcriptions "200 OK" Headers([('date', 'Sun, 25 May 2025 09:17:16 GMT'), ('content-type', 'text/plain; charset=utf-8'), ('transfer-encoding', 'chunked'), ('connection', 'keep-alive'), ('access-control-expose-headers', 'X-Request-ID'), ('openai-organization', 'genhaus'), ('openai-processing-ms', '863'), ('openai-version', '2020-10-01'), ('strict-transport-security', 'max-age=31536000; includeSubDomains; preload'), ('via', 'envoy-router-7c4bf98c9f-8g7tq'), ('x-envoy-upstream-service-time', '869'), ('x-ratelimit-limit-requests', '500'), ('x-ratelimit-remaining-requests', '499'), ('x-ratelimit-reset-requests', '120ms'), ('x-request-id', 'req_9cecd3c2c506e3d05875380cb2bf5f0f'), ('cf-cache-status', 'DYNAMIC'), ('set-cookie', '__cf_bm=jN0EVwl1NEt6.WxOXYBO1A.lgJBgK2gtdUFM2VHU9No-1748164636-1.0.1.1-3LlFE_N0H_7FOFdmBf_msiA.2Legfp3qakpW_x4XYl__JdNbx3DNYpW.br_3ZI_W1sw68L8ELpZPHKzdgV_SVWM8XL56g3azDBFG_evQStU; path=/; expires=Sun, 25-May-25 09:47:16 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('x-content-type-options', 'nosniff'), ('set-cookie', '_cfuvid=exR9n2epA5Ex9Xh3YXwlSL_Nc_xcWN_rReTkEDw68gc-1748164636540-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('server', 'cloudflare'), ('cf-ray', '9453f0476b68f062-KHH'), ('content-encoding', 'gzip'), ('alt-svc', 'h3=":443"; ma=86400')])
+2025-05-25 17:17:16,900 - openai._base_client - DEBUG - request_id: req_9cecd3c2c506e3d05875380cb2bf5f0f
+2025-05-25 17:17:16,927 - pydub.converter - DEBUG - subprocess.call(['ffmpeg', '-y', '-i', 'temp\\20250525_171556_step4_audio_temp\\02.mp3', '-acodec', 'pcm_s16le', '-vn', '-f', 'wav', '-'])
+2025-05-25 17:17:17,195 - openai._base_client - DEBUG - Request options: {'method': 'post', 'url': '/audio/transcriptions', 'headers': {'Content-Type': 'multipart/form-data'}, 'files': [('file', SerializationIterator(index=0, iterator=SerializationIterator(index=0, iterator=<_io.BufferedReader name='temp\\20250525_171556_step4_audio_temp\\03.mp3'>)))], 'idempotency_key': 'stainless-python-retry-18e080e2-bc54-4d68-bff8-3313c56f5293', 'json_data': {'model': 'whisper-1', 'language': 'zh', 'response_format': 'srt'}}
+2025-05-25 17:17:17,195 - httpcore.connection - DEBUG - close.started
+2025-05-25 17:17:17,195 - httpcore.connection - DEBUG - close.complete
+2025-05-25 17:17:17,195 - openai._base_client - DEBUG - Sending HTTP Request: POST https://api.openai.com/v1/audio/transcriptions
+2025-05-25 17:17:17,195 - httpcore.connection - DEBUG - connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=5.0 socket_options=None
+2025-05-25 17:17:17,246 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000020F2D013950>
+2025-05-25 17:17:17,246 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x0000020F2D0417D0> server_hostname='api.openai.com' timeout=5.0
+2025-05-25 17:17:17,284 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000020F2D013E30>
+2025-05-25 17:17:17,284 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-05-25 17:17:17,284 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-25 17:17:17,284 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-05-25 17:17:17,315 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-25 17:17:17,315 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-05-25 17:17:18,971 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 25 May 2025 09:17:18 GMT'), (b'Content-Type', b'text/plain; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-expose-headers', b'X-Request-ID'), (b'openai-organization', b'genhaus'), (b'openai-processing-ms', b'1066'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), (b'via', b'envoy-router-7c4c8df9b7-rqs8j'), (b'x-envoy-upstream-service-time', b'1071'), (b'x-ratelimit-limit-requests', b'500'), (b'x-ratelimit-remaining-requests', b'499'), (b'x-ratelimit-reset-requests', b'120ms'), (b'x-request-id', b'req_3011b0cd2d19a3022cbaf1375376e1d9'), (b'cf-cache-status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=Sit9W2zifdU2f9Gl3H0GBTcUZUQXPrsRgMrHci613wg-1748164638-1.0.1.1-J0gdcXS.2nc61I6Chmz4Q_bpObps_8HKqG9jTGSauBwvVuVs7FwZybQayS7.c5lRBcDnPMnPiwuKjKb36ZHsmx0QF4nLJTdT4U3Reyt2vZQ; path=/; expires=Sun, 25-May-25 09:47:18 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'X-Content-Type-Options', b'nosniff'), (b'Set-Cookie', b'_cfuvid=Bk1oeq3iQ33sObIQ6zFvq5tkc.I5bJuRT1tfgXEzRbk-1748164638610-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9453f054f915f07b-KHH'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-05-25 17:17:18,972 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-05-25 17:17:18,972 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-05-25 17:17:18,972 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-25 17:17:18,972 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-25 17:17:18,972 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-25 17:17:18,972 - openai._base_client - DEBUG - HTTP Response: POST https://api.openai.com/v1/audio/transcriptions "200 OK" Headers([('date', 'Sun, 25 May 2025 09:17:18 GMT'), ('content-type', 'text/plain; charset=utf-8'), ('transfer-encoding', 'chunked'), ('connection', 'keep-alive'), ('access-control-expose-headers', 'X-Request-ID'), ('openai-organization', 'genhaus'), ('openai-processing-ms', '1066'), ('openai-version', '2020-10-01'), ('strict-transport-security', 'max-age=31536000; includeSubDomains; preload'), ('via', 'envoy-router-7c4c8df9b7-rqs8j'), ('x-envoy-upstream-service-time', '1071'), ('x-ratelimit-limit-requests', '500'), ('x-ratelimit-remaining-requests', '499'), ('x-ratelimit-reset-requests', '120ms'), ('x-request-id', 'req_3011b0cd2d19a3022cbaf1375376e1d9'), ('cf-cache-status', 'DYNAMIC'), ('set-cookie', '__cf_bm=Sit9W2zifdU2f9Gl3H0GBTcUZUQXPrsRgMrHci613wg-1748164638-1.0.1.1-J0gdcXS.2nc61I6Chmz4Q_bpObps_8HKqG9jTGSauBwvVuVs7FwZybQayS7.c5lRBcDnPMnPiwuKjKb36ZHsmx0QF4nLJTdT4U3Reyt2vZQ; path=/; expires=Sun, 25-May-25 09:47:18 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('x-content-type-options', 'nosniff'), ('set-cookie', '_cfuvid=Bk1oeq3iQ33sObIQ6zFvq5tkc.I5bJuRT1tfgXEzRbk-1748164638610-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('server', 'cloudflare'), ('cf-ray', '9453f054f915f07b-KHH'), ('content-encoding', 'gzip'), ('alt-svc', 'h3=":443"; ma=86400')])
+2025-05-25 17:17:18,972 - openai._base_client - DEBUG - request_id: req_3011b0cd2d19a3022cbaf1375376e1d9
+2025-05-25 17:17:18,994 - pydub.converter - DEBUG - subprocess.call(['ffmpeg', '-y', '-i', 'temp\\20250525_171556_step4_audio_temp\\03.mp3', '-acodec', 'pcm_s16le', '-vn', '-f', 'wav', '-'])
+2025-05-25 17:17:19,260 - openai._base_client - DEBUG - Request options: {'method': 'post', 'url': '/audio/transcriptions', 'headers': {'Content-Type': 'multipart/form-data'}, 'files': [('file', SerializationIterator(index=0, iterator=SerializationIterator(index=0, iterator=<_io.BufferedReader name='temp\\20250525_171556_step4_audio_temp\\04.mp3'>)))], 'idempotency_key': 'stainless-python-retry-30671a2a-6862-470f-82e6-4f7db4565bea', 'json_data': {'model': 'whisper-1', 'language': 'zh', 'response_format': 'srt'}}
+2025-05-25 17:17:19,260 - openai._base_client - DEBUG - Sending HTTP Request: POST https://api.openai.com/v1/audio/transcriptions
+2025-05-25 17:17:19,260 - httpcore.connection - DEBUG - connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=5.0 socket_options=None
+2025-05-25 17:17:19,301 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000020F2D0447D0>
+2025-05-25 17:17:19,301 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x0000020F2D042550> server_hostname='api.openai.com' timeout=5.0
+2025-05-25 17:17:19,340 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000020F2D045250>
+2025-05-25 17:17:19,341 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-05-25 17:17:19,341 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-25 17:17:19,341 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-05-25 17:17:19,341 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-25 17:17:19,341 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-05-25 17:17:21,972 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 25 May 2025 09:17:21 GMT'), (b'Content-Type', b'text/plain; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-expose-headers', b'X-Request-ID'), (b'openai-organization', b'genhaus'), (b'openai-processing-ms', b'1785'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), (b'via', b'envoy-router-5f689c5f9d-c8mz8'), (b'x-envoy-upstream-service-time', b'1790'), (b'x-ratelimit-limit-requests', b'500'), (b'x-ratelimit-remaining-requests', b'499'), (b'x-ratelimit-reset-requests', b'120ms'), (b'x-request-id', b'req_cb6d48cd6db8747a52d3ab0b46293aca'), (b'cf-cache-status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=0lgl4sVoBtBKRF3k4VOjdelNxGGkfMqvPzD417hsP0o-1748164641-1.0.1.1-O7d6r3YNEgNBCsr2Ud.c_PHRPDlNBCiFDiqDsrav05vTLwiVHAJg9b4gTv1lGXmGBmV8X7iygEf0WqoYWMBINzW5X3iQIo6VUdelzGmpgH4; path=/; expires=Sun, 25-May-25 09:47:21 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'X-Content-Type-Options', b'nosniff'), (b'Set-Cookie', b'_cfuvid=0NunPTSQRHXIWxX2Yc0HUggUSvgkAiKxxy8v4gzuOkg-1748164641610-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9453f061ce2ef073-KHH'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-05-25 17:17:21,972 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-05-25 17:17:21,972 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-05-25 17:17:21,973 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-25 17:17:21,973 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-25 17:17:21,973 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-25 17:17:21,973 - openai._base_client - DEBUG - HTTP Response: POST https://api.openai.com/v1/audio/transcriptions "200 OK" Headers([('date', 'Sun, 25 May 2025 09:17:21 GMT'), ('content-type', 'text/plain; charset=utf-8'), ('transfer-encoding', 'chunked'), ('connection', 'keep-alive'), ('access-control-expose-headers', 'X-Request-ID'), ('openai-organization', 'genhaus'), ('openai-processing-ms', '1785'), ('openai-version', '2020-10-01'), ('strict-transport-security', 'max-age=31536000; includeSubDomains; preload'), ('via', 'envoy-router-5f689c5f9d-c8mz8'), ('x-envoy-upstream-service-time', '1790'), ('x-ratelimit-limit-requests', '500'), ('x-ratelimit-remaining-requests', '499'), ('x-ratelimit-reset-requests', '120ms'), ('x-request-id', 'req_cb6d48cd6db8747a52d3ab0b46293aca'), ('cf-cache-status', 'DYNAMIC'), ('set-cookie', '__cf_bm=0lgl4sVoBtBKRF3k4VOjdelNxGGkfMqvPzD417hsP0o-1748164641-1.0.1.1-O7d6r3YNEgNBCsr2Ud.c_PHRPDlNBCiFDiqDsrav05vTLwiVHAJg9b4gTv1lGXmGBmV8X7iygEf0WqoYWMBINzW5X3iQIo6VUdelzGmpgH4; path=/; expires=Sun, 25-May-25 09:47:21 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('x-content-type-options', 'nosniff'), ('set-cookie', '_cfuvid=0NunPTSQRHXIWxX2Yc0HUggUSvgkAiKxxy8v4gzuOkg-1748164641610-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('server', 'cloudflare'), ('cf-ray', '9453f061ce2ef073-KHH'), ('content-encoding', 'gzip'), ('alt-svc', 'h3=":443"; ma=86400')])
+2025-05-25 17:17:21,973 - openai._base_client - DEBUG - request_id: req_cb6d48cd6db8747a52d3ab0b46293aca
+2025-05-25 17:17:21,995 - pydub.converter - DEBUG - subprocess.call(['ffmpeg', '-y', '-i', 'temp\\20250525_171556_step4_audio_temp\\04.mp3', '-acodec', 'pcm_s16le', '-vn', '-f', 'wav', '-'])
+2025-05-25 17:17:22,265 - openai._base_client - DEBUG - Request options: {'method': 'post', 'url': '/audio/transcriptions', 'headers': {'Content-Type': 'multipart/form-data'}, 'files': [('file', SerializationIterator(index=0, iterator=SerializationIterator(index=0, iterator=<_io.BufferedReader name='temp\\20250525_171556_step4_audio_temp\\05.mp3'>)))], 'idempotency_key': 'stainless-python-retry-b8b35656-07b7-475d-8eb7-7a44cbeb5eff', 'json_data': {'model': 'whisper-1', 'language': 'zh', 'response_format': 'srt'}}
+2025-05-25 17:17:22,265 - openai._base_client - DEBUG - Sending HTTP Request: POST https://api.openai.com/v1/audio/transcriptions
+2025-05-25 17:17:22,266 - httpcore.connection - DEBUG - connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=5.0 socket_options=None
+2025-05-25 17:17:22,300 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000020F2D0474D0>
+2025-05-25 17:17:22,300 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x0000020F2D041850> server_hostname='api.openai.com' timeout=5.0
+2025-05-25 17:17:22,328 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000020F2D047230>
+2025-05-25 17:17:22,328 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-05-25 17:17:22,328 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-25 17:17:22,328 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-05-25 17:17:22,328 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-25 17:17:22,328 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-05-25 17:17:23,395 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 25 May 2025 09:17:23 GMT'), (b'Content-Type', b'text/plain; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-expose-headers', b'X-Request-ID'), (b'openai-organization', b'genhaus'), (b'openai-processing-ms', b'650'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), (b'via', b'envoy-router-5f689c5f9d-lfw6w'), (b'x-envoy-upstream-service-time', b'649'), (b'x-ratelimit-limit-requests', b'500'), (b'x-ratelimit-remaining-requests', b'499'), (b'x-ratelimit-reset-requests', b'120ms'), (b'x-request-id', b'req_04b093c148310b2eb9f7b840cc408693'), (b'cf-cache-status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=buciTqFP5RKC9uB3s9JwTVH5wKH2gnrdZUicJkyjQbU-1748164643-1.0.1.1-vuNfIgwn0ruVG39_RnD2zAheMDHcxeYJy.CgXg7vsVdh4Uz4Gle2KFUX1AAVfCzBVoSp1L6YBuCbkscjt0TMgACuxAMWtd7nP10T2QzALNI; path=/; expires=Sun, 25-May-25 09:47:23 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'X-Content-Type-Options', b'nosniff'), (b'Set-Cookie', b'_cfuvid=6scWuANFojyLx6rb7E4vS5SIBUxYJsN8Jqau9.BP7_I-1748164643033-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9453f0747af5f062-KHH'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-05-25 17:17:23,395 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-05-25 17:17:23,395 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-05-25 17:17:23,395 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-25 17:17:23,395 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-25 17:17:23,395 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-25 17:17:23,395 - openai._base_client - DEBUG - HTTP Response: POST https://api.openai.com/v1/audio/transcriptions "200 OK" Headers([('date', 'Sun, 25 May 2025 09:17:23 GMT'), ('content-type', 'text/plain; charset=utf-8'), ('transfer-encoding', 'chunked'), ('connection', 'keep-alive'), ('access-control-expose-headers', 'X-Request-ID'), ('openai-organization', 'genhaus'), ('openai-processing-ms', '650'), ('openai-version', '2020-10-01'), ('strict-transport-security', 'max-age=31536000; includeSubDomains; preload'), ('via', 'envoy-router-5f689c5f9d-lfw6w'), ('x-envoy-upstream-service-time', '649'), ('x-ratelimit-limit-requests', '500'), ('x-ratelimit-remaining-requests', '499'), ('x-ratelimit-reset-requests', '120ms'), ('x-request-id', 'req_04b093c148310b2eb9f7b840cc408693'), ('cf-cache-status', 'DYNAMIC'), ('set-cookie', '__cf_bm=buciTqFP5RKC9uB3s9JwTVH5wKH2gnrdZUicJkyjQbU-1748164643-1.0.1.1-vuNfIgwn0ruVG39_RnD2zAheMDHcxeYJy.CgXg7vsVdh4Uz4Gle2KFUX1AAVfCzBVoSp1L6YBuCbkscjt0TMgACuxAMWtd7nP10T2QzALNI; path=/; expires=Sun, 25-May-25 09:47:23 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('x-content-type-options', 'nosniff'), ('set-cookie', '_cfuvid=6scWuANFojyLx6rb7E4vS5SIBUxYJsN8Jqau9.BP7_I-1748164643033-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('server', 'cloudflare'), ('cf-ray', '9453f0747af5f062-KHH'), ('content-encoding', 'gzip'), ('alt-svc', 'h3=":443"; ma=86400')])
+2025-05-25 17:17:23,395 - openai._base_client - DEBUG - request_id: req_04b093c148310b2eb9f7b840cc408693
+2025-05-25 17:17:23,422 - pydub.converter - DEBUG - subprocess.call(['ffmpeg', '-y', '-i', 'temp\\20250525_171556_step4_audio_temp\\05.mp3', '-acodec', 'pcm_s16le', '-vn', '-f', 'wav', '-'])
+2025-05-25 17:17:23,685 - openai._base_client - DEBUG - Request options: {'method': 'post', 'url': '/audio/transcriptions', 'headers': {'Content-Type': 'multipart/form-data'}, 'files': [('file', SerializationIterator(index=0, iterator=SerializationIterator(index=0, iterator=<_io.BufferedReader name='temp\\20250525_171556_step4_audio_temp\\06.mp3'>)))], 'idempotency_key': 'stainless-python-retry-93f38c91-799e-4913-b2a2-d8c52c1cec53', 'json_data': {'model': 'whisper-1', 'language': 'zh', 'response_format': 'srt'}}
+2025-05-25 17:17:23,686 - openai._base_client - DEBUG - Sending HTTP Request: POST https://api.openai.com/v1/audio/transcriptions
+2025-05-25 17:17:23,686 - httpcore.connection - DEBUG - connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=5.0 socket_options=None
+2025-05-25 17:17:23,737 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000020F2D05D130>
+2025-05-25 17:17:23,737 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x0000020F2D0425D0> server_hostname='api.openai.com' timeout=5.0
+2025-05-25 17:17:23,776 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000020F2D05CE90>
+2025-05-25 17:17:23,776 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-05-25 17:17:23,776 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-25 17:17:23,776 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-05-25 17:17:23,776 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-25 17:17:23,776 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-05-25 17:17:25,722 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 25 May 2025 09:17:25 GMT'), (b'Content-Type', b'text/plain; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-expose-headers', b'X-Request-ID'), (b'openai-organization', b'genhaus'), (b'openai-processing-ms', b'542'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), (b'via', b'envoy-router-6d88f968d4-dpd2c'), (b'x-envoy-upstream-service-time', b'547'), (b'x-ratelimit-limit-requests', b'500'), (b'x-ratelimit-remaining-requests', b'499'), (b'x-ratelimit-reset-requests', b'120ms'), (b'x-request-id', b'req_303b2a170da298b88b7bafdb1f04bf9c'), (b'cf-cache-status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=UTsJ2QO9gJXnr6V.Na_O.wf8.zJTmgcYy6JApZWKRTU-1748164645-1.0.1.1-yLTKw_fy2a7o3.PpxvPr6BTwsCEf55bEN4EGhDi.GIVP8VJHQ83GelTcS2SXZGFdyp6q.OjBO6_vb80MCR.907ll_XwPpqJQNyIJq9Uf3KY; path=/; expires=Sun, 25-May-25 09:47:25 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'X-Content-Type-Options', b'nosniff'), (b'Set-Cookie', b'_cfuvid=hQsYMvVA0Aeg6UA52KnCZrbt3qkLjwS9E8a2YHlxWmQ-1748164645359-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9453f07d8efff067-KHH'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-05-25 17:17:25,722 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-05-25 17:17:25,722 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-05-25 17:17:25,722 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-25 17:17:25,722 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-25 17:17:25,722 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-25 17:17:25,722 - openai._base_client - DEBUG - HTTP Response: POST https://api.openai.com/v1/audio/transcriptions "200 OK" Headers([('date', 'Sun, 25 May 2025 09:17:25 GMT'), ('content-type', 'text/plain; charset=utf-8'), ('transfer-encoding', 'chunked'), ('connection', 'keep-alive'), ('access-control-expose-headers', 'X-Request-ID'), ('openai-organization', 'genhaus'), ('openai-processing-ms', '542'), ('openai-version', '2020-10-01'), ('strict-transport-security', 'max-age=31536000; includeSubDomains; preload'), ('via', 'envoy-router-6d88f968d4-dpd2c'), ('x-envoy-upstream-service-time', '547'), ('x-ratelimit-limit-requests', '500'), ('x-ratelimit-remaining-requests', '499'), ('x-ratelimit-reset-requests', '120ms'), ('x-request-id', 'req_303b2a170da298b88b7bafdb1f04bf9c'), ('cf-cache-status', 'DYNAMIC'), ('set-cookie', '__cf_bm=UTsJ2QO9gJXnr6V.Na_O.wf8.zJTmgcYy6JApZWKRTU-1748164645-1.0.1.1-yLTKw_fy2a7o3.PpxvPr6BTwsCEf55bEN4EGhDi.GIVP8VJHQ83GelTcS2SXZGFdyp6q.OjBO6_vb80MCR.907ll_XwPpqJQNyIJq9Uf3KY; path=/; expires=Sun, 25-May-25 09:47:25 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('x-content-type-options', 'nosniff'), ('set-cookie', '_cfuvid=hQsYMvVA0Aeg6UA52KnCZrbt3qkLjwS9E8a2YHlxWmQ-1748164645359-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('server', 'cloudflare'), ('cf-ray', '9453f07d8efff067-KHH'), ('content-encoding', 'gzip'), ('alt-svc', 'h3=":443"; ma=86400')])
+2025-05-25 17:17:25,722 - openai._base_client - DEBUG - request_id: req_303b2a170da298b88b7bafdb1f04bf9c
+2025-05-25 17:17:25,745 - pydub.converter - DEBUG - subprocess.call(['ffmpeg', '-y', '-i', 'temp\\20250525_171556_step4_audio_temp\\06.mp3', '-acodec', 'pcm_s16le', '-vn', '-f', 'wav', '-'])
+2025-05-25 17:17:26,015 - openai._base_client - DEBUG - Request options: {'method': 'post', 'url': '/audio/transcriptions', 'headers': {'Content-Type': 'multipart/form-data'}, 'files': [('file', SerializationIterator(index=0, iterator=SerializationIterator(index=0, iterator=<_io.BufferedReader name='temp\\20250525_171556_step4_audio_temp\\07.mp3'>)))], 'idempotency_key': 'stainless-python-retry-bb52d884-61ff-4477-8c54-ceb63f14d159', 'json_data': {'model': 'whisper-1', 'language': 'zh', 'response_format': 'srt'}}
+2025-05-25 17:17:26,015 - openai._base_client - DEBUG - Sending HTTP Request: POST https://api.openai.com/v1/audio/transcriptions
+2025-05-25 17:17:26,015 - httpcore.connection - DEBUG - connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=5.0 socket_options=None
+2025-05-25 17:17:26,049 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000020F2D05EDB0>
+2025-05-25 17:17:26,049 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x0000020F2D043850> server_hostname='api.openai.com' timeout=5.0
+2025-05-25 17:17:26,077 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000020F2D05EB10>
+2025-05-25 17:17:26,077 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-05-25 17:17:26,077 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-25 17:17:26,078 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-05-25 17:17:26,078 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-25 17:17:26,078 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-05-25 17:17:29,250 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 25 May 2025 09:17:28 GMT'), (b'Content-Type', b'text/plain; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-expose-headers', b'X-Request-ID'), (b'openai-organization', b'genhaus'), (b'openai-processing-ms', b'1715'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), (b'via', b'envoy-router-78998c59cd-22swj'), (b'x-envoy-upstream-service-time', b'1718'), (b'x-ratelimit-limit-requests', b'500'), (b'x-ratelimit-remaining-requests', b'499'), (b'x-ratelimit-reset-requests', b'120ms'), (b'x-request-id', b'req_73e10718ce6e2b3499755b3ce8bcac9e'), (b'cf-cache-status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=A2RrvbeKk_BqFKJPb7uUuyOd1s0gtHEqe_HtBCNi8y0-1748164648-1.0.1.1-fzSK..iT4OgzjqyFBV_U1CWfKSfZO8dCjLRBzly37jz0813o3dxuwJ1Ncdxmr2_5V1ULJKRdIP5uPPxyx_vcfr.bKqbg_SZBzXhhm16YQ_k; path=/; expires=Sun, 25-May-25 09:47:28 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'X-Content-Type-Options', b'nosniff'), (b'Set-Cookie', b'_cfuvid=iOE0wSxmEOi5rAbGA3.S.nYR.5QieRR3hRLRe67boBM-1748164648756-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9453f08beabff05b-KHH'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-05-25 17:17:29,251 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-05-25 17:17:29,251 - httpcore.connection - DEBUG - close.started
+2025-05-25 17:17:29,251 - httpcore.connection - DEBUG - close.complete
+2025-05-25 17:17:29,251 - httpcore.connection - DEBUG - close.started
+2025-05-25 17:17:29,251 - httpcore.connection - DEBUG - close.complete
+2025-05-25 17:17:29,251 - httpcore.connection - DEBUG - close.started
+2025-05-25 17:17:29,251 - httpcore.connection - DEBUG - close.complete
+2025-05-25 17:17:29,251 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-05-25 17:17:29,253 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-25 17:17:29,253 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-25 17:17:29,253 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-25 17:17:29,253 - openai._base_client - DEBUG - HTTP Response: POST https://api.openai.com/v1/audio/transcriptions "200 OK" Headers([('date', 'Sun, 25 May 2025 09:17:28 GMT'), ('content-type', 'text/plain; charset=utf-8'), ('transfer-encoding', 'chunked'), ('connection', 'keep-alive'), ('access-control-expose-headers', 'X-Request-ID'), ('openai-organization', 'genhaus'), ('openai-processing-ms', '1715'), ('openai-version', '2020-10-01'), ('strict-transport-security', 'max-age=31536000; includeSubDomains; preload'), ('via', 'envoy-router-78998c59cd-22swj'), ('x-envoy-upstream-service-time', '1718'), ('x-ratelimit-limit-requests', '500'), ('x-ratelimit-remaining-requests', '499'), ('x-ratelimit-reset-requests', '120ms'), ('x-request-id', 'req_73e10718ce6e2b3499755b3ce8bcac9e'), ('cf-cache-status', 'DYNAMIC'), ('set-cookie', '__cf_bm=A2RrvbeKk_BqFKJPb7uUuyOd1s0gtHEqe_HtBCNi8y0-1748164648-1.0.1.1-fzSK..iT4OgzjqyFBV_U1CWfKSfZO8dCjLRBzly37jz0813o3dxuwJ1Ncdxmr2_5V1ULJKRdIP5uPPxyx_vcfr.bKqbg_SZBzXhhm16YQ_k; path=/; expires=Sun, 25-May-25 09:47:28 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('x-content-type-options', 'nosniff'), ('set-cookie', '_cfuvid=iOE0wSxmEOi5rAbGA3.S.nYR.5QieRR3hRLRe67boBM-1748164648756-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('server', 'cloudflare'), ('cf-ray', '9453f08beabff05b-KHH'), ('content-encoding', 'gzip'), ('alt-svc', 'h3=":443"; ma=86400')])
+2025-05-25 17:17:29,253 - openai._base_client - DEBUG - request_id: req_73e10718ce6e2b3499755b3ce8bcac9e
+2025-05-25 17:17:29,279 - pydub.converter - DEBUG - subprocess.call(['ffmpeg', '-y', '-i', 'temp\\20250525_171556_step4_audio_temp\\07.mp3', '-acodec', 'pcm_s16le', '-vn', '-f', 'wav', '-'])
+2025-05-25 17:17:29,541 - openai._base_client - DEBUG - Request options: {'method': 'post', 'url': '/audio/transcriptions', 'headers': {'Content-Type': 'multipart/form-data'}, 'files': [('file', SerializationIterator(index=0, iterator=SerializationIterator(index=0, iterator=<_io.BufferedReader name='temp\\20250525_171556_step4_audio_temp\\08.mp3'>)))], 'idempotency_key': 'stainless-python-retry-49497632-b269-4c2f-b26b-95adade7ab49', 'json_data': {'model': 'whisper-1', 'language': 'zh', 'response_format': 'srt'}}
+2025-05-25 17:17:29,541 - openai._base_client - DEBUG - Sending HTTP Request: POST https://api.openai.com/v1/audio/transcriptions
+2025-05-25 17:17:29,541 - httpcore.connection - DEBUG - connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=5.0 socket_options=None
+2025-05-25 17:17:29,609 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000020F2D013CB0>
+2025-05-25 17:17:29,609 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x0000020F2D041950> server_hostname='api.openai.com' timeout=5.0
+2025-05-25 17:17:29,638 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000020F2D0135F0>
+2025-05-25 17:17:29,638 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-05-25 17:17:29,638 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-25 17:17:29,638 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-05-25 17:17:29,638 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-25 17:17:29,638 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-05-25 17:17:31,777 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 25 May 2025 09:17:31 GMT'), (b'Content-Type', b'text/plain; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-expose-headers', b'X-Request-ID'), (b'openai-organization', b'genhaus'), (b'openai-processing-ms', b'1316'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), (b'via', b'envoy-router-7c4c8df9b7-57dm7'), (b'x-envoy-upstream-service-time', b'1322'), (b'x-ratelimit-limit-requests', b'500'), (b'x-ratelimit-remaining-requests', b'499'), (b'x-ratelimit-reset-requests', b'120ms'), (b'x-request-id', b'req_3b52af35cbdc7fe97bbba3b0022f5202'), (b'cf-cache-status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=pE3j8PajYuFK4BUtp1KxLZ9iWOmKV3_tDuced11UWnc-1748164651-1.0.1.1-HIeVV0CIkWhA9.thCO_w7J6.gdxr6jXONn9M.WLdLzEtKXT3zH6W3LXrNhcvlCZPgHTNfsYiZ1i09Srmy38cp4OfciYJM2iNs9AMHg7Q0Bg; path=/; expires=Sun, 25-May-25 09:47:31 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'X-Content-Type-Options', b'nosniff'), (b'Set-Cookie', b'_cfuvid=U8YjH7p0TJbfNEafp2qGuzc.vCccT3JmWRXawUGBjyc-1748164651416-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9453f0a22807f05b-KHH'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-05-25 17:17:31,777 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-05-25 17:17:31,777 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-05-25 17:17:31,777 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-25 17:17:31,777 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-25 17:17:31,778 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-25 17:17:31,778 - openai._base_client - DEBUG - HTTP Response: POST https://api.openai.com/v1/audio/transcriptions "200 OK" Headers([('date', 'Sun, 25 May 2025 09:17:31 GMT'), ('content-type', 'text/plain; charset=utf-8'), ('transfer-encoding', 'chunked'), ('connection', 'keep-alive'), ('access-control-expose-headers', 'X-Request-ID'), ('openai-organization', 'genhaus'), ('openai-processing-ms', '1316'), ('openai-version', '2020-10-01'), ('strict-transport-security', 'max-age=31536000; includeSubDomains; preload'), ('via', 'envoy-router-7c4c8df9b7-57dm7'), ('x-envoy-upstream-service-time', '1322'), ('x-ratelimit-limit-requests', '500'), ('x-ratelimit-remaining-requests', '499'), ('x-ratelimit-reset-requests', '120ms'), ('x-request-id', 'req_3b52af35cbdc7fe97bbba3b0022f5202'), ('cf-cache-status', 'DYNAMIC'), ('set-cookie', '__cf_bm=pE3j8PajYuFK4BUtp1KxLZ9iWOmKV3_tDuced11UWnc-1748164651-1.0.1.1-HIeVV0CIkWhA9.thCO_w7J6.gdxr6jXONn9M.WLdLzEtKXT3zH6W3LXrNhcvlCZPgHTNfsYiZ1i09Srmy38cp4OfciYJM2iNs9AMHg7Q0Bg; path=/; expires=Sun, 25-May-25 09:47:31 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('x-content-type-options', 'nosniff'), ('set-cookie', '_cfuvid=U8YjH7p0TJbfNEafp2qGuzc.vCccT3JmWRXawUGBjyc-1748164651416-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('server', 'cloudflare'), ('cf-ray', '9453f0a22807f05b-KHH'), ('content-encoding', 'gzip'), ('alt-svc', 'h3=":443"; ma=86400')])
+2025-05-25 17:17:31,778 - openai._base_client - DEBUG - request_id: req_3b52af35cbdc7fe97bbba3b0022f5202
+2025-05-25 17:17:31,795 - pydub.converter - DEBUG - subprocess.call(['ffmpeg', '-y', '-i', 'temp\\20250525_171556_step4_audio_temp\\08.mp3', '-acodec', 'pcm_s16le', '-vn', '-f', 'wav', '-'])
+2025-05-25 17:17:31,852 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-25 17:19:22,055 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-25 17:19:22,055 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-25 17:19:22,289 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-25 17:19:22,293 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-25 17:19:24,331 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-25 17:19:24,594 - openai._base_client - DEBUG - Request options: {'method': 'post', 'url': '/audio/transcriptions', 'headers': {'Content-Type': 'multipart/form-data'}, 'files': [('file', SerializationIterator(index=0, iterator=SerializationIterator(index=0, iterator=<_io.BufferedReader name='temp\\20250525_171556_step4_audio_temp\\01.mp3'>)))], 'idempotency_key': 'stainless-python-retry-9bf44e5a-ed09-42ed-8ca9-9f59ca1cc8d0', 'json_data': {'model': 'whisper-1', 'language': 'zh', 'response_format': 'srt'}}
+2025-05-25 17:19:24,594 - openai._base_client - DEBUG - Sending HTTP Request: POST https://api.openai.com/v1/audio/transcriptions
+2025-05-25 17:19:24,594 - httpcore.connection - DEBUG - connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=5.0 socket_options=None
+2025-05-25 17:19:24,647 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000020F2D05C5F0>
+2025-05-25 17:19:24,647 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x0000020F2D068650> server_hostname='api.openai.com' timeout=5.0
+2025-05-25 17:19:24,687 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000020F2D05E270>
+2025-05-25 17:19:24,687 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-05-25 17:19:24,688 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-25 17:19:24,688 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-05-25 17:19:24,688 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-25 17:19:24,688 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-05-25 17:19:27,926 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 25 May 2025 09:19:27 GMT'), (b'Content-Type', b'text/plain; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-expose-headers', b'X-Request-ID'), (b'openai-organization', b'genhaus'), (b'openai-processing-ms', b'1419'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), (b'via', b'envoy-router-78456c78d9-nzvxh'), (b'x-envoy-upstream-service-time', b'1422'), (b'x-ratelimit-limit-requests', b'500'), (b'x-ratelimit-remaining-requests', b'499'), (b'x-ratelimit-reset-requests', b'120ms'), (b'x-request-id', b'req_871721b92e55535af0c09c12e1029c5a'), (b'cf-cache-status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=_vr4oTg7WNoZWdCV.C8fhfc89WEnBF6pBWcqtOBhBq8-1748164767-1.0.1.1-IVLMI_2TuCv5sNKQ37H8tNFb0turB_VeyCgLwAEIl3JlgDZH07SXoBQaiJk9r6nQYFV0jKkzO9DwYnsexUQv4C.BaS47pc0_.ekXS3cSyx4; path=/; expires=Sun, 25-May-25 09:49:27 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'X-Content-Type-Options', b'nosniff'), (b'Set-Cookie', b'_cfuvid=c5J4ngot7ooDyj4EVQ1jA9VYyOJmfV9uRUo86BNroqI-1748164767560-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9453f3713be0f087-KHH'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-05-25 17:19:27,926 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-05-25 17:19:27,926 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-05-25 17:19:27,926 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-25 17:19:27,926 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-25 17:19:27,926 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-25 17:19:27,926 - openai._base_client - DEBUG - HTTP Response: POST https://api.openai.com/v1/audio/transcriptions "200 OK" Headers([('date', 'Sun, 25 May 2025 09:19:27 GMT'), ('content-type', 'text/plain; charset=utf-8'), ('transfer-encoding', 'chunked'), ('connection', 'keep-alive'), ('access-control-expose-headers', 'X-Request-ID'), ('openai-organization', 'genhaus'), ('openai-processing-ms', '1419'), ('openai-version', '2020-10-01'), ('strict-transport-security', 'max-age=31536000; includeSubDomains; preload'), ('via', 'envoy-router-78456c78d9-nzvxh'), ('x-envoy-upstream-service-time', '1422'), ('x-ratelimit-limit-requests', '500'), ('x-ratelimit-remaining-requests', '499'), ('x-ratelimit-reset-requests', '120ms'), ('x-request-id', 'req_871721b92e55535af0c09c12e1029c5a'), ('cf-cache-status', 'DYNAMIC'), ('set-cookie', '__cf_bm=_vr4oTg7WNoZWdCV.C8fhfc89WEnBF6pBWcqtOBhBq8-1748164767-1.0.1.1-IVLMI_2TuCv5sNKQ37H8tNFb0turB_VeyCgLwAEIl3JlgDZH07SXoBQaiJk9r6nQYFV0jKkzO9DwYnsexUQv4C.BaS47pc0_.ekXS3cSyx4; path=/; expires=Sun, 25-May-25 09:49:27 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('x-content-type-options', 'nosniff'), ('set-cookie', '_cfuvid=c5J4ngot7ooDyj4EVQ1jA9VYyOJmfV9uRUo86BNroqI-1748164767560-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('server', 'cloudflare'), ('cf-ray', '9453f3713be0f087-KHH'), ('content-encoding', 'gzip'), ('alt-svc', 'h3=":443"; ma=86400')])
+2025-05-25 17:19:27,926 - openai._base_client - DEBUG - request_id: req_871721b92e55535af0c09c12e1029c5a
+2025-05-25 17:19:27,953 - pydub.converter - DEBUG - subprocess.call(['ffmpeg', '-y', '-i', 'temp\\20250525_171556_step4_audio_temp\\01.mp3', '-acodec', 'pcm_s16le', '-vn', '-f', 'wav', '-'])
+2025-05-25 17:19:28,220 - httpcore.connection - DEBUG - close.started
+2025-05-25 17:19:28,222 - httpcore.connection - DEBUG - close.complete
+2025-05-25 17:19:28,222 - httpcore.connection - DEBUG - close.started
+2025-05-25 17:19:28,222 - httpcore.connection - DEBUG - close.complete
+2025-05-25 17:19:28,222 - httpcore.connection - DEBUG - close.started
+2025-05-25 17:19:28,222 - httpcore.connection - DEBUG - close.complete
+2025-05-25 17:19:28,222 - httpcore.connection - DEBUG - close.started
+2025-05-25 17:19:28,222 - httpcore.connection - DEBUG - close.complete
+2025-05-25 17:19:28,222 - openai._base_client - DEBUG - Request options: {'method': 'post', 'url': '/audio/transcriptions', 'headers': {'Content-Type': 'multipart/form-data'}, 'files': [('file', SerializationIterator(index=0, iterator=SerializationIterator(index=0, iterator=<_io.BufferedReader name='temp\\20250525_171556_step4_audio_temp\\02.mp3'>)))], 'idempotency_key': 'stainless-python-retry-4c1a6fa8-1040-4129-951e-344f56505fe5', 'json_data': {'model': 'whisper-1', 'language': 'zh', 'response_format': 'srt'}}
+2025-05-25 17:19:28,222 - openai._base_client - DEBUG - Sending HTTP Request: POST https://api.openai.com/v1/audio/transcriptions
+2025-05-25 17:19:28,222 - httpcore.connection - DEBUG - connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=5.0 socket_options=None
+2025-05-25 17:19:28,334 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000020F2D05CEF0>
+2025-05-25 17:19:28,334 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x0000020F2D068AD0> server_hostname='api.openai.com' timeout=5.0
+2025-05-25 17:19:28,367 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000020F2D05FC20>
+2025-05-25 17:19:28,367 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-05-25 17:19:28,367 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-25 17:19:28,367 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-05-25 17:19:28,422 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-25 17:19:28,422 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-05-25 17:19:31,300 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 25 May 2025 09:19:30 GMT'), (b'Content-Type', b'text/plain; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-expose-headers', b'X-Request-ID'), (b'openai-organization', b'genhaus'), (b'openai-processing-ms', b'1510'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), (b'via', b'envoy-router-58f7f7856-b77gd'), (b'x-envoy-upstream-service-time', b'1513'), (b'x-ratelimit-limit-requests', b'500'), (b'x-ratelimit-remaining-requests', b'499'), (b'x-ratelimit-reset-requests', b'120ms'), (b'x-request-id', b'req_262e69259fd31bc1cf0a3e5f9b645e28'), (b'cf-cache-status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=p1q2JTnjhzKBolEpGsJyaRBNFkQ9Eco2z1MzkW44_Ag-1748164770-1.0.1.1-peCM0Tb1E9URVGVP1UIuClz6G_IN4DZGZveX1QCw0jPLXrD8YskjSVZoyPV5Vo3nCcZNDYmEU3Lc7q_A_IviC2vCCJb9MrcGN7.CatVRUpk; path=/; expires=Sun, 25-May-25 09:49:30 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'X-Content-Type-Options', b'nosniff'), (b'Set-Cookie', b'_cfuvid=GrgkbOO1B.GpDW4E0ritjF.urz8jh2uNJm2sqOVgce0-1748164770879-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9453f38838c5f083-KHH'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-05-25 17:19:31,300 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-05-25 17:19:31,300 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-05-25 17:19:31,300 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-25 17:19:31,300 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-25 17:19:31,300 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-25 17:19:31,300 - openai._base_client - DEBUG - HTTP Response: POST https://api.openai.com/v1/audio/transcriptions "200 OK" Headers([('date', 'Sun, 25 May 2025 09:19:30 GMT'), ('content-type', 'text/plain; charset=utf-8'), ('transfer-encoding', 'chunked'), ('connection', 'keep-alive'), ('access-control-expose-headers', 'X-Request-ID'), ('openai-organization', 'genhaus'), ('openai-processing-ms', '1510'), ('openai-version', '2020-10-01'), ('strict-transport-security', 'max-age=31536000; includeSubDomains; preload'), ('via', 'envoy-router-58f7f7856-b77gd'), ('x-envoy-upstream-service-time', '1513'), ('x-ratelimit-limit-requests', '500'), ('x-ratelimit-remaining-requests', '499'), ('x-ratelimit-reset-requests', '120ms'), ('x-request-id', 'req_262e69259fd31bc1cf0a3e5f9b645e28'), ('cf-cache-status', 'DYNAMIC'), ('set-cookie', '__cf_bm=p1q2JTnjhzKBolEpGsJyaRBNFkQ9Eco2z1MzkW44_Ag-1748164770-1.0.1.1-peCM0Tb1E9URVGVP1UIuClz6G_IN4DZGZveX1QCw0jPLXrD8YskjSVZoyPV5Vo3nCcZNDYmEU3Lc7q_A_IviC2vCCJb9MrcGN7.CatVRUpk; path=/; expires=Sun, 25-May-25 09:49:30 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('x-content-type-options', 'nosniff'), ('set-cookie', '_cfuvid=GrgkbOO1B.GpDW4E0ritjF.urz8jh2uNJm2sqOVgce0-1748164770879-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('server', 'cloudflare'), ('cf-ray', '9453f38838c5f083-KHH'), ('content-encoding', 'gzip'), ('alt-svc', 'h3=":443"; ma=86400')])
+2025-05-25 17:19:31,300 - openai._base_client - DEBUG - request_id: req_262e69259fd31bc1cf0a3e5f9b645e28
+2025-05-25 17:19:31,328 - pydub.converter - DEBUG - subprocess.call(['ffmpeg', '-y', '-i', 'temp\\20250525_171556_step4_audio_temp\\02.mp3', '-acodec', 'pcm_s16le', '-vn', '-f', 'wav', '-'])
+2025-05-25 17:19:31,599 - openai._base_client - DEBUG - Request options: {'method': 'post', 'url': '/audio/transcriptions', 'headers': {'Content-Type': 'multipart/form-data'}, 'files': [('file', SerializationIterator(index=0, iterator=SerializationIterator(index=0, iterator=<_io.BufferedReader name='temp\\20250525_171556_step4_audio_temp\\03.mp3'>)))], 'idempotency_key': 'stainless-python-retry-6e818b20-46f9-456d-9c6c-08cd8a7af535', 'json_data': {'model': 'whisper-1', 'language': 'zh', 'response_format': 'srt'}}
+2025-05-25 17:19:31,599 - openai._base_client - DEBUG - Sending HTTP Request: POST https://api.openai.com/v1/audio/transcriptions
+2025-05-25 17:19:31,599 - httpcore.connection - DEBUG - connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=5.0 socket_options=None
+2025-05-25 17:19:31,716 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000020F2D05E900>
+2025-05-25 17:19:31,716 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x0000020F2D041750> server_hostname='api.openai.com' timeout=5.0
+2025-05-25 17:19:31,821 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000020F2D05EA50>
+2025-05-25 17:19:31,821 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-05-25 17:19:31,821 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-25 17:19:31,821 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-05-25 17:19:31,916 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-25 17:19:31,916 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-05-25 17:19:33,141 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 25 May 2025 09:19:32 GMT'), (b'Content-Type', b'text/plain; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-expose-headers', b'X-Request-ID'), (b'openai-organization', b'genhaus'), (b'openai-processing-ms', b'656'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), (b'via', b'envoy-router-7c4bf98c9f-ncmd9'), (b'x-envoy-upstream-service-time', b'658'), (b'x-ratelimit-limit-requests', b'500'), (b'x-ratelimit-remaining-requests', b'499'), (b'x-ratelimit-reset-requests', b'120ms'), (b'x-request-id', b'req_64cdd1adee453b133a8c893526852880'), (b'cf-cache-status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=0KOG4OF60UEnUUne5e8rBYmQWJFh.Ex6rEE_TmxN1bU-1748164772-1.0.1.1-K3LCUEh6j7wgMZSmEWLs4FLiuxsNOnxPDr8.n_o0ql2w4xUpTq7tb.DhxtGgH1AkX16tHNqNtJ4LpBLiNicb94SX7JSRcnJXeoZcrA_gsFs; path=/; expires=Sun, 25-May-25 09:49:32 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'X-Content-Type-Options', b'nosniff'), (b'Set-Cookie', b'_cfuvid=RVQeprVBSKE6N2evWxjucxnsiyiIV8ZNYXg5DpxcFqE-1748164772732-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9453f39dcadcde67-KHH'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-05-25 17:19:33,141 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-05-25 17:19:33,141 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-05-25 17:19:33,141 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-25 17:19:33,141 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-25 17:19:33,141 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-25 17:19:33,141 - openai._base_client - DEBUG - HTTP Response: POST https://api.openai.com/v1/audio/transcriptions "200 OK" Headers([('date', 'Sun, 25 May 2025 09:19:32 GMT'), ('content-type', 'text/plain; charset=utf-8'), ('transfer-encoding', 'chunked'), ('connection', 'keep-alive'), ('access-control-expose-headers', 'X-Request-ID'), ('openai-organization', 'genhaus'), ('openai-processing-ms', '656'), ('openai-version', '2020-10-01'), ('strict-transport-security', 'max-age=31536000; includeSubDomains; preload'), ('via', 'envoy-router-7c4bf98c9f-ncmd9'), ('x-envoy-upstream-service-time', '658'), ('x-ratelimit-limit-requests', '500'), ('x-ratelimit-remaining-requests', '499'), ('x-ratelimit-reset-requests', '120ms'), ('x-request-id', 'req_64cdd1adee453b133a8c893526852880'), ('cf-cache-status', 'DYNAMIC'), ('set-cookie', '__cf_bm=0KOG4OF60UEnUUne5e8rBYmQWJFh.Ex6rEE_TmxN1bU-1748164772-1.0.1.1-K3LCUEh6j7wgMZSmEWLs4FLiuxsNOnxPDr8.n_o0ql2w4xUpTq7tb.DhxtGgH1AkX16tHNqNtJ4LpBLiNicb94SX7JSRcnJXeoZcrA_gsFs; path=/; expires=Sun, 25-May-25 09:49:32 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('x-content-type-options', 'nosniff'), ('set-cookie', '_cfuvid=RVQeprVBSKE6N2evWxjucxnsiyiIV8ZNYXg5DpxcFqE-1748164772732-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('server', 'cloudflare'), ('cf-ray', '9453f39dcadcde67-KHH'), ('content-encoding', 'gzip'), ('alt-svc', 'h3=":443"; ma=86400')])
+2025-05-25 17:19:33,141 - openai._base_client - DEBUG - request_id: req_64cdd1adee453b133a8c893526852880
+2025-05-25 17:19:33,172 - pydub.converter - DEBUG - subprocess.call(['ffmpeg', '-y', '-i', 'temp\\20250525_171556_step4_audio_temp\\03.mp3', '-acodec', 'pcm_s16le', '-vn', '-f', 'wav', '-'])
+2025-05-25 17:19:33,435 - openai._base_client - DEBUG - Request options: {'method': 'post', 'url': '/audio/transcriptions', 'headers': {'Content-Type': 'multipart/form-data'}, 'files': [('file', SerializationIterator(index=0, iterator=SerializationIterator(index=0, iterator=<_io.BufferedReader name='temp\\20250525_171556_step4_audio_temp\\04.mp3'>)))], 'idempotency_key': 'stainless-python-retry-c559b078-fa29-4475-a732-e64756d6e3ed', 'json_data': {'model': 'whisper-1', 'language': 'zh', 'response_format': 'srt'}}
+2025-05-25 17:19:33,435 - openai._base_client - DEBUG - Sending HTTP Request: POST https://api.openai.com/v1/audio/transcriptions
+2025-05-25 17:19:33,435 - httpcore.connection - DEBUG - connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=5.0 socket_options=None
+2025-05-25 17:19:33,487 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000020F2D047530>
+2025-05-25 17:19:33,487 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x0000020F2D0436D0> server_hostname='api.openai.com' timeout=5.0
+2025-05-25 17:19:33,514 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000020F2D0465A0>
+2025-05-25 17:19:33,514 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-05-25 17:19:33,514 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-25 17:19:33,514 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-05-25 17:19:33,514 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-25 17:19:33,514 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-05-25 17:19:35,337 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 25 May 2025 09:19:34 GMT'), (b'Content-Type', b'text/plain; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-expose-headers', b'X-Request-ID'), (b'openai-organization', b'genhaus'), (b'openai-processing-ms', b'787'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), (b'via', b'envoy-router-dc9d5f6f7-9r8x5'), (b'x-envoy-upstream-service-time', b'790'), (b'x-ratelimit-limit-requests', b'500'), (b'x-ratelimit-remaining-requests', b'499'), (b'x-ratelimit-reset-requests', b'120ms'), (b'x-request-id', b'req_d8152fc8b1c17d6a658d31596fc3ac39'), (b'cf-cache-status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=RXQgxgk8Xrhwe14.vHcYMPz1_GRHg7zbeqbtJlZKE6Y-1748164774-1.0.1.1-fI682b3sFrY51rebfeHbKjszyU2O7VLtlHf5upIgbUWuiL2IyCfn9danh1Z607x3QZjYDKdjFC.aru7cPUa2dRL.44pITC6.8O9ipZexQy8; path=/; expires=Sun, 25-May-25 09:49:34 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'X-Content-Type-Options', b'nosniff'), (b'Set-Cookie', b'_cfuvid=g3espvulRieBICZvkaJfV8E8nw84S_gZzOq16KD2KSI-1748164774969-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9453f3a86a2ef087-KHH'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-05-25 17:19:35,337 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-05-25 17:19:35,337 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-05-25 17:19:35,337 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-25 17:19:35,337 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-25 17:19:35,337 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-25 17:19:35,337 - openai._base_client - DEBUG - HTTP Response: POST https://api.openai.com/v1/audio/transcriptions "200 OK" Headers([('date', 'Sun, 25 May 2025 09:19:34 GMT'), ('content-type', 'text/plain; charset=utf-8'), ('transfer-encoding', 'chunked'), ('connection', 'keep-alive'), ('access-control-expose-headers', 'X-Request-ID'), ('openai-organization', 'genhaus'), ('openai-processing-ms', '787'), ('openai-version', '2020-10-01'), ('strict-transport-security', 'max-age=31536000; includeSubDomains; preload'), ('via', 'envoy-router-dc9d5f6f7-9r8x5'), ('x-envoy-upstream-service-time', '790'), ('x-ratelimit-limit-requests', '500'), ('x-ratelimit-remaining-requests', '499'), ('x-ratelimit-reset-requests', '120ms'), ('x-request-id', 'req_d8152fc8b1c17d6a658d31596fc3ac39'), ('cf-cache-status', 'DYNAMIC'), ('set-cookie', '__cf_bm=RXQgxgk8Xrhwe14.vHcYMPz1_GRHg7zbeqbtJlZKE6Y-1748164774-1.0.1.1-fI682b3sFrY51rebfeHbKjszyU2O7VLtlHf5upIgbUWuiL2IyCfn9danh1Z607x3QZjYDKdjFC.aru7cPUa2dRL.44pITC6.8O9ipZexQy8; path=/; expires=Sun, 25-May-25 09:49:34 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('x-content-type-options', 'nosniff'), ('set-cookie', '_cfuvid=g3espvulRieBICZvkaJfV8E8nw84S_gZzOq16KD2KSI-1748164774969-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('server', 'cloudflare'), ('cf-ray', '9453f3a86a2ef087-KHH'), ('content-encoding', 'gzip'), ('alt-svc', 'h3=":443"; ma=86400')])
+2025-05-25 17:19:35,337 - openai._base_client - DEBUG - request_id: req_d8152fc8b1c17d6a658d31596fc3ac39
+2025-05-25 17:19:35,359 - pydub.converter - DEBUG - subprocess.call(['ffmpeg', '-y', '-i', 'temp\\20250525_171556_step4_audio_temp\\04.mp3', '-acodec', 'pcm_s16le', '-vn', '-f', 'wav', '-'])
+2025-05-25 17:19:35,622 - openai._base_client - DEBUG - Request options: {'method': 'post', 'url': '/audio/transcriptions', 'headers': {'Content-Type': 'multipart/form-data'}, 'files': [('file', SerializationIterator(index=0, iterator=SerializationIterator(index=0, iterator=<_io.BufferedReader name='temp\\20250525_171556_step4_audio_temp\\05.mp3'>)))], 'idempotency_key': 'stainless-python-retry-de45f81e-f7e6-420f-9de1-3f4f760aebbf', 'json_data': {'model': 'whisper-1', 'language': 'zh', 'response_format': 'srt'}}
+2025-05-25 17:19:35,622 - openai._base_client - DEBUG - Sending HTTP Request: POST https://api.openai.com/v1/audio/transcriptions
+2025-05-25 17:19:35,622 - httpcore.connection - DEBUG - connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=5.0 socket_options=None
+2025-05-25 17:19:35,674 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000020F2D013E60>
+2025-05-25 17:19:35,674 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x0000020F2D041ED0> server_hostname='api.openai.com' timeout=5.0
+2025-05-25 17:19:35,701 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000020F2D012930>
+2025-05-25 17:19:35,701 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-05-25 17:19:35,701 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-25 17:19:35,701 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-05-25 17:19:35,701 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-25 17:19:35,701 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-05-25 17:19:37,334 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 25 May 2025 09:19:36 GMT'), (b'Content-Type', b'text/plain; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-expose-headers', b'X-Request-ID'), (b'openai-organization', b'genhaus'), (b'openai-processing-ms', b'632'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), (b'via', b'envoy-router-74c8894ff9-vzmg6'), (b'x-envoy-upstream-service-time', b'635'), (b'x-ratelimit-limit-requests', b'500'), (b'x-ratelimit-remaining-requests', b'499'), (b'x-ratelimit-reset-requests', b'120ms'), (b'x-request-id', b'req_f3eebd8539a3b6f189295b108d7ac3db'), (b'cf-cache-status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=mLlFzCGZ4C4ltF.5XDkGF.No1iiDWJAnj4_aS6D3PUA-1748164776-1.0.1.1-8n5ydXFBxFxHTfX3N3MlxfsvjqvymPNx_VbN.4Iy8U9mpy0p1ATmGH1OpbWR6t0WtQKigPaiHVlFfreILHmg49cepKJYY6alfvqhEMpuOUs; path=/; expires=Sun, 25-May-25 09:49:36 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'X-Content-Type-Options', b'nosniff'), (b'Set-Cookie', b'_cfuvid=alpob47UAOfpopCrIg5JMupVh9xyz6dv4VKO.PcHQ.c-1748164776917-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9453f3b6186ef067-KHH'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-05-25 17:19:37,334 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-05-25 17:19:37,334 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-05-25 17:19:37,334 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-25 17:19:37,334 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-25 17:19:37,334 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-25 17:19:37,334 - openai._base_client - DEBUG - HTTP Response: POST https://api.openai.com/v1/audio/transcriptions "200 OK" Headers([('date', 'Sun, 25 May 2025 09:19:36 GMT'), ('content-type', 'text/plain; charset=utf-8'), ('transfer-encoding', 'chunked'), ('connection', 'keep-alive'), ('access-control-expose-headers', 'X-Request-ID'), ('openai-organization', 'genhaus'), ('openai-processing-ms', '632'), ('openai-version', '2020-10-01'), ('strict-transport-security', 'max-age=31536000; includeSubDomains; preload'), ('via', 'envoy-router-74c8894ff9-vzmg6'), ('x-envoy-upstream-service-time', '635'), ('x-ratelimit-limit-requests', '500'), ('x-ratelimit-remaining-requests', '499'), ('x-ratelimit-reset-requests', '120ms'), ('x-request-id', 'req_f3eebd8539a3b6f189295b108d7ac3db'), ('cf-cache-status', 'DYNAMIC'), ('set-cookie', '__cf_bm=mLlFzCGZ4C4ltF.5XDkGF.No1iiDWJAnj4_aS6D3PUA-1748164776-1.0.1.1-8n5ydXFBxFxHTfX3N3MlxfsvjqvymPNx_VbN.4Iy8U9mpy0p1ATmGH1OpbWR6t0WtQKigPaiHVlFfreILHmg49cepKJYY6alfvqhEMpuOUs; path=/; expires=Sun, 25-May-25 09:49:36 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('x-content-type-options', 'nosniff'), ('set-cookie', '_cfuvid=alpob47UAOfpopCrIg5JMupVh9xyz6dv4VKO.PcHQ.c-1748164776917-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('server', 'cloudflare'), ('cf-ray', '9453f3b6186ef067-KHH'), ('content-encoding', 'gzip'), ('alt-svc', 'h3=":443"; ma=86400')])
+2025-05-25 17:19:37,334 - openai._base_client - DEBUG - request_id: req_f3eebd8539a3b6f189295b108d7ac3db
+2025-05-25 17:19:37,359 - pydub.converter - DEBUG - subprocess.call(['ffmpeg', '-y', '-i', 'temp\\20250525_171556_step4_audio_temp\\05.mp3', '-acodec', 'pcm_s16le', '-vn', '-f', 'wav', '-'])
+2025-05-25 17:19:37,631 - openai._base_client - DEBUG - Request options: {'method': 'post', 'url': '/audio/transcriptions', 'headers': {'Content-Type': 'multipart/form-data'}, 'files': [('file', SerializationIterator(index=0, iterator=SerializationIterator(index=0, iterator=<_io.BufferedReader name='temp\\20250525_171556_step4_audio_temp\\06.mp3'>)))], 'idempotency_key': 'stainless-python-retry-235893bb-c896-497d-86a6-e8c25607b011', 'json_data': {'model': 'whisper-1', 'language': 'zh', 'response_format': 'srt'}}
+2025-05-25 17:19:37,631 - openai._base_client - DEBUG - Sending HTTP Request: POST https://api.openai.com/v1/audio/transcriptions
+2025-05-25 17:19:37,631 - httpcore.connection - DEBUG - connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=5.0 socket_options=None
+2025-05-25 17:19:37,661 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000020F2D06D310>
+2025-05-25 17:19:37,661 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x0000020F2D042950> server_hostname='api.openai.com' timeout=5.0
+2025-05-25 17:19:37,695 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000020F2D06D040>
+2025-05-25 17:19:37,695 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-05-25 17:19:37,695 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-25 17:19:37,695 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-05-25 17:19:37,695 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-25 17:19:37,695 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-05-25 17:19:39,568 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 25 May 2025 09:19:39 GMT'), (b'Content-Type', b'text/plain; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-expose-headers', b'X-Request-ID'), (b'openai-organization', b'genhaus'), (b'openai-processing-ms', b'1154'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), (b'via', b'envoy-router-78456c78d9-vw4tl'), (b'x-envoy-upstream-service-time', b'1156'), (b'x-ratelimit-limit-requests', b'500'), (b'x-ratelimit-remaining-requests', b'499'), (b'x-ratelimit-reset-requests', b'120ms'), (b'x-request-id', b'req_aa2e12c5a4e5272708b3139ec33eca38'), (b'cf-cache-status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=eri3B9dK5mF0B.7N7qPWhFWszs2fwSdtXk1LQzF4qi0-1748164779-1.0.1.1-y2yUENDPqrrY10qe7cxqoNNkyEaNE1bnH2e3xHnoOKXWrHyBno3_IL7uoCOwUU0tsczRQZLnpSZYbPIk9bx_WXD_Z8Kd_PaR6KXiynmIvcA; path=/; expires=Sun, 25-May-25 09:49:39 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'X-Content-Type-Options', b'nosniff'), (b'Set-Cookie', b'_cfuvid=TLlAH8skxWOicJeryUkX2tLtNd7XfsTYpzzZWaIL1mU-1748164779210-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9453f3c28c2bc91e-KHH'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-05-25 17:19:39,568 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-05-25 17:19:39,568 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-05-25 17:19:39,568 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-25 17:19:39,568 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-25 17:19:39,568 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-25 17:19:39,568 - openai._base_client - DEBUG - HTTP Response: POST https://api.openai.com/v1/audio/transcriptions "200 OK" Headers([('date', 'Sun, 25 May 2025 09:19:39 GMT'), ('content-type', 'text/plain; charset=utf-8'), ('transfer-encoding', 'chunked'), ('connection', 'keep-alive'), ('access-control-expose-headers', 'X-Request-ID'), ('openai-organization', 'genhaus'), ('openai-processing-ms', '1154'), ('openai-version', '2020-10-01'), ('strict-transport-security', 'max-age=31536000; includeSubDomains; preload'), ('via', 'envoy-router-78456c78d9-vw4tl'), ('x-envoy-upstream-service-time', '1156'), ('x-ratelimit-limit-requests', '500'), ('x-ratelimit-remaining-requests', '499'), ('x-ratelimit-reset-requests', '120ms'), ('x-request-id', 'req_aa2e12c5a4e5272708b3139ec33eca38'), ('cf-cache-status', 'DYNAMIC'), ('set-cookie', '__cf_bm=eri3B9dK5mF0B.7N7qPWhFWszs2fwSdtXk1LQzF4qi0-1748164779-1.0.1.1-y2yUENDPqrrY10qe7cxqoNNkyEaNE1bnH2e3xHnoOKXWrHyBno3_IL7uoCOwUU0tsczRQZLnpSZYbPIk9bx_WXD_Z8Kd_PaR6KXiynmIvcA; path=/; expires=Sun, 25-May-25 09:49:39 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('x-content-type-options', 'nosniff'), ('set-cookie', '_cfuvid=TLlAH8skxWOicJeryUkX2tLtNd7XfsTYpzzZWaIL1mU-1748164779210-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('server', 'cloudflare'), ('cf-ray', '9453f3c28c2bc91e-KHH'), ('content-encoding', 'gzip'), ('alt-svc', 'h3=":443"; ma=86400')])
+2025-05-25 17:19:39,568 - openai._base_client - DEBUG - request_id: req_aa2e12c5a4e5272708b3139ec33eca38
+2025-05-25 17:19:39,594 - pydub.converter - DEBUG - subprocess.call(['ffmpeg', '-y', '-i', 'temp\\20250525_171556_step4_audio_temp\\06.mp3', '-acodec', 'pcm_s16le', '-vn', '-f', 'wav', '-'])
+2025-05-25 17:19:39,872 - openai._base_client - DEBUG - Request options: {'method': 'post', 'url': '/audio/transcriptions', 'headers': {'Content-Type': 'multipart/form-data'}, 'files': [('file', SerializationIterator(index=0, iterator=SerializationIterator(index=0, iterator=<_io.BufferedReader name='temp\\20250525_171556_step4_audio_temp\\07.mp3'>)))], 'idempotency_key': 'stainless-python-retry-26f1fc44-2a41-41a3-a9cd-62c8c1356f6b', 'json_data': {'model': 'whisper-1', 'language': 'zh', 'response_format': 'srt'}}
+2025-05-25 17:19:39,874 - openai._base_client - DEBUG - Sending HTTP Request: POST https://api.openai.com/v1/audio/transcriptions
+2025-05-25 17:19:39,874 - httpcore.connection - DEBUG - connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=5.0 socket_options=None
+2025-05-25 17:19:39,914 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000020F2D06EFC0>
+2025-05-25 17:19:39,914 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x0000020F2D0691D0> server_hostname='api.openai.com' timeout=5.0
+2025-05-25 17:19:40,009 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000020F2D06ECF0>
+2025-05-25 17:19:40,009 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-05-25 17:19:40,009 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-25 17:19:40,009 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-05-25 17:19:40,009 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-25 17:19:40,009 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-05-25 17:19:41,955 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 25 May 2025 09:19:41 GMT'), (b'Content-Type', b'text/plain; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-expose-headers', b'X-Request-ID'), (b'openai-organization', b'genhaus'), (b'openai-processing-ms', b'602'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), (b'via', b'envoy-router-6b5d94d96-bl8p6'), (b'x-envoy-upstream-service-time', b'616'), (b'x-ratelimit-limit-requests', b'500'), (b'x-ratelimit-remaining-requests', b'499'), (b'x-ratelimit-reset-requests', b'120ms'), (b'x-request-id', b'req_f517f01e73238054be3f32878161596c'), (b'cf-cache-status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=DHrM2RU_j7f_sbRcNLTC2558UpyAYTyex2dwa4T495k-1748164781-1.0.1.1-CK0gIrOoQ7jAoHBy.CfjAzgqQ5STgi1.uEXpXP379HnriYC.a1cnqbL9SVC53Y6DAFVqkd9ZIjK6XS3Rx0O8kPEZlfXjMa.bou.ETMSzTtM; path=/; expires=Sun, 25-May-25 09:49:41 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'X-Content-Type-Options', b'nosniff'), (b'Set-Cookie', b'_cfuvid=fDmY8txsjq_krnhDTGpzEJl2HV2fXRI1VZ4P3oXtIx0-1748164781525-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9453f3d0fd11f067-KHH'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-05-25 17:19:41,955 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-05-25 17:19:41,957 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-05-25 17:19:41,957 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-25 17:19:41,957 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-25 17:19:41,957 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-25 17:19:41,957 - openai._base_client - DEBUG - HTTP Response: POST https://api.openai.com/v1/audio/transcriptions "200 OK" Headers([('date', 'Sun, 25 May 2025 09:19:41 GMT'), ('content-type', 'text/plain; charset=utf-8'), ('transfer-encoding', 'chunked'), ('connection', 'keep-alive'), ('access-control-expose-headers', 'X-Request-ID'), ('openai-organization', 'genhaus'), ('openai-processing-ms', '602'), ('openai-version', '2020-10-01'), ('strict-transport-security', 'max-age=31536000; includeSubDomains; preload'), ('via', 'envoy-router-6b5d94d96-bl8p6'), ('x-envoy-upstream-service-time', '616'), ('x-ratelimit-limit-requests', '500'), ('x-ratelimit-remaining-requests', '499'), ('x-ratelimit-reset-requests', '120ms'), ('x-request-id', 'req_f517f01e73238054be3f32878161596c'), ('cf-cache-status', 'DYNAMIC'), ('set-cookie', '__cf_bm=DHrM2RU_j7f_sbRcNLTC2558UpyAYTyex2dwa4T495k-1748164781-1.0.1.1-CK0gIrOoQ7jAoHBy.CfjAzgqQ5STgi1.uEXpXP379HnriYC.a1cnqbL9SVC53Y6DAFVqkd9ZIjK6XS3Rx0O8kPEZlfXjMa.bou.ETMSzTtM; path=/; expires=Sun, 25-May-25 09:49:41 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('x-content-type-options', 'nosniff'), ('set-cookie', '_cfuvid=fDmY8txsjq_krnhDTGpzEJl2HV2fXRI1VZ4P3oXtIx0-1748164781525-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('server', 'cloudflare'), ('cf-ray', '9453f3d0fd11f067-KHH'), ('content-encoding', 'gzip'), ('alt-svc', 'h3=":443"; ma=86400')])
+2025-05-25 17:19:41,957 - openai._base_client - DEBUG - request_id: req_f517f01e73238054be3f32878161596c
+2025-05-25 17:19:41,981 - pydub.converter - DEBUG - subprocess.call(['ffmpeg', '-y', '-i', 'temp\\20250525_171556_step4_audio_temp\\07.mp3', '-acodec', 'pcm_s16le', '-vn', '-f', 'wav', '-'])
+2025-05-25 17:19:42,248 - openai._base_client - DEBUG - Request options: {'method': 'post', 'url': '/audio/transcriptions', 'headers': {'Content-Type': 'multipart/form-data'}, 'files': [('file', SerializationIterator(index=0, iterator=SerializationIterator(index=0, iterator=<_io.BufferedReader name='temp\\20250525_171556_step4_audio_temp\\08.mp3'>)))], 'idempotency_key': 'stainless-python-retry-6a17b2d4-35f8-4d03-9f3b-c5147f628e5a', 'json_data': {'model': 'whisper-1', 'language': 'zh', 'response_format': 'srt'}}
+2025-05-25 17:19:42,248 - httpcore.connection - DEBUG - close.started
+2025-05-25 17:19:42,248 - httpcore.connection - DEBUG - close.complete
+2025-05-25 17:19:42,248 - httpcore.connection - DEBUG - close.started
+2025-05-25 17:19:42,248 - httpcore.connection - DEBUG - close.complete
+2025-05-25 17:19:42,248 - httpcore.connection - DEBUG - close.started
+2025-05-25 17:19:42,248 - httpcore.connection - DEBUG - close.complete
+2025-05-25 17:19:42,248 - httpcore.connection - DEBUG - close.started
+2025-05-25 17:19:42,248 - httpcore.connection - DEBUG - close.complete
+2025-05-25 17:19:42,248 - httpcore.connection - DEBUG - close.started
+2025-05-25 17:19:42,248 - httpcore.connection - DEBUG - close.complete
+2025-05-25 17:19:42,248 - openai._base_client - DEBUG - Sending HTTP Request: POST https://api.openai.com/v1/audio/transcriptions
+2025-05-25 17:19:42,248 - httpcore.connection - DEBUG - connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=5.0 socket_options=None
+2025-05-25 17:19:42,355 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000020F2D0127B0>
+2025-05-25 17:19:42,355 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x0000020F2D068550> server_hostname='api.openai.com' timeout=5.0
+2025-05-25 17:19:42,381 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000020F2D012510>
+2025-05-25 17:19:42,381 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-05-25 17:19:42,381 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-25 17:19:42,381 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-05-25 17:19:42,381 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-25 17:19:42,381 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-05-25 17:19:44,004 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 25 May 2025 09:19:43 GMT'), (b'Content-Type', b'text/plain; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-expose-headers', b'X-Request-ID'), (b'openai-organization', b'genhaus'), (b'openai-processing-ms', b'811'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), (b'via', b'envoy-router-5f689c5f9d-gv99r'), (b'x-envoy-upstream-service-time', b'815'), (b'x-ratelimit-limit-requests', b'500'), (b'x-ratelimit-remaining-requests', b'499'), (b'x-ratelimit-reset-requests', b'120ms'), (b'x-request-id', b'req_d2fbebe0c894e7d2116a76ddda50eb34'), (b'cf-cache-status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=Rn..yX.u3_GSkz8npXfYKz0B6xlrzbEe6hFX3kYO7UE-1748164783-1.0.1.1-uPoX9pk2vaF.NZwFDH2ADVL3j1gf5d0VnPeKhhQgI6kuoVNuk7gikr6B_belawJD3Gxsg_sBPvsV7WjObCMZ2sRcf6QEYhu8Nw.FvY7zjJ8; path=/; expires=Sun, 25-May-25 09:49:43 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'X-Content-Type-Options', b'nosniff'), (b'Set-Cookie', b'_cfuvid=TfS7fQ6EK0jh25oF3pEQYtkx1wg9sNSKa3LYJ4GUay0-1748164783565-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9453f3dfcb82f067-KHH'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-05-25 17:19:44,004 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-05-25 17:19:44,004 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-05-25 17:19:44,004 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-25 17:19:44,004 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-25 17:19:44,004 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-25 17:19:44,004 - openai._base_client - DEBUG - HTTP Response: POST https://api.openai.com/v1/audio/transcriptions "200 OK" Headers([('date', 'Sun, 25 May 2025 09:19:43 GMT'), ('content-type', 'text/plain; charset=utf-8'), ('transfer-encoding', 'chunked'), ('connection', 'keep-alive'), ('access-control-expose-headers', 'X-Request-ID'), ('openai-organization', 'genhaus'), ('openai-processing-ms', '811'), ('openai-version', '2020-10-01'), ('strict-transport-security', 'max-age=31536000; includeSubDomains; preload'), ('via', 'envoy-router-5f689c5f9d-gv99r'), ('x-envoy-upstream-service-time', '815'), ('x-ratelimit-limit-requests', '500'), ('x-ratelimit-remaining-requests', '499'), ('x-ratelimit-reset-requests', '120ms'), ('x-request-id', 'req_d2fbebe0c894e7d2116a76ddda50eb34'), ('cf-cache-status', 'DYNAMIC'), ('set-cookie', '__cf_bm=Rn..yX.u3_GSkz8npXfYKz0B6xlrzbEe6hFX3kYO7UE-1748164783-1.0.1.1-uPoX9pk2vaF.NZwFDH2ADVL3j1gf5d0VnPeKhhQgI6kuoVNuk7gikr6B_belawJD3Gxsg_sBPvsV7WjObCMZ2sRcf6QEYhu8Nw.FvY7zjJ8; path=/; expires=Sun, 25-May-25 09:49:43 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('x-content-type-options', 'nosniff'), ('set-cookie', '_cfuvid=TfS7fQ6EK0jh25oF3pEQYtkx1wg9sNSKa3LYJ4GUay0-1748164783565-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('server', 'cloudflare'), ('cf-ray', '9453f3dfcb82f067-KHH'), ('content-encoding', 'gzip'), ('alt-svc', 'h3=":443"; ma=86400')])
+2025-05-25 17:19:44,004 - openai._base_client - DEBUG - request_id: req_d2fbebe0c894e7d2116a76ddda50eb34
+2025-05-25 17:19:44,027 - pydub.converter - DEBUG - subprocess.call(['ffmpeg', '-y', '-i', 'temp\\20250525_171556_step4_audio_temp\\08.mp3', '-acodec', 'pcm_s16le', '-vn', '-f', 'wav', '-'])
+2025-05-25 17:19:44,060 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-25 17:22:29,285 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-25 17:22:29,285 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-25 17:22:29,809 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-25 17:22:29,812 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-25 17:22:30,023 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-25 17:22:30,025 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-25 17:22:32,919 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-25 17:22:32,922 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-25 17:22:33,106 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-25 17:22:33,108 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-25 17:39:10,501 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-25 17:39:10,501 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-25 17:39:10,501 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-25 17:39:10,628 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-25 17:39:11,238 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-25 17:39:11,241 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-25 17:39:11,648 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "GET /pkg-version HTTP/1.1" 200 21
+2025-05-25 17:39:12,262 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-initiated-analytics/ HTTP/1.1" 200 None
+2025-05-25 17:40:18,981 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-25 17:40:18,983 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-25 17:40:18,983 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-25 17:40:19,101 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-25 17:40:19,113 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:7863
+2025-05-25 17:40:19,681 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-25 17:40:19,683 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-25 17:40:19,999 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "GET /pkg-version HTTP/1.1" 200 21

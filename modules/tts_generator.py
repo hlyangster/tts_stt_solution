@@ -90,7 +90,7 @@ class TTSGenerator:
         return pronunciation_dict
 
     def generate_speech(self, text, voice_name="訓練長", emotion="neutral", 
-                       speed=1.0, custom_pronunciation=None, progress_callback=None):
+                       speed=1.0, custom_pronunciation=None, progress_callback=None, identifier=None):
         """生成語音"""
         # 首先測試 API 連接
         print("開始 API 連接測試...")
@@ -126,9 +126,15 @@ class TTSGenerator:
         for i, segment in enumerate(segments):
             print(f"段落 {i+1} ({len(segment)} 字符): {segment[:50]}...")
         
+        # 檢查是否提供 identifier
+        if not identifier:
+            raise TTSGenerationError("無效的處理識別碼")
+            
         # 生成每個段落的語音
         mp3_files = []
-        zip_path = self.output_dir / "audio_files.zip"
+        # 使用 identifier 作為時間戳命名 zip 檔案
+        zip_filename = f"{identifier}_step3_audio.zip"
+        zip_path = self.output_dir / zip_filename
         
         try:
             with zipfile.ZipFile(zip_path, 'w') as zipf:
