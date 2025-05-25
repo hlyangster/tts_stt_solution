@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # modules/openai_patch.py
 """
 OpenAI 補丁模塊 - 用於解決 proxies 參數問題
@@ -23,17 +24,17 @@ def patch_openai():
             # 創建一個包裝函數來過濾 proxies 參數
             def patched_openai_init(*args, **kwargs):
                 if 'proxies' in kwargs:
-                    print(f"[openai_patch] 移除不支持的 'proxies' 參數")
+                    print("[openai_patch] Removing unsupported 'proxies' parameter")
                     del kwargs['proxies']
                 return original_openai(*args, **kwargs)
             
             # 替換原始的 OpenAI 類
             openai_module.OpenAI = patched_openai_init
-            print("[openai_patch] 成功修補 OpenAI 客戶端初始化函數")
+            print("[openai_patch] Successfully patched OpenAI client initialization")
         else:
-            print("[openai_patch] 未找到 OpenAI 類，可能是使用了不同版本的 openai 庫")
+            print("[openai_patch] OpenAI class not found, might be using a different version")
     else:
-        print("[openai_patch] OpenAI 模塊尚未導入，將預先初始化它並應用補丁")
+        print("[openai_patch] OpenAI module not imported, will initialize and patch it")
         # 如果尚未導入，先導入它然後應用補丁
         import openai
         from openai import OpenAI
@@ -44,7 +45,7 @@ def patch_openai():
         # 創建一個包裝函數來過濾 proxies 參數
         def patched_openai_init(*args, **kwargs):
             if 'proxies' in kwargs:
-                print(f"[openai_patch] 移除不支持的 'proxies' 參數")
+                print("[openai_patch] Removing unsupported 'proxies' parameter")
                 del kwargs['proxies']
             return original_openai(*args, **kwargs)
         

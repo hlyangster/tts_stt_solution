@@ -1367,3 +1367,394 @@
 2025-05-15 22:11:01,889 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "GET /pkg-version HTTP/1.1" 200 21
 2025-05-15 22:11:02,543 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-initiated-analytics/ HTTP/1.1" 200 None
 2025-05-15 22:11:02,568 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-launched-telemetry/ HTTP/1.1" 200 None
+2025-05-16 00:31:23,899 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-16 00:31:23,900 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-16 00:31:23,900 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-16 00:31:24,024 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-16 00:31:24,036 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:7862
+2025-05-16 00:31:24,036 - urllib3.connectionpool - DEBUG - http://127.0.0.1:7862 "GET /startup-events HTTP/1.1" 200 5
+2025-05-16 00:31:24,042 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:7862
+2025-05-16 00:31:24,074 - urllib3.connectionpool - DEBUG - http://127.0.0.1:7862 "HEAD / HTTP/1.1" 200 0
+2025-05-16 00:31:24,076 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-16 00:31:24,588 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-16 00:31:24,590 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-16 00:31:24,638 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-16 00:31:24,640 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-16 00:31:24,866 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "GET /pkg-version HTTP/1.1" 200 21
+2025-05-16 00:31:25,592 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-launched-telemetry/ HTTP/1.1" 200 None
+2025-05-16 00:31:25,693 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-initiated-analytics/ HTTP/1.1" 200 None
+2025-05-16 00:32:08,474 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-16 00:32:08,474 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-16 00:32:08,474 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-16 00:32:08,599 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-16 00:32:08,611 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:7862
+2025-05-16 00:32:08,611 - urllib3.connectionpool - DEBUG - http://127.0.0.1:7862 "GET /startup-events HTTP/1.1" 200 5
+2025-05-16 00:32:08,619 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:7862
+2025-05-16 00:32:08,645 - urllib3.connectionpool - DEBUG - http://127.0.0.1:7862 "HEAD / HTTP/1.1" 200 0
+2025-05-16 00:32:08,646 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-16 00:32:09,146 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-16 00:32:09,149 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-16 00:32:09,210 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-16 00:32:09,211 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-16 00:32:09,462 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "GET /pkg-version HTTP/1.1" 200 21
+2025-05-16 00:32:10,188 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-launched-telemetry/ HTTP/1.1" 200 None
+2025-05-16 00:32:10,239 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-initiated-analytics/ HTTP/1.1" 200 None
+2025-05-16 06:07:30,792 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-16 06:07:30,792 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-16 06:07:30,792 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-16 06:07:30,911 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-16 06:07:30,923 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:7862
+2025-05-16 06:07:30,923 - urllib3.connectionpool - DEBUG - http://127.0.0.1:7862 "GET /startup-events HTTP/1.1" 200 5
+2025-05-16 06:07:30,933 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:7862
+2025-05-16 06:07:30,961 - urllib3.connectionpool - DEBUG - http://127.0.0.1:7862 "HEAD / HTTP/1.1" 200 0
+2025-05-16 06:07:30,963 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-16 06:07:31,480 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-16 06:07:31,483 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-16 06:07:31,530 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-16 06:07:31,533 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-16 06:07:31,793 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "GET /pkg-version HTTP/1.1" 200 21
+2025-05-16 06:07:32,539 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-launched-telemetry/ HTTP/1.1" 200 None
+2025-05-16 06:07:32,632 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-initiated-analytics/ HTTP/1.1" 200 None
+2025-05-16 06:08:36,937 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-16 06:08:36,939 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-16 06:08:36,939 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-16 06:08:37,055 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-16 06:08:37,069 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:7862
+2025-05-16 06:08:37,070 - urllib3.connectionpool - DEBUG - http://127.0.0.1:7862 "GET /startup-events HTTP/1.1" 200 5
+2025-05-16 06:08:37,078 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:7862
+2025-05-16 06:08:37,087 - urllib3.connectionpool - DEBUG - http://127.0.0.1:7862 "HEAD / HTTP/1.1" 200 0
+2025-05-16 06:08:37,090 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-16 06:08:37,572 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-16 06:08:37,574 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-16 06:08:37,596 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-16 06:08:37,597 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-16 06:08:37,933 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "GET /pkg-version HTTP/1.1" 200 21
+2025-05-16 06:08:38,600 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-launched-telemetry/ HTTP/1.1" 200 None
+2025-05-16 06:08:38,643 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-initiated-analytics/ HTTP/1.1" 200 None
+2025-05-16 06:10:02,189 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-16 06:10:02,189 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-16 06:10:02,189 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-16 06:10:02,233 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-16 06:10:02,248 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:7862
+2025-05-16 06:10:02,248 - urllib3.connectionpool - DEBUG - http://127.0.0.1:7862 "GET /startup-events HTTP/1.1" 200 5
+2025-05-16 06:10:02,257 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:7862
+2025-05-16 06:10:02,353 - urllib3.connectionpool - DEBUG - http://127.0.0.1:7862 "HEAD / HTTP/1.1" 200 0
+2025-05-16 06:10:02,357 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-16 06:10:02,442 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-16 06:10:02,445 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-16 06:10:02,612 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-16 06:10:02,612 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-16 06:10:02,874 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "GET /pkg-version HTTP/1.1" 200 21
+2025-05-16 06:10:03,266 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-initiated-analytics/ HTTP/1.1" 200 None
+2025-05-16 06:10:03,361 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-launched-telemetry/ HTTP/1.1" 200 None
+2025-05-16 06:11:11,109 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-16 06:11:11,120 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-16 06:11:11,124 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-16 06:11:11,163 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-16 06:11:11,175 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:7862
+2025-05-16 06:11:11,176 - urllib3.connectionpool - DEBUG - http://127.0.0.1:7862 "GET /startup-events HTTP/1.1" 200 5
+2025-05-16 06:11:11,183 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:7862
+2025-05-16 06:11:11,192 - urllib3.connectionpool - DEBUG - http://127.0.0.1:7862 "HEAD / HTTP/1.1" 200 0
+2025-05-16 06:11:11,195 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-16 06:11:11,426 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-16 06:11:11,430 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-16 06:11:11,482 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-16 06:11:11,482 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-16 06:11:11,835 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "GET /pkg-version HTTP/1.1" 200 21
+2025-05-16 06:11:12,189 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-launched-telemetry/ HTTP/1.1" 200 None
+2025-05-16 06:11:12,244 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-initiated-analytics/ HTTP/1.1" 200 None
+2025-05-16 06:15:51,201 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-16 06:15:51,201 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-16 06:15:51,209 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-16 06:15:51,248 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-16 06:15:51,259 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:7862
+2025-05-16 06:15:51,261 - urllib3.connectionpool - DEBUG - http://127.0.0.1:7862 "GET /startup-events HTTP/1.1" 200 5
+2025-05-16 06:15:51,262 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:7862
+2025-05-16 06:15:51,380 - urllib3.connectionpool - DEBUG - http://127.0.0.1:7862 "HEAD / HTTP/1.1" 200 0
+2025-05-16 06:15:51,383 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-16 06:15:51,512 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-16 06:15:51,517 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-16 06:15:51,676 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-16 06:15:51,680 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-16 06:15:51,916 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "GET /pkg-version HTTP/1.1" 200 21
+2025-05-16 06:15:52,315 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-initiated-analytics/ HTTP/1.1" 200 None
+2025-05-16 06:15:52,412 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-launched-telemetry/ HTTP/1.1" 200 None
+2025-05-16 06:16:47,896 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-16 06:16:47,899 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-16 06:16:47,901 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-16 06:16:47,942 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-16 06:16:47,954 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:7862
+2025-05-16 06:16:47,954 - urllib3.connectionpool - DEBUG - http://127.0.0.1:7862 "GET /startup-events HTTP/1.1" 200 5
+2025-05-16 06:16:47,962 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:7862
+2025-05-16 06:16:47,972 - urllib3.connectionpool - DEBUG - http://127.0.0.1:7862 "HEAD / HTTP/1.1" 200 0
+2025-05-16 06:16:47,976 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-16 06:16:48,207 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-16 06:16:48,207 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-16 06:16:48,251 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-16 06:16:48,256 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-16 06:16:48,613 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "GET /pkg-version HTTP/1.1" 200 21
+2025-05-16 06:16:48,970 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-launched-telemetry/ HTTP/1.1" 200 None
+2025-05-16 06:16:49,006 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-initiated-analytics/ HTTP/1.1" 200 None
+2025-05-16 06:18:42,216 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-16 06:18:42,230 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-16 06:18:42,234 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-16 06:18:42,275 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-16 06:18:42,287 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:7862
+2025-05-16 06:18:42,289 - urllib3.connectionpool - DEBUG - http://127.0.0.1:7862 "GET /startup-events HTTP/1.1" 200 5
+2025-05-16 06:18:42,296 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:7862
+2025-05-16 06:18:42,308 - urllib3.connectionpool - DEBUG - http://127.0.0.1:7862 "HEAD / HTTP/1.1" 200 0
+2025-05-16 06:18:42,309 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-16 06:18:42,548 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-16 06:18:42,549 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-16 06:18:42,598 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-16 06:18:42,599 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-16 06:18:42,925 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "GET /pkg-version HTTP/1.1" 200 21
+2025-05-16 06:18:43,347 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-launched-telemetry/ HTTP/1.1" 200 None
+2025-05-16 06:18:43,373 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-initiated-analytics/ HTTP/1.1" 200 None
+2025-05-20 15:46:27,522 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-20 15:46:27,523 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-20 15:46:27,523 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-20 15:46:27,646 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-20 15:46:27,664 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:7862
+2025-05-20 15:46:27,665 - urllib3.connectionpool - DEBUG - http://127.0.0.1:7862 "GET /startup-events HTTP/1.1" 200 5
+2025-05-20 15:46:27,673 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:7862
+2025-05-20 15:46:27,774 - urllib3.connectionpool - DEBUG - http://127.0.0.1:7862 "HEAD / HTTP/1.1" 200 0
+2025-05-20 15:46:27,777 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-20 15:46:28,212 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-20 15:46:28,214 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-20 15:46:28,332 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-20 15:46:28,334 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-20 15:46:28,560 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "GET /pkg-version HTTP/1.1" 200 21
+2025-05-20 15:46:29,301 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-launched-telemetry/ HTTP/1.1" 200 None
+2025-05-20 15:46:29,342 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-initiated-analytics/ HTTP/1.1" 200 None
+2025-05-20 15:58:17,092 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-20 15:58:17,092 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-20 15:58:17,093 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): generativelanguage.googleapis.com:443
+2025-05-20 15:58:33,307 - urllib3.connectionpool - DEBUG - https://generativelanguage.googleapis.com:443 "POST /v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBDc73003zr5T8KVhem_kTOIa9nRIbcHsg HTTP/1.1" 200 None
+2025-05-20 15:58:33,310 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-20 15:58:35,196 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-20 15:58:35,197 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-20 15:58:35,433 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-20 15:58:35,433 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-20 15:58:35,639 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-20 15:58:35,640 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-20 15:58:35,863 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-20 15:58:35,863 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-20 15:58:36,324 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-20 15:58:36,325 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-20 15:58:36,751 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-20 15:58:36,752 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-20 15:58:37,147 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-20 15:58:37,148 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-20 16:01:34,941 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-20 16:01:34,942 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): generativelanguage.googleapis.com:443
+2025-05-20 16:01:36,294 - urllib3.connectionpool - DEBUG - https://generativelanguage.googleapis.com:443 "POST /v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBDc73003zr5T8KVhem_kTOIa9nRIbcHsg HTTP/1.1" 200 None
+2025-05-20 16:01:36,296 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-20 16:01:44,938 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-20 16:01:44,939 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-20 16:01:49,443 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-20 16:02:25,609 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-20 16:18:22,672 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-20 16:18:22,672 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-20 16:18:25,506 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-20 16:18:25,506 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-20 16:18:25,671 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-20 16:18:25,671 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-20 16:18:42,773 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-20 16:18:42,774 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.minimaxi.chat:443
+2025-05-20 16:18:45,946 - urllib3.connectionpool - DEBUG - https://api.minimaxi.chat:443 "POST /v1/t2a_v2?GroupId=1886392350196895842 HTTP/1.1" 200 None
+2025-05-20 16:18:46,188 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.minimaxi.chat:443
+2025-05-20 16:18:50,015 - urllib3.connectionpool - DEBUG - https://api.minimaxi.chat:443 "POST /v1/t2a_v2?GroupId=1886392350196895842 HTTP/1.1" 200 None
+2025-05-20 16:18:51,281 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.minimaxi.chat:443
+2025-05-20 16:18:54,716 - urllib3.connectionpool - DEBUG - https://api.minimaxi.chat:443 "POST /v1/t2a_v2?GroupId=1886392350196895842 HTTP/1.1" 200 None
+2025-05-20 16:18:56,134 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.minimaxi.chat:443
+2025-05-20 16:18:59,871 - urllib3.connectionpool - DEBUG - https://api.minimaxi.chat:443 "POST /v1/t2a_v2?GroupId=1886392350196895842 HTTP/1.1" 200 None
+2025-05-20 16:19:01,456 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.minimaxi.chat:443
+2025-05-20 16:19:04,796 - urllib3.connectionpool - DEBUG - https://api.minimaxi.chat:443 "POST /v1/t2a_v2?GroupId=1886392350196895842 HTTP/1.1" 200 None
+2025-05-20 16:19:06,237 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.minimaxi.chat:443
+2025-05-20 16:19:09,732 - urllib3.connectionpool - DEBUG - https://api.minimaxi.chat:443 "POST /v1/t2a_v2?GroupId=1886392350196895842 HTTP/1.1" 200 None
+2025-05-20 16:19:11,139 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.minimaxi.chat:443
+2025-05-20 16:19:14,763 - urllib3.connectionpool - DEBUG - https://api.minimaxi.chat:443 "POST /v1/t2a_v2?GroupId=1886392350196895842 HTTP/1.1" 200 None
+2025-05-20 16:19:16,355 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.minimaxi.chat:443
+2025-05-20 16:19:19,356 - urllib3.connectionpool - DEBUG - https://api.minimaxi.chat:443 "POST /v1/t2a_v2?GroupId=1886392350196895842 HTTP/1.1" 200 None
+2025-05-20 16:19:20,762 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.minimaxi.chat:443
+2025-05-20 16:19:23,946 - urllib3.connectionpool - DEBUG - https://api.minimaxi.chat:443 "POST /v1/t2a_v2?GroupId=1886392350196895842 HTTP/1.1" 200 None
+2025-05-20 16:19:25,403 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.minimaxi.chat:443
+2025-05-20 16:19:28,696 - urllib3.connectionpool - DEBUG - https://api.minimaxi.chat:443 "POST /v1/t2a_v2?GroupId=1886392350196895842 HTTP/1.1" 200 None
+2025-05-20 16:19:30,348 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.minimaxi.chat:443
+2025-05-20 16:19:32,861 - urllib3.connectionpool - DEBUG - https://api.minimaxi.chat:443 "POST /v1/t2a_v2?GroupId=1886392350196895842 HTTP/1.1" 200 None
+2025-05-20 16:19:34,169 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.minimaxi.chat:443
+2025-05-20 16:19:36,829 - urllib3.connectionpool - DEBUG - https://api.minimaxi.chat:443 "POST /v1/t2a_v2?GroupId=1886392350196895842 HTTP/1.1" 200 None
+2025-05-20 16:19:37,931 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.minimaxi.chat:443
+2025-05-20 16:19:40,308 - urllib3.connectionpool - DEBUG - https://api.minimaxi.chat:443 "POST /v1/t2a_v2?GroupId=1886392350196895842 HTTP/1.1" 200 None
+2025-05-20 16:19:41,400 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.minimaxi.chat:443
+2025-05-20 16:19:43,974 - urllib3.connectionpool - DEBUG - https://api.minimaxi.chat:443 "POST /v1/t2a_v2?GroupId=1886392350196895842 HTTP/1.1" 200 None
+2025-05-20 16:19:45,036 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.minimaxi.chat:443
+2025-05-20 16:19:47,998 - urllib3.connectionpool - DEBUG - https://api.minimaxi.chat:443 "POST /v1/t2a_v2?GroupId=1886392350196895842 HTTP/1.1" 200 None
+2025-05-20 16:19:49,326 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.minimaxi.chat:443
+2025-05-20 16:19:53,027 - urllib3.connectionpool - DEBUG - https://api.minimaxi.chat:443 "POST /v1/t2a_v2?GroupId=1886392350196895842 HTTP/1.1" 200 None
+2025-05-20 16:19:54,962 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.minimaxi.chat:443
+2025-05-20 16:19:58,236 - urllib3.connectionpool - DEBUG - https://api.minimaxi.chat:443 "POST /v1/t2a_v2?GroupId=1886392350196895842 HTTP/1.1" 200 None
+2025-05-20 16:19:59,862 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.minimaxi.chat:443
+2025-05-20 16:20:03,398 - urllib3.connectionpool - DEBUG - https://api.minimaxi.chat:443 "POST /v1/t2a_v2?GroupId=1886392350196895842 HTTP/1.1" 200 None
+2025-05-20 16:20:05,117 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.minimaxi.chat:443
+2025-05-20 16:20:08,548 - urllib3.connectionpool - DEBUG - https://api.minimaxi.chat:443 "POST /v1/t2a_v2?GroupId=1886392350196895842 HTTP/1.1" 200 None
+2025-05-20 16:20:10,422 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.minimaxi.chat:443
+2025-05-20 16:20:13,255 - urllib3.connectionpool - DEBUG - https://api.minimaxi.chat:443 "POST /v1/t2a_v2?GroupId=1886392350196895842 HTTP/1.1" 200 None
+2025-05-20 16:20:14,645 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.minimaxi.chat:443
+2025-05-20 16:20:17,796 - urllib3.connectionpool - DEBUG - https://api.minimaxi.chat:443 "POST /v1/t2a_v2?GroupId=1886392350196895842 HTTP/1.1" 200 None
+2025-05-20 16:20:19,449 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.minimaxi.chat:443
+2025-05-20 16:20:23,182 - urllib3.connectionpool - DEBUG - https://api.minimaxi.chat:443 "POST /v1/t2a_v2?GroupId=1886392350196895842 HTTP/1.1" 200 None
+2025-05-20 16:20:25,446 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.minimaxi.chat:443
+2025-05-20 16:20:28,883 - urllib3.connectionpool - DEBUG - https://api.minimaxi.chat:443 "POST /v1/t2a_v2?GroupId=1886392350196895842 HTTP/1.1" 200 None
+2025-05-20 16:20:31,722 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.minimaxi.chat:443
+2025-05-20 16:20:34,709 - urllib3.connectionpool - DEBUG - https://api.minimaxi.chat:443 "POST /v1/t2a_v2?GroupId=1886392350196895842 HTTP/1.1" 200 None
+2025-05-20 16:20:37,632 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-23 16:45:57,296 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-23 16:45:57,300 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-23 16:45:57,306 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-23 16:45:57,356 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-23 16:45:57,375 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:7862
+2025-05-23 16:45:57,378 - urllib3.connectionpool - DEBUG - http://127.0.0.1:7862 "GET /startup-events HTTP/1.1" 200 5
+2025-05-23 16:45:57,386 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:7862
+2025-05-23 16:45:57,502 - urllib3.connectionpool - DEBUG - http://127.0.0.1:7862 "HEAD / HTTP/1.1" 200 0
+2025-05-23 16:45:57,504 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-23 16:45:57,605 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-23 16:45:57,612 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-23 16:45:57,792 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-23 16:45:57,792 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-23 16:45:58,038 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "GET /pkg-version HTTP/1.1" 200 21
+2025-05-23 16:45:58,398 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-initiated-analytics/ HTTP/1.1" 200 None
+2025-05-23 16:45:58,472 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-launched-telemetry/ HTTP/1.1" 200 None
+2025-05-23 16:47:15,063 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-23 16:47:15,063 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-23 16:47:15,063 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-23 16:47:15,724 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-23 16:47:15,729 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-23 16:47:16,100 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "GET /pkg-version HTTP/1.1" 200 21
+2025-05-23 16:47:16,862 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-initiated-analytics/ HTTP/1.1" 200 None
+2025-05-23 16:48:19,846 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-23 16:48:19,850 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-23 16:48:19,850 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-23 16:48:19,987 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-23 16:48:20,004 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:7862
+2025-05-23 16:48:20,005 - urllib3.connectionpool - DEBUG - http://127.0.0.1:7862 "GET /startup-events HTTP/1.1" 200 5
+2025-05-23 16:48:20,012 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:7862
+2025-05-23 16:48:20,043 - urllib3.connectionpool - DEBUG - http://127.0.0.1:7862 "HEAD / HTTP/1.1" 200 0
+2025-05-23 16:48:20,045 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-23 16:48:20,480 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-23 16:48:20,481 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-23 16:48:20,566 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-23 16:48:20,566 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-23 16:48:20,853 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "GET /pkg-version HTTP/1.1" 200 21
+2025-05-23 16:48:21,533 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-initiated-analytics/ HTTP/1.1" 200 None
+2025-05-23 16:48:21,534 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-launched-telemetry/ HTTP/1.1" 200 None
+2025-05-23 16:52:21,110 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-23 16:52:21,113 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-23 16:52:21,116 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-23 16:52:21,159 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-23 16:52:21,172 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:7862
+2025-05-23 16:52:21,173 - urllib3.connectionpool - DEBUG - http://127.0.0.1:7862 "GET /startup-events HTTP/1.1" 200 5
+2025-05-23 16:52:21,174 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:7862
+2025-05-23 16:52:21,272 - urllib3.connectionpool - DEBUG - http://127.0.0.1:7862 "HEAD / HTTP/1.1" 200 0
+2025-05-23 16:52:21,274 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-23 16:52:21,431 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-23 16:52:21,431 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-23 16:52:21,572 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-23 16:52:21,574 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-23 16:52:21,804 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "GET /pkg-version HTTP/1.1" 200 21
+2025-05-23 16:52:22,188 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-initiated-analytics/ HTTP/1.1" 200 None
+2025-05-23 16:52:22,320 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-launched-telemetry/ HTTP/1.1" 200 None
+2025-05-23 16:53:41,117 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-23 16:53:41,122 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-23 16:53:41,127 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-23 16:53:41,167 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-23 16:53:41,179 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:7863
+2025-05-23 16:53:41,428 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-23 16:53:41,429 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-23 16:53:41,799 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "GET /pkg-version HTTP/1.1" 200 21
+2025-05-23 16:53:42,239 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-initiated-analytics/ HTTP/1.1" 200 None
+2025-05-23 16:53:43,212 - urllib3.connectionpool - DEBUG - http://localhost:7863 "GET /startup-events HTTP/1.1" 200 5
+2025-05-23 16:53:43,222 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:7863
+2025-05-23 16:53:45,288 - urllib3.connectionpool - DEBUG - http://localhost:7863 "HEAD / HTTP/1.1" 200 0
+2025-05-23 16:53:45,291 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-23 16:53:46,120 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-launched-telemetry/ HTTP/1.1" 200 None
+2025-05-23 16:56:40,983 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-23 16:56:40,983 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-23 16:56:40,983 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-23 16:56:43,600 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-23 16:56:43,600 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-23 16:56:55,537 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-23 16:56:55,538 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): generativelanguage.googleapis.com:443
+2025-05-23 16:56:56,446 - urllib3.connectionpool - DEBUG - https://generativelanguage.googleapis.com:443 "POST /v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBDc73003zr5T8KVhem_kTOIa9nRIbcHsg HTTP/1.1" 200 None
+2025-05-23 16:56:56,462 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-23 16:57:24,528 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-23 16:57:24,530 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): generativelanguage.googleapis.com:443
+2025-05-23 16:57:25,496 - urllib3.connectionpool - DEBUG - https://generativelanguage.googleapis.com:443 "POST /v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBDc73003zr5T8KVhem_kTOIa9nRIbcHsg HTTP/1.1" 200 None
+2025-05-23 16:57:25,500 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-23 16:58:22,875 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-23 16:58:22,876 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-23 16:58:27,281 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-23 16:59:04,312 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-23 16:59:08,967 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-23 16:59:08,967 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-23 16:59:17,487 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-23 16:59:17,488 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.minimaxi.chat:443
+2025-05-23 16:59:21,349 - urllib3.connectionpool - DEBUG - https://api.minimaxi.chat:443 "POST /v1/t2a_v2?GroupId=1886392350196895842 HTTP/1.1" 200 None
+2025-05-23 16:59:21,623 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-23 16:59:54,253 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-23 16:59:54,254 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.minimaxi.chat:443
+2025-05-23 16:59:55,974 - urllib3.connectionpool - DEBUG - https://api.minimaxi.chat:443 "POST /v1/t2a_v2?GroupId=1886392350196895842 HTTP/1.1" 200 None
+2025-05-23 16:59:56,230 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-23 17:01:46,725 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-23 17:01:46,725 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-23 17:01:46,731 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-23 17:01:46,770 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-23 17:01:46,781 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:7863
+2025-05-23 17:01:47,035 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-23 17:01:47,036 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-23 17:01:47,405 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "GET /pkg-version HTTP/1.1" 200 21
+2025-05-23 17:01:47,821 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-initiated-analytics/ HTTP/1.1" 200 None
+2025-05-23 17:01:48,809 - urllib3.connectionpool - DEBUG - http://localhost:7863 "GET /startup-events HTTP/1.1" 200 5
+2025-05-23 17:01:48,816 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:7863
+2025-05-23 17:01:50,872 - urllib3.connectionpool - DEBUG - http://localhost:7863 "HEAD / HTTP/1.1" 200 0
+2025-05-23 17:01:50,874 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-23 17:01:51,570 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-launched-telemetry/ HTTP/1.1" 200 None
+2025-05-23 17:02:41,147 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-23 17:02:41,147 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-23 17:02:41,148 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): generativelanguage.googleapis.com:443
+2025-05-23 17:02:56,679 - urllib3.connectionpool - DEBUG - https://generativelanguage.googleapis.com:443 "POST /v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBDc73003zr5T8KVhem_kTOIa9nRIbcHsg HTTP/1.1" 200 None
+2025-05-23 17:02:56,682 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-23 17:03:02,610 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-23 17:03:02,611 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-23 17:03:04,644 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-23 17:03:40,692 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-23 17:05:01,533 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-23 17:05:01,534 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-23 17:05:10,428 - matplotlib.pyplot - DEBUG - Loaded backend agg version v2.2.
+2025-05-23 17:05:10,429 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.minimaxi.chat:443
+2025-05-23 17:05:12,297 - urllib3.connectionpool - DEBUG - https://api.minimaxi.chat:443 "POST /v1/t2a_v2?GroupId=1886392350196895842 HTTP/1.1" 200 None
+2025-05-23 17:05:12,550 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version 8.6.
+2025-05-25 15:57:20,616 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-25 15:57:20,617 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-25 15:57:20,622 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-25 15:57:20,661 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-25 15:57:20,677 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:7863
+2025-05-25 15:57:20,935 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-25 15:57:20,936 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-25 15:57:21,370 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "GET /pkg-version HTTP/1.1" 200 21
+2025-05-25 15:57:21,801 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-initiated-analytics/ HTTP/1.1" 200 None
+2025-05-25 15:57:22,734 - urllib3.connectionpool - DEBUG - http://localhost:7863 "GET /startup-events HTTP/1.1" 200 5
+2025-05-25 15:57:22,756 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:7863
+2025-05-25 15:57:24,909 - urllib3.connectionpool - DEBUG - http://localhost:7863 "HEAD / HTTP/1.1" 200 0
+2025-05-25 15:57:24,912 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-25 15:57:25,619 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-launched-telemetry/ HTTP/1.1" 200 None
+2025-05-25 16:07:20,583 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-25 16:07:20,584 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): checkip.amazonaws.com:443
+2025-05-25 16:07:20,590 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-25 16:07:20,629 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-25 16:07:20,643 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:7863
+2025-05-25 16:07:20,919 - urllib3.connectionpool - DEBUG - https://checkip.amazonaws.com:443 "GET / HTTP/1.1" 200 15
+2025-05-25 16:07:20,920 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.gradio.app:443
+2025-05-25 16:07:21,350 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "GET /pkg-version HTTP/1.1" 200 21
+2025-05-25 16:07:21,768 - urllib3.connectionpool - DEBUG - https://api.gradio.app:443 "POST /gradio-initiated-analytics/ HTTP/1.1" 200 None

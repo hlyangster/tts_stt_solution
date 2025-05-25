@@ -250,6 +250,7 @@ class SRTGenerator:
         """
         all_entries = []
         last_end_time = 0
+        current_index = 1  # 用於追蹤當前序號
         
         # 準備文件列表
         files_list = []
@@ -291,10 +292,10 @@ class SRTGenerator:
                     entry['start_time'] = self.ms_to_time(start_ms)
                     entry['end_time'] = self.ms_to_time(end_ms)
             
-            # 更新序號
-            start_index = len(all_entries) + 1
-            for i, entry in enumerate(parsed, start_index):
-                entry['index'] = i
+            # 更新序號，使用全局序號
+            for entry in parsed:
+                entry['index'] = current_index
+                current_index += 1
                 
                 # 如果是中文，將半形標點替換為全形標點
                 if language == "zh":
