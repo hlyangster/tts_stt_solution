@@ -1,3 +1,7 @@
+# Python 版本需求
+# 本專案建議使用 Python 3.11.x，3.12 以上將遇到 distutils 相容性問題
+python_version >=3.11, <3.12
+
 pysrt>=1.1.2
 gradio==3.50.2
 pydub>=0.25.1
