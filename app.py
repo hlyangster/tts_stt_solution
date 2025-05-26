@@ -192,17 +192,25 @@ def generate_subtitle_only(audio_zip, whisper_api_key, language, identifier):
         audio_temp_dir = file_manager.get_file_path(identifier, "step4", "audio_temp")
         os.makedirs(audio_temp_dir, exist_ok=True)
         
-        # 確保使用正確的音频zip檔案路徑
-        audio_zip_path = file_manager.get_file_path(identifier, "step3", "audio.zip")
-        if not os.path.exists(audio_zip_path):
-            return "找不到音频zip檔案", None, None
+        try:
+            # 嘗試先使用上傳的音頻檔案
+            if isinstance(audio_zip, str) and os.path.exists(audio_zip):
+                audio_zip_path = audio_zip
+            else:
+                # 如果上傳的檔案無效，嘗試使用步驟3的音頻檔案
+                audio_zip_path = file_manager.get_file_path(identifier, "step3", "audio.zip")
+                if not os.path.exists(audio_zip_path):
+                    return "找不到音頻檔案，請先上傳或生成音頻", None, None
 
-        # 解壓縮音频文件
-        with zipfile.ZipFile(audio_zip_path, 'r') as zip_ref:
-            zip_ref.extractall(audio_temp_dir)
+            # 解壓縮音频文件
+            with zipfile.ZipFile(audio_zip_path, 'r') as zip_ref:
+                zip_ref.extractall(audio_temp_dir)
+        except Exception as e:
+            return f"處理音頻檔案時發生錯誤：{str(e)}", None, None
         
         # 取得所有音频文件的路徑
         audio_files = [os.path.join(audio_temp_dir, f) for f in os.listdir(audio_temp_dir) if f.endswith('.mp3')]
+        audio_files.sort()  # 確保按照檔名排序
         
         if not audio_files:
             return "未找到任何MP3音頻文件", None, None
@@ -210,22 +218,45 @@ def generate_subtitle_only(audio_zip, whisper_api_key, language, identifier):
         # 生成字幕
         initial_srt_file = file_manager.get_file_path(identifier, "step4", "initial_subtitle.srt")
         
-        # 為每個音頻文件生成字幕並合併
-        all_srt_content = []
-        current_index = 1  # SRT字幕索引
+        # 為每個音頻文件生成字幕
+        all_srt_entries = []
+        current_index = 1
+        time_offset = 0  # 時間偏移量（毫秒）
         
-        for audio_file in sorted(audio_files):
+        for audio_file in audio_files:
             # 使用Whisper API轉錄音頻
             srt_content = subtitle_generator.transcribe(audio_file, whisper_api_key, language)
-            if srt_content:
-                # 獲取音頻時長用於時間戳校正
-                audio_duration = subtitle_generator.get_audio_duration(audio_file)
-                # 校正時間戳
-                corrected_srt = subtitle_generator.correct_timestamps_proportionally(srt_content, audio_duration)
-                all_srt_content.append(corrected_srt)
+            if not srt_content:
+                continue
+                
+            # 解析SRT內容
+            entries = subtitle_generator.parse_srt(srt_content)
+            if not entries:
+                continue
+                
+            # 調整時間戳和序號
+            for entry in entries:
+                # 調整時間戳
+                start_ms = subtitle_generator.time_to_ms(entry['start_time']) + time_offset
+                end_ms = subtitle_generator.time_to_ms(entry['end_time']) + time_offset
+                
+                entry['start_time'] = subtitle_generator.ms_to_time(start_ms)
+                entry['end_time'] = subtitle_generator.ms_to_time(end_ms)
+                entry['index'] = current_index
+                
+                all_srt_entries.append(entry)
+                current_index += 1
+            
+            # 更新時間偏移量
+            last_entry = entries[-1]
+            time_offset = subtitle_generator.time_to_ms(last_entry['end_time'])
         
-        # 合併所有SRT內容
-        combined_srt = "\n\n".join(all_srt_content)
+        # 生成合併後的SRT內容
+        combined_srt = ""
+        for entry in all_srt_entries:
+            combined_srt += f"{entry['index']}\n"
+            combined_srt += f"{entry['start_time']} --> {entry['end_time']}\n"
+            combined_srt += f"{entry['text']}\n\n"
         
         # 保存合併後的字幕文件
         with open(initial_srt_file, "w", encoding="utf-8") as f:
